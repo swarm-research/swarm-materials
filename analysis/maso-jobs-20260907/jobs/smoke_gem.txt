@@ -1,0 +1,1 @@
+Smoke test. Use your shell/file tools to list the entries of /Users/bytedance/swarm-work/data/gen1/agents and report how many subdirectories it has. Then reply in one short sentence. Do not create files.

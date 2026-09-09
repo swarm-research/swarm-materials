@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "bytes": 1959,
+      "file": "audit_figure_values.csv",
+      "sha256": "0b5ca68d8847206dabe7a7b707a90f28210382ab748921e21ea2a66001f214b1"
+    },
+    {
+      "bytes": 26413,
+      "file": "gen2_execution_funnel.pdf",
+      "sha256": "e66bce1a81d8371adb61d96cd34f09f30f96c5d48aba91345451c39495b59b08"
+    },
+    {
+      "bytes": 362339,
+      "file": "gen2_execution_funnel.png",
+      "sha256": "acac489e438b0f1c01a73caa6f2c02ee3241815013ff6206e7df16071d311cca"
+    },
+    {
+      "bytes": 8853,
+      "file": "make_audit_figures.py",
+      "sha256": "ac01b05ddced8bb5f9b9ef9978c2e33e94b658d2b623be2f346471d29c233d55"
+    },
+    {
+      "bytes": 30641,
+      "file": "maso_cost_amplifiers.pdf",
+      "sha256": "c2b4079177572d1cc535fdb1bfa941a335bf865ba8d639b005e680c26b34ddbe"
+    },
+    {
+      "bytes": 478819,
+      "file": "maso_cost_amplifiers.png",
+      "sha256": "2d8f6b7d0c94e6b5e7e51117060a84d8770e4bc16d9f24ff2d355327410a6c26"
+    }
+  ],
+  "schema": "maso-audit-figures/v1"
+}

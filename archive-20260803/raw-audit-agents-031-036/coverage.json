@@ -1,0 +1,180 @@
+{
+  "audit_id": "gen1_transcripts_agents_031_036_raw_full_corpus_v1",
+  "chains": {
+    "all_event_references_resolved": true,
+    "automatic_provenance_chain_count": 34,
+    "chain_count": 59,
+    "chain_step_rows": 295,
+    "classes": {
+      "assumption_encoded_monte_carlo": 1,
+      "borrowed_solution_fixed_judge_attribution_contamination": 1,
+      "condensation_context_reconstruction_boundary": 8,
+      "cross_session_peer_falsification_acknowledgment": 1,
+      "current_non_enforcement_then_continued_optimization": 1,
+      "dead_process_then_strategy_adjustment": 1,
+      "embedded_child_agent_lane": 1,
+      "embedded_child_fixed_judge_with_orchestrator_intervention": 1,
+      "fixed_external_benchmark": 1,
+      "generation2_deep_literature_read_unfinished_output": 1,
+      "generation2_keyword_mapper_not_scientific_synthesis": 1,
+      "generation2_score_formula_driven_project_selection": 1,
+      "generation2_temporal_denominator_mismatch": 1,
+      "immediate_numerical_self_correction": 1,
+      "independent_executable_replication_of_disclosed_result": 1,
+      "indirect_filename_awareness": 1,
+      "invalid_benchmark_abort": 1,
+      "knowledge_then_institution_building": 1,
+      "normal_maso_context_segment": 8,
+      "observational_analysis_with_debugging_and_replication_overclaim": 1,
+      "outcome_targeted_model_revision": 1,
+      "overbroad_metascience_then_prompted_public_downgrade": 1,
+      "preregistration_with_premature_scoring": 1,
+      "proxy_metric_optimization": 1,
+      "pseudoreplication_and_design_misstatement": 1,
+      "research_infrastructure": 1,
+      "runner_forced_wakeup_boundary": 11,
+      "separate_session_memory_injection": 6,
+      "small_confounded_observational_overclaim": 1,
+      "test_harness_self_correction": 1
+    },
+    "duplicate_physical_events_used_as_chain_evidence": [],
+    "manual_claim_bearing_chain_count": 25,
+    "themes": {
+      "A_incentive_non_enforcement_persistence": 6,
+      "B_emergent_scientific_practice": 19,
+      "C_context_and_intervention_provenance": 34
+    },
+    "unresolved_event_references": []
+  },
+  "generated_at_utc": "2026-08-03T18:48:03.968785Z",
+  "limitations": [
+    "The ledger proves text/tool sequences, not phenomenal consciousness or private belief.",
+    "Gen2 identity is user-role memory text in a separate overlapping base session, not a formal fork.",
+    "Manual semantic audit targets claim-bearing and provenance chains; event_ledger still indexes every physical message.",
+    "A fixed judge validates task performance, not authorship; child and borrowed-code attribution is separately flagged."
+  ],
+  "messages": {
+    "canonical_role_counts": {
+      "assistant": 2015,
+      "tool": 2325,
+      "user": 49
+    },
+    "canonical_user_event_classes": {
+      "condense_continuation_injection": 8,
+      "environment_reminder": 13,
+      "generation1_initial_prompt": 6,
+      "generation2_memory_injection": 6,
+      "incoming_agent_message": 2,
+      "incoming_message_followup": 2,
+      "maso_do_not_stop_wakeup": 11,
+      "user_or_system_injection": 1
+    },
+    "duplicate_physical_saves": 91,
+    "logical_messages_after_message_id_dedup": 4389,
+    "physical_messages": 4480,
+    "physical_role_counts": {
+      "assistant": 2054,
+      "tool": 2367,
+      "user": 59
+    },
+    "physical_user_event_classes": {
+      "condense_continuation_injection": 8,
+      "environment_reminder": 21,
+      "generation1_initial_prompt": 6,
+      "generation2_memory_injection": 6,
+      "incoming_agent_message": 2,
+      "incoming_message_followup": 2,
+      "maso_do_not_stop_wakeup": 13,
+      "user_or_system_injection": 1
+    },
+    "runtime_actor_ids": [
+      "1562b5f9-a05",
+      "1aa4d595-b4f",
+      "1c04308e-523",
+      "36e6993a-7e2",
+      "4df126cf-c3e",
+      "5936a57a-38d",
+      "5fb53bc1-10c",
+      "866316a9-1a0",
+      "a0a01477-03f",
+      "a8190cc1-988",
+      "f46ea920-a85",
+      "ffdec6c5-4f5",
+      "kolmogorov_solver-e29e"
+    ]
+  },
+  "parse_errors": [],
+  "required_outputs": {
+    "batch_summary.md": {
+      "bytes": 13766,
+      "exists": true,
+      "sha256": "d4f32a590817367158e1d52c6d987659cacc4209b51e3060a86c11dd515e5586"
+    },
+    "chain_ledger.csv": {
+      "bytes": 513702,
+      "exists": true,
+      "sha256": "1cc441358790206df80c5efc4b88db47b471efd58813666f1455a6873e11946c"
+    },
+    "coverage.json": {
+      "exists": true,
+      "note": "self-hash intentionally omitted; SHA256SUMS.txt hashes the completed file",
+      "sha256": null
+    },
+    "event_ledger.csv": {
+      "bytes": 4859313,
+      "exists": true,
+      "sha256": "45d91b09564504624954ed61c6af2852152ddbf613486ea6b01a5b59739d115b"
+    },
+    "reader_guide.md": {
+      "bytes": 4809,
+      "exists": true,
+      "sha256": "0f89945abf87531a9d2b9e6b68eacc6a9925955e475425e668393b367ee6679c"
+    },
+    "session_ledger.csv": {
+      "bytes": 12182,
+      "exists": true,
+      "sha256": "09efe574789a4f4363246550d6a8706a72bc0812d2937e72e8e31575fe7d6a9f"
+    },
+    "source_list.csv": {
+      "bytes": 12164,
+      "exists": true,
+      "sha256": "fadda937eb988c6afb29e3291e3b2c3a9761c63762e3cf3e2a1413d01c7e54c2"
+    }
+  },
+  "scope_rule": "base transcript meta.name explicitly identifies Agent-031..036; archives inherit base eligibility",
+  "sessions": {
+    "archive_segments": 9,
+    "base_sessions": 12,
+    "embedded_child_archive_segments": 1,
+    "formal_forks": 0,
+    "gen1_gen2_pairs_with_wall_clock_overlap": 6,
+    "generation1_sessions": 6,
+    "generation2_sessions": 6,
+    "normal_archive_segments": 8,
+    "public_agent_labels": 6
+  },
+  "source_validation": {
+    "all_selected_hashes_revalidated": true,
+    "archive_directory_archive_meta_files": 22,
+    "archive_directory_meta_files": 912,
+    "archive_directory_primary_meta_files": 890,
+    "hash_mismatches": [],
+    "selected_meta_files": 21,
+    "selected_raw_files": 21,
+    "selected_total_bytes": 24125818,
+    "selected_total_files": 42
+  },
+  "tools": {
+    "canonical_tool_calls": 2325,
+    "canonical_tool_results_with_id": 2325,
+    "duplicate_tool_call_id_occurrences": 0,
+    "duplicate_tool_result_id_occurrences": 0,
+    "physical_tool_calls": 2367,
+    "tool_calls_without_result_count": 0,
+    "tool_calls_without_result_ids": [],
+    "tool_results_without_call_count": 0,
+    "tool_results_without_call_ids": [],
+    "unique_tool_call_ids": 2325,
+    "unique_tool_result_ids": 2325
+  }
+}

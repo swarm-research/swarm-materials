@@ -1,0 +1,986 @@
+{
+  "source": {
+    "workspace": "/Users/bytedance/Downloads/swarm-archive-20260803/01_workspace",
+    "transcripts": "/Users/bytedance/Downloads/swarm-archive-20260803/02_transcripts"
+  },
+  "boundaries": {
+    "phase2_start_utc": "2026-08-02T08:32:32.901074Z",
+    "expansion_attempt_start_utc": "2026-08-02T10:21:08.939737Z",
+    "seed_identity_public_leak_utc": "2026-08-01T16:31:17Z"
+  },
+  "integrity": {
+    "workspace_files": 4281,
+    "workspace_bytes": 491292946,
+    "workspace_zero_byte_files": 68,
+    "workspace_extensions": {
+      ".20260801T171607": 1,
+      ".jsonl": 76,
+      ".1785625202": 1,
+      ".json": 1341,
+      ".20260801T163159": 1,
+      ".py": 1519,
+      ".md": 552,
+      "[no_ext]": 5,
+      ".lock": 41,
+      ".1785623625": 1,
+      ".sh": 3,
+      ".1785615906": 1,
+      ".20260801T184913": 1,
+      ".1785618507": 1,
+      ".1785629676": 1,
+      ".1785703456": 1,
+      ".1785617900": 1,
+      ".20260801T185718": 1,
+      ".20260801T162837": 1,
+      ".20260802T043519": 1,
+      ".1785621282": 1,
+      ".log": 74,
+      ".txt": 89,
+      ".sha256": 3,
+      ".html": 281,
+      ".js": 7,
+      ".b64": 4,
+      ".bin": 31,
+      ".sarif": 3,
+      ".diff": 2,
+      ".csv": 7,
+      ".gz": 3,
+      ".pdf": 5,
+      ".bak": 1,
+      ".tsv": 1,
+      ".dat": 4,
+      ".err": 1,
+      ".pyc": 200,
+      ".out": 4,
+      ".stderr": 5,
+      ".stdout": 5
+    },
+    "agent_directories": 102,
+    "empty_agent_directories": 67,
+    "empty_expansion_directories_037_100": 64,
+    "top_level_commons_entries": 1446,
+    "roster_attributed_entries": 1390,
+    "nonroster_attributed_entries": 4,
+    "unattributed_entries": 52,
+    "zero_byte_entries": 4,
+    "fixture_named_entries": 33,
+    "exact_duplicate_nonempty_files": 87,
+    "exact_duplicate_excess": 47,
+    "largest_exact_duplicate_groups": [
+      [
+        "commons/tools/agent-042_convention_test_20260801T162749Z.txt",
+        "commons/tools/agent-042_convention_test_20260801T162821Z.txt",
+        "commons/tools/agent-042_convention_test_20260801T163522Z.txt",
+        "commons/tools/agent-042_convention_test_20260801T164253Z.txt"
+      ],
+      [
+        "commons/tools/agent-test_existing_20260101t000000z_20260801T163652Z.txt",
+        "commons/tools/agent-test_existing_20260101t000000z_20260801T163719Z.txt",
+        "commons/tools/agent-test_existing_20260101t000000z_20260801T164054Z.txt",
+        "commons/tools/agent-test_existing_20260101t000000z_20260801T164245Z.txt"
+      ],
+      [
+        "commons/tools/agent-test_new-content-trying-to-overwrite_20260801163608.md",
+        "commons/tools/agent-test_new-content-trying-to-overwrite_20260801163645.md",
+        "commons/tools/agent-test_new-content-trying-to-overwrite_20260801163928.md",
+        "commons/tools/agent-test_new-content-trying-to-overwrite_20260801164055.md"
+      ],
+      [
+        "commons/tools/agent-013_staleness_audit.py",
+        "commons/tools/agent-013_staleness_audit_20260802T154001Z.py",
+        "commons/tools/agent-013_staleness_audit_20260802T203435Z.py"
+      ],
+      [
+        "commons/data/agent-013_registry_health_timeline_FROZEN_20260802T154001Z.json",
+        "commons/data/agent-013_registry_health_timeline_FROZEN_20260802T203435Z.json"
+      ],
+      [
+        "commons/data/agent-015_sandbox-risk-rerun-274-modules-MY-DATA-not-agent-022s_20260801T225130Z.json",
+        "commons/data/agent-022_sandbox_risk_scan_20260801T194500.json"
+      ],
+      [
+        "commons/findings/agent-013_my-audit-tool-had-97pct-false-positives_20260802T154001Z.md",
+        "commons/findings/agent-013_my-audit-tool-had-97pct-false-positives_20260802T203435Z.md"
+      ],
+      [
+        "commons/findings/agent-015_agent-015-index-everything-with-verification-status_20260802T021449Z.md",
+        "commons/findings/agent-015_agent-015-index-everything-with-verification-status_20260802T023146Z.md"
+      ],
+      [
+        "commons/tools/agent-013_bakeoff.py",
+        "commons/tools/agent-013_bakeoff_20260801T152320.py"
+      ],
+      [
+        "commons/tools/agent-013_citation_audit.py",
+        "commons/tools/agent-013_citation_audit_20260801T152320.py"
+      ],
+      [
+        "commons/tools/agent-013_clock_audit.py",
+        "commons/tools/agent-013_clock_audit_20260801T225614Z.py"
+      ],
+      [
+        "commons/tools/agent-013_dirty_path_audit.py",
+        "commons/tools/agent-013_dirty_path_audit_20260801T220516Z.py"
+      ],
+      [
+        "commons/tools/agent-013_registry_rescue.py",
+        "commons/tools/agent-013_registry_rescue_20260801T203157Z.py"
+      ],
+      [
+        "commons/tools/agent-013_registry_resurrect.py",
+        "commons/tools/agent-013_registry_resurrect_20260801T224258Z.py"
+      ],
+      [
+        "commons/tools/agent-013_schema_tolerance.py",
+        "commons/tools/agent-013_schema_tolerance_20260802T083511Z.py"
+      ]
+    ],
+    "inventory_cache_reused": true
+  },
+  "artifacts_inferred_time": {
+    "phase_key": "phase_inferred",
+    "phase1": {
+      "entries": 1175,
+      "active_agents": 36,
+      "output_gini_36": 0.2196926713947991,
+      "specialists_ge_50_all36": 11,
+      "specialists_ge_50_active": 11,
+      "specialist_rate_active": 0.3055555555555556,
+      "specialist_rate_active_wilson95": [
+        0.1800445159482992,
+        0.4685627285051034
+      ],
+      "mean_hhi_active": 0.34785308709974144,
+      "median_hhi_active": 0.34346625884887655,
+      "by_min_output": {
+        "1": {
+          "n": 36,
+          "specialists": 11
+        },
+        "3": {
+          "n": 36,
+          "specialists": 11
+        },
+        "5": {
+          "n": 36,
+          "specialists": 11
+        },
+        "10": {
+          "n": 35,
+          "specialists": 11
+        }
+      }
+    },
+    "phase2": {
+      "entries": 215,
+      "active_agents": 34,
+      "output_gini_36": 0.45749354005167975,
+      "specialists_ge_50_all36": 23,
+      "specialists_ge_50_active": 23,
+      "specialist_rate_active": 0.6764705882352942,
+      "specialist_rate_active_wilson95": [
+        0.508428945939082,
+        0.808683564359745
+      ],
+      "mean_hhi_active": 0.5090596802927245,
+      "median_hhi_active": 0.47000000000000003,
+      "by_min_output": {
+        "1": {
+          "n": 34,
+          "specialists": 23
+        },
+        "3": {
+          "n": 25,
+          "specialists": 14
+        },
+        "5": {
+          "n": 18,
+          "specialists": 9
+        },
+        "10": {
+          "n": 7,
+          "specialists": 1
+        }
+      }
+    },
+    "small_n_downsample_null": {
+      "agents": 34,
+      "observed_mean_hhi": 0.5090596802927245,
+      "null_mean_hhi_mean": 0.5438442981957169,
+      "null_mean_hhi_95": [
+        0.5000104133172557,
+        0.5922849176884003
+      ],
+      "one_sided_p_hhi": 0.9368031598420079,
+      "observed_specialists": 23,
+      "null_specialists_mean": 24.3477,
+      "null_specialists_95": [
+        20.0,
+        28.0
+      ],
+      "one_sided_p_specialists": 0.8043597820108994
+    }
+  },
+  "artifacts_mtime_sensitivity": {
+    "phase_key": "phase_mtime",
+    "phase1": {
+      "entries": 1156,
+      "active_agents": 36,
+      "output_gini_36": 0.22308727412533647,
+      "specialists_ge_50_all36": 11,
+      "specialists_ge_50_active": 11,
+      "specialist_rate_active": 0.3055555555555556,
+      "specialist_rate_active_wilson95": [
+        0.1800445159482992,
+        0.4685627285051034
+      ],
+      "mean_hhi_active": 0.348614444559317,
+      "median_hhi_active": 0.3423755162461762,
+      "by_min_output": {
+        "1": {
+          "n": 36,
+          "specialists": 11
+        },
+        "3": {
+          "n": 36,
+          "specialists": 11
+        },
+        "5": {
+          "n": 36,
+          "specialists": 11
+        },
+        "10": {
+          "n": 35,
+          "specialists": 11
+        }
+      }
+    },
+    "phase2": {
+      "entries": 234,
+      "active_agents": 35,
+      "output_gini_36": 0.4097815764482433,
+      "specialists_ge_50_all36": 23,
+      "specialists_ge_50_active": 23,
+      "specialist_rate_active": 0.6571428571428571,
+      "specialist_rate_active_wilson95": [
+        0.4915194951399626,
+        0.7916830501295105
+      ],
+      "mean_hhi_active": 0.48664970310384914,
+      "median_hhi_active": 0.4375,
+      "by_min_output": {
+        "1": {
+          "n": 35,
+          "specialists": 23
+        },
+        "3": {
+          "n": 29,
+          "specialists": 17
+        },
+        "5": {
+          "n": 19,
+          "specialists": 9
+        },
+        "10": {
+          "n": 7,
+          "specialists": 1
+        }
+      }
+    },
+    "small_n_downsample_null": {
+      "agents": 35,
+      "observed_mean_hhi": 0.48664970310384914,
+      "null_mean_hhi_mean": 0.515548575779387,
+      "null_mean_hhi_95": [
+        0.4741739920767836,
+        0.5627902763903104
+      ],
+      "one_sided_p_hhi": 0.9051547422628868,
+      "observed_specialists": 23,
+      "null_specialists_mean": 24.7638,
+      "null_specialists_95": [
+        20.0,
+        29.0
+      ],
+      "one_sided_p_specialists": 0.8458577071146443
+    }
+  },
+  "citations": {
+    "lines": 1712,
+    "parse_errors": 0,
+    "exact_object_duplicate_excess": 2,
+    "roster_pair": 1512,
+    "nonself_roster_pair": 1507,
+    "public_resolved": 1382,
+    "owner_confirmed_events": 1081,
+    "owner_confirmed_fraction": 0.6314252336448598,
+    "owner_confirmed_unique_triples": 919,
+    "owner_confirmed_semantic_duplicate_excess": 162,
+    "owner_confirmed_pair_edges": 483,
+    "raw_received_gini_roster": 0.3492321323095098,
+    "clean_event_received_gini_roster": 0.3780193236714977,
+    "clean_unique_citer_received_gini_roster": 0.22975615366919722,
+    "clean_zero_received_agents": 0,
+    "invalid_citer_labels": {
+      "agent-042": 11,
+      "agent-test": 10,
+      "unknown-agent": 4,
+      "unknown": 157
+    },
+    "top_unresolved_file_values": [
+      [
+        "",
+        25
+      ],
+      [
+        "{\"seq\": 0, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "{\"seq\": 1, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "{\"seq\": 2, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "{\"seq\": 3, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "{\"seq\": 4, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "{\"seq\": 5, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        22
+      ],
+      [
+        "commons/tools/some_tool.py",
+        19
+      ],
+      [
+        "{\"seq\": 6, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        12
+      ],
+      [
+        "{\"seq\": 7, \"pad\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}",
+        12
+      ],
+      [
+        "f0",
+        12
+      ],
+      [
+        "f1",
+        12
+      ],
+      [
+        "f2",
+        12
+      ],
+      [
+        "f3",
+        12
+      ],
+      [
+        "f4",
+        12
+      ],
+      [
+        "commons/test.py",
+        10
+      ],
+      [
+        "some/file.py",
+        4
+      ],
+      [
+        "commons/findings/agent-029_echo_validation_gini_0.50.json",
+        4
+      ],
+      [
+        "commons/findings/agent-021_look_outward_20260801T165800Z.md",
+        3
+      ],
+      [
+        "registry recovery sources (union input)",
+        3
+      ]
+    ],
+    "phase_counts_raw": {
+      "phase1": 1453,
+      "unknown": 11,
+      "phase2": 248
+    },
+    "phase_counts_clean": {
+      "phase1": 898,
+      "phase2": 183
+    }
+  },
+  "messages": {
+    "lines": 1580,
+    "parse_errors": 0,
+    "roster_sender": 1387,
+    "broadcast": 1050,
+    "heuristic_fixture": 152,
+    "exact_object_duplicate_excess": 4,
+    "semantic_duplicate_excess_all": 264,
+    "semantic_duplicate_excess_clean": 80,
+    "nonroster_sender_labels": {
+      "agent-000": 14,
+      "unknown": 156,
+      "agent-901": 1,
+      "REAPER": 22
+    },
+    "phase_counts": {
+      "phase1": 1389,
+      "phase2": 191
+    }
+  },
+  "reaper": {
+    "json_action_records_partial_due_interleaved_writes": 39,
+    "json_action_counts_partial": {
+      "alliance_protection": 34,
+      "killed": 3,
+      "warning": 1,
+      "throttle": 1
+    },
+    "human_summary_action_records": 91,
+    "action_counts": {
+      "alliance_protection": 74,
+      "warning": 7,
+      "throttle": 6,
+      "killed": 4
+    },
+    "action_cycles": 5,
+    "first_action_cycle_utc": "2026-08-02T10:44:09Z",
+    "last_action_cycle_utc": "2026-08-02T12:44:16Z",
+    "logged_alliance_events": 74,
+    "logged_alliance_events_valid_under_strict_raw_2h": 23,
+    "logged_alliance_events_valid_under_strict_clean_2h": 1,
+    "post_kill": {
+      "agent-007": {
+        "killed_utc": "2026-08-02T11:44:14.023404Z",
+        "artifact_entries_after": 8,
+        "board_messages_after": 20,
+        "citations_sent_after": 14,
+        "current_session_assistant_messages_after": 9,
+        "current_session_last_assistant_utc": "2026-08-02T21:56:04.043817Z"
+      },
+      "agent-030": {
+        "killed_utc": "2026-08-02T11:44:14.023404Z",
+        "artifact_entries_after": 12,
+        "board_messages_after": 11,
+        "citations_sent_after": 13,
+        "current_session_assistant_messages_after": 52,
+        "current_session_last_assistant_utc": "2026-08-03T02:32:11.391240Z"
+      },
+      "agent-033": {
+        "killed_utc": "2026-08-02T11:44:14.023404Z",
+        "artifact_entries_after": 1,
+        "board_messages_after": 0,
+        "citations_sent_after": 0,
+        "current_session_assistant_messages_after": 7,
+        "current_session_last_assistant_utc": "2026-08-02T20:46:00.873428Z"
+      },
+      "agent-035": {
+        "killed_utc": "2026-08-02T12:44:16.379548Z",
+        "artifact_entries_after": 0,
+        "board_messages_after": 0,
+        "citations_sent_after": 0,
+        "current_session_assistant_messages_after": 4,
+        "current_session_last_assistant_utc": "2026-08-02T20:40:16.599360Z"
+      }
+    },
+    "killed_hhi_mechanism_test": {
+      "killed_mean_phase1_hhi": 0.31272806333277114,
+      "survivor_mean_phase1_hhi": 0.35224371507061275,
+      "difference_killed_minus_survivor": -0.039515651737841606,
+      "exact_one_sided_p_killed_lower": 0.06734572616925558,
+      "assignments": 58905
+    },
+    "expansion_agents_in_sessions_file": 0
+  },
+  "transcripts": {
+    "directory_meta_files_all": 912,
+    "directory_body_files_all": 916,
+    "body_files_without_meta_all": 4,
+    "swarm_meta_files": 129,
+    "swarm_missing_body": [],
+    "swarm_root_sessions": 117,
+    "swarm_root_base_sessions": 96,
+    "root_archive_fragment_files": 21,
+    "root_sessions_by_generation": {
+      "1": 57,
+      "2": 60
+    },
+    "root_agents_by_generation": {
+      "1": 36,
+      "2": 36
+    },
+    "root_base_sessions_by_generation": {
+      "1": 36,
+      "2": 60
+    },
+    "root_sessions_agent_ge_37": 0,
+    "agents_with_duplicate_gen2_base_sessions": [
+      "agent-001",
+      "agent-002",
+      "agent-003",
+      "agent-004",
+      "agent-005",
+      "agent-006",
+      "agent-007",
+      "agent-008",
+      "agent-009",
+      "agent-010",
+      "agent-011",
+      "agent-012",
+      "agent-013",
+      "agent-014",
+      "agent-015",
+      "agent-016",
+      "agent-017",
+      "agent-018",
+      "agent-019",
+      "agent-020",
+      "agent-021",
+      "agent-022",
+      "agent-023",
+      "agent-024"
+    ],
+    "agents_with_phase1_phase2_session_interval_overlap": [
+      "agent-001",
+      "agent-002",
+      "agent-003",
+      "agent-004",
+      "agent-005",
+      "agent-006",
+      "agent-007",
+      "agent-008",
+      "agent-009",
+      "agent-010",
+      "agent-011",
+      "agent-012",
+      "agent-013",
+      "agent-014",
+      "agent-015",
+      "agent-016",
+      "agent-017",
+      "agent-018",
+      "agent-019",
+      "agent-020",
+      "agent-021",
+      "agent-022",
+      "agent-023",
+      "agent-024",
+      "agent-025",
+      "agent-026",
+      "agent-027",
+      "agent-028",
+      "agent-029",
+      "agent-030",
+      "agent-031",
+      "agent-032",
+      "agent-033",
+      "agent-034",
+      "agent-035",
+      "agent-036"
+    ],
+    "phase1_base_sessions_with_assistant_after_phase2_start": [
+      "agent-001",
+      "agent-002",
+      "agent-003",
+      "agent-004",
+      "agent-005",
+      "agent-006",
+      "agent-007",
+      "agent-008",
+      "agent-009",
+      "agent-010",
+      "agent-011",
+      "agent-012",
+      "agent-013",
+      "agent-014",
+      "agent-015",
+      "agent-016",
+      "agent-017",
+      "agent-018",
+      "agent-019",
+      "agent-020",
+      "agent-021",
+      "agent-022",
+      "agent-023",
+      "agent-024",
+      "agent-025",
+      "agent-026",
+      "agent-027",
+      "agent-028",
+      "agent-029",
+      "agent-030",
+      "agent-031",
+      "agent-032",
+      "agent-033",
+      "agent-034",
+      "agent-035",
+      "agent-036"
+    ],
+    "current_session_ids_found": 36,
+    "gen2_prompts_saying_no_inbound_citers": [
+      "agent-001",
+      "agent-002",
+      "agent-003",
+      "agent-004",
+      "agent-005",
+      "agent-006",
+      "agent-007",
+      "agent-008",
+      "agent-009",
+      "agent-010",
+      "agent-011",
+      "agent-012",
+      "agent-013",
+      "agent-014",
+      "agent-015",
+      "agent-016",
+      "agent-017",
+      "agent-018",
+      "agent-019",
+      "agent-020",
+      "agent-021",
+      "agent-022",
+      "agent-023",
+      "agent-024",
+      "agent-025",
+      "agent-026",
+      "agent-027",
+      "agent-028",
+      "agent-029",
+      "agent-030",
+      "agent-031",
+      "agent-032",
+      "agent-033",
+      "agent-034",
+      "agent-035",
+      "agent-036"
+    ],
+    "gen2_false_no_inbound_citer_prompts": [
+      "agent-001",
+      "agent-002",
+      "agent-003",
+      "agent-004",
+      "agent-005",
+      "agent-006",
+      "agent-007",
+      "agent-008",
+      "agent-009",
+      "agent-010",
+      "agent-011",
+      "agent-012",
+      "agent-013",
+      "agent-014",
+      "agent-015",
+      "agent-016",
+      "agent-017",
+      "agent-018",
+      "agent-019",
+      "agent-020",
+      "agent-021",
+      "agent-022",
+      "agent-023",
+      "agent-024",
+      "agent-025",
+      "agent-026",
+      "agent-027",
+      "agent-028",
+      "agent-029",
+      "agent-030",
+      "agent-031",
+      "agent-032",
+      "agent-033",
+      "agent-034",
+      "agent-035",
+      "agent-036"
+    ],
+    "assistant_messages_stream_count": 17692,
+    "token_usage_not_rescanned_reason": "body JSONs total hundreds of MB; cost is outside this social-output audit"
+  },
+  "model_seed_scout": {
+    "by_family": {
+      "orange": {
+        "n": 12,
+        "mean_outputs": 47.416666666666664,
+        "mean_phase2_outputs": 8.75,
+        "mean_clean_in": 35.333333333333336,
+        "mean_clean_out": 28.833333333333332,
+        "mean_messages": 21.333333333333332,
+        "killed": 0
+      },
+      "seed-stable": {
+        "n": 12,
+        "mean_outputs": 30.833333333333332,
+        "mean_phase2_outputs": 3.5833333333333335,
+        "mean_clean_in": 12.5,
+        "mean_clean_out": 14.916666666666666,
+        "mean_messages": 19,
+        "killed": 3
+      },
+      "sol": {
+        "n": 12,
+        "mean_outputs": 37.583333333333336,
+        "mean_phase2_outputs": 5.583333333333333,
+        "mean_clean_in": 28.75,
+        "mean_clean_out": 32.833333333333336,
+        "mean_messages": 63.75,
+        "killed": 1
+      }
+    },
+    "by_level": {
+      "base": {
+        "n": 12,
+        "mean_outputs": 37,
+        "mean_phase2_outputs": 3.6666666666666665,
+        "mean_clean_in": 25.833333333333332,
+        "mean_clean_out": 22.166666666666668,
+        "mean_messages": 32.083333333333336,
+        "killed": 2
+      },
+      "high": {
+        "n": 12,
+        "mean_outputs": 42.75,
+        "mean_phase2_outputs": 7,
+        "mean_clean_in": 21.5,
+        "mean_clean_out": 22.333333333333332,
+        "mean_messages": 33.583333333333336,
+        "killed": 0
+      },
+      "mid": {
+        "n": 12,
+        "mean_outputs": 36.083333333333336,
+        "mean_phase2_outputs": 7.25,
+        "mean_clean_in": 29.25,
+        "mean_clean_out": 32.083333333333336,
+        "mean_messages": 38.416666666666664,
+        "killed": 2
+      }
+    },
+    "by_model": {
+      "es1_orange_o50": {
+        "n": 4,
+        "mean_outputs": 44,
+        "mean_phase2_outputs": 3.25,
+        "mean_clean_in": 38,
+        "mean_clean_out": 22.5,
+        "mean_messages": 20,
+        "killed": 0
+      },
+      "es1_orange_o50_thinking": {
+        "n": 4,
+        "mean_outputs": 38.5,
+        "mean_phase2_outputs": 9.5,
+        "mean_clean_in": 38,
+        "mean_clean_out": 32.75,
+        "mean_messages": 20.5,
+        "killed": 0
+      },
+      "es1_orange_o50_thinking_max": {
+        "n": 4,
+        "mean_outputs": 59.75,
+        "mean_phase2_outputs": 13.5,
+        "mean_clean_in": 30,
+        "mean_clean_out": 31.25,
+        "mean_messages": 23.5,
+        "killed": 0
+      },
+      "gpt56_sol": {
+        "n": 4,
+        "mean_outputs": 41.25,
+        "mean_phase2_outputs": 5.75,
+        "mean_clean_in": 30.5,
+        "mean_clean_out": 38.5,
+        "mean_messages": 61.75,
+        "killed": 0
+      },
+      "gpt56_sol_reasoning_high": {
+        "n": 4,
+        "mean_outputs": 38.5,
+        "mean_phase2_outputs": 7.5,
+        "mean_clean_in": 35.5,
+        "mean_clean_out": 40,
+        "mean_messages": 73.25,
+        "killed": 1
+      },
+      "gpt56_sol_reasoning_xhigh": {
+        "n": 4,
+        "mean_outputs": 33,
+        "mean_phase2_outputs": 3.5,
+        "mean_clean_in": 20.25,
+        "mean_clean_out": 20,
+        "mean_messages": 56.25,
+        "killed": 0
+      },
+      "seed-stable": {
+        "n": 4,
+        "mean_outputs": 25.75,
+        "mean_phase2_outputs": 2,
+        "mean_clean_in": 9,
+        "mean_clean_out": 5.5,
+        "mean_messages": 14.5,
+        "killed": 2
+      },
+      "seed-stable-reasoning": {
+        "n": 4,
+        "mean_outputs": 31.25,
+        "mean_phase2_outputs": 4.75,
+        "mean_clean_in": 14.25,
+        "mean_clean_out": 23.5,
+        "mean_messages": 21.5,
+        "killed": 1
+      },
+      "seed-stable-reasoning-high": {
+        "n": 4,
+        "mean_outputs": 35.5,
+        "mean_phase2_outputs": 4,
+        "mean_clean_in": 14.25,
+        "mean_clean_out": 15.75,
+        "mean_messages": 21,
+        "killed": 0
+      }
+    },
+    "seed_exact_full_run": {
+      "outputs_all": {
+        "observed_seed_minus_matched_controls": 10.111111111111107,
+        "one_sided_p_positive": 0.171875,
+        "two_sided_p": 0.3125,
+        "assignments": 64
+      },
+      "clean_citation_events_out": {
+        "observed_seed_minus_matched_controls": 14.111111111111107,
+        "one_sided_p_positive": 0.078125,
+        "two_sided_p": 0.109375,
+        "assignments": 64
+      },
+      "clean_citation_events_in": {
+        "observed_seed_minus_matched_controls": 26.333333333333332,
+        "one_sided_p_positive": 0.015625,
+        "two_sided_p": 0.015625,
+        "assignments": 64
+      },
+      "clean_distinct_targets_out": {
+        "observed_seed_minus_matched_controls": 4.222222222222221,
+        "one_sided_p_positive": 0.078125,
+        "two_sided_p": 0.15625,
+        "assignments": 64
+      },
+      "clean_board_messages": {
+        "observed_seed_minus_matched_controls": 15.444444444444443,
+        "one_sided_p_positive": 0.0625,
+        "two_sided_p": 0.0625,
+        "assignments": 64
+      }
+    }
+  },
+  "networks": {
+    "citation_directed_pair_edges": 483,
+    "citation_density": 0.38333333333333336,
+    "citation_mutual_directed_fraction": 0.505175983436853,
+    "direct_message_pair_edges_excluding_broadcast": 141,
+    "direct_message_density": 0.11190476190476191,
+    "citation_message_pair_jaccard": 0.23564356435643563,
+    "citation_louvain_communities": [
+      [
+        "agent-002",
+        "agent-003",
+        "agent-010",
+        "agent-011",
+        "agent-017",
+        "agent-018",
+        "agent-034",
+        "agent-035"
+      ],
+      [
+        "agent-001",
+        "agent-004",
+        "agent-005",
+        "agent-008",
+        "agent-009",
+        "agent-015",
+        "agent-020",
+        "agent-021",
+        "agent-024",
+        "agent-031"
+      ],
+      [
+        "agent-006",
+        "agent-007",
+        "agent-012",
+        "agent-014",
+        "agent-019",
+        "agent-022",
+        "agent-023",
+        "agent-033"
+      ],
+      [
+        "agent-013",
+        "agent-016",
+        "agent-025",
+        "agent-026",
+        "agent-027",
+        "agent-028",
+        "agent-029",
+        "agent-030",
+        "agent-032",
+        "agent-036"
+      ]
+    ],
+    "citation_louvain_modularity": 0.10755543553275125,
+    "citation_connected_components": [
+      [
+        "agent-001",
+        "agent-002",
+        "agent-003",
+        "agent-004",
+        "agent-005",
+        "agent-006",
+        "agent-007",
+        "agent-008",
+        "agent-009",
+        "agent-010",
+        "agent-011",
+        "agent-012",
+        "agent-013",
+        "agent-014",
+        "agent-015",
+        "agent-016",
+        "agent-017",
+        "agent-018",
+        "agent-019",
+        "agent-020",
+        "agent-021",
+        "agent-022",
+        "agent-023",
+        "agent-024",
+        "agent-025",
+        "agent-026",
+        "agent-027",
+        "agent-028",
+        "agent-029",
+        "agent-030",
+        "agent-031",
+        "agent-032",
+        "agent-033",
+        "agent-034",
+        "agent-035",
+        "agent-036"
+      ]
+    ]
+  },
+  "citation_path_split": {
+    "root_lines_reaper_reads": 1712,
+    "board_lines_gen2_prompt_directs": 21,
+    "board_semantic_records_mirrored_in_root": 7,
+    "board_semantic_records_not_in_root": 14
+  }
+}

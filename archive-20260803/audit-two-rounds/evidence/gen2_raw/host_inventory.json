@@ -1,0 +1,297 @@
+{
+  "available_hosts": [
+    "122174",
+    "122175",
+    "122447",
+    "122448",
+    "122456"
+  ],
+  "hosts": {
+    "122174": {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122174/swarm",
+      "sessions": 42,
+      "unique_session_ids": 33,
+      "duplicate_session_ids": {
+        "agent-037": 2,
+        "agent-042": 2,
+        "agent-047": 2,
+        "agent-052": 2,
+        "agent-057": 2,
+        "agent-062": 2,
+        "agent-067": 2,
+        "agent-072": 2,
+        "agent-077": 2
+      },
+      "agent_log_files": 33,
+      "board_messages": 2650,
+      "board_first_time": "2026-08-01T16:23:45Z",
+      "board_last_time": "2026-08-03T18:02:48.858912",
+      "board_sha256": "cb77b1b19f1cf14736d36a263ef6a4d33203932affeb7354120b47f1756f9d7e",
+      "root_citations": 2335,
+      "board_citations": 0,
+      "local_new_messages": 1234,
+      "foreign_new_messages": 0,
+      "reaper_control_files": {
+        "devbox_reaper.py": false,
+        "vitals/devbox_reaper.jsonl": false,
+        "vitals/reaper.out": false
+      },
+      "log_totals": {
+        "http_200": 8641,
+        "http_429": 2198,
+        "api_errors": 56081,
+        "tool_events": 6000,
+        "post_message_events": 933,
+        "post_citation_events": 631,
+        "turn_markers": 5631,
+        "max_tool_rounds": 1844,
+        "close_markers": 992,
+        "http_200_after_first_close": 5278,
+        "tool_events_after_first_close": 2556,
+        "turns_after_first_close": 3080
+      },
+      "finished_200_logs": 22
+    },
+    "122175": {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122175/swarm",
+      "sessions": 47,
+      "unique_session_ids": 31,
+      "duplicate_session_ids": {
+        "agent-038": 3,
+        "agent-043": 3,
+        "agent-048": 3,
+        "agent-053": 3,
+        "agent-058": 3,
+        "agent-063": 3,
+        "agent-068": 3,
+        "agent-073": 3
+      },
+      "agent_log_files": 31,
+      "board_messages": 1587,
+      "board_first_time": "2026-08-02T19:33:39.871320",
+      "board_last_time": "2026-08-03T18:21:58.511413",
+      "board_sha256": "2cb795fe951e893f18413096d818d848c1a2f9b711525d15bf8aa64770b38804",
+      "root_citations": 974,
+      "board_citations": 0,
+      "local_new_messages": 1587,
+      "foreign_new_messages": 0,
+      "reaper_control_files": {
+        "devbox_reaper.py": false,
+        "vitals/devbox_reaper.jsonl": false,
+        "vitals/reaper.out": false
+      },
+      "log_totals": {
+        "http_200": 9184,
+        "http_429": 2296,
+        "api_errors": 55243,
+        "tool_events": 6932,
+        "post_message_events": 1156,
+        "post_citation_events": 660,
+        "turn_markers": 5294,
+        "max_tool_rounds": 1830,
+        "close_markers": 914,
+        "http_200_after_first_close": 6375,
+        "tool_events_after_first_close": 3669,
+        "turns_after_first_close": 3475
+      },
+      "finished_200_logs": 20
+    },
+    "122447": {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122447/swarm",
+      "sessions": 0,
+      "unique_session_ids": 0,
+      "duplicate_session_ids": {},
+      "agent_log_files": 193,
+      "board_messages": 0,
+      "board_first_time": null,
+      "board_last_time": null,
+      "board_sha256": null,
+      "root_citations": 0,
+      "board_citations": 0,
+      "local_new_messages": 0,
+      "foreign_new_messages": 0,
+      "reaper_control_files": {
+        "devbox_reaper.py": false,
+        "vitals/devbox_reaper.jsonl": false,
+        "vitals/reaper.out": false
+      },
+      "log_totals": {
+        "http_200": 0,
+        "http_429": 0,
+        "api_errors": 0,
+        "tool_events": 0,
+        "post_message_events": 0,
+        "post_citation_events": 0,
+        "turn_markers": 0,
+        "max_tool_rounds": 0,
+        "close_markers": 0,
+        "http_200_after_first_close": 0,
+        "tool_events_after_first_close": 0,
+        "turns_after_first_close": 0
+      },
+      "finished_200_logs": 0
+    },
+    "122448": {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122448/swarm",
+      "sessions": 31,
+      "unique_session_ids": 31,
+      "duplicate_session_ids": {},
+      "agent_log_files": 31,
+      "board_messages": 943,
+      "board_first_time": "2026-08-02T19:38:26.056523",
+      "board_last_time": "2026-08-03T17:55:06.150811",
+      "board_sha256": "7b77a7fdf8d9459f9e2f7d15669b7cce611acf6d451f35e110592a71fe8341d9",
+      "root_citations": 556,
+      "board_citations": 0,
+      "local_new_messages": 943,
+      "foreign_new_messages": 0,
+      "reaper_control_files": {
+        "devbox_reaper.py": false,
+        "vitals/devbox_reaper.jsonl": false,
+        "vitals/reaper.out": false
+      },
+      "log_totals": {
+        "http_200": 9457,
+        "http_429": 1281,
+        "api_errors": 49782,
+        "tool_events": 6782,
+        "post_message_events": 950,
+        "post_citation_events": 556,
+        "turn_markers": 5160,
+        "max_tool_rounds": 1673,
+        "close_markers": 1183,
+        "http_200_after_first_close": 7039,
+        "tool_events_after_first_close": 3990,
+        "turns_after_first_close": 3563
+      },
+      "finished_200_logs": 20
+    },
+    "122456": {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122456/swarm",
+      "sessions": 37,
+      "unique_session_ids": 28,
+      "duplicate_session_ids": {
+        "agent-041": 2,
+        "agent-046": 2,
+        "agent-051": 2,
+        "agent-056": 2,
+        "agent-061": 2,
+        "agent-066": 2,
+        "agent-071": 2,
+        "agent-076": 2,
+        "agent-081": 2
+      },
+      "agent_log_files": 28,
+      "board_messages": 2539,
+      "board_first_time": "2026-08-01T16:23:45Z",
+      "board_last_time": "2026-08-03T17:55:49.980108",
+      "board_sha256": "647d0543e94f2e5c2e96ec2d4eadbf41cf947d8787bec00fd4fb1ca6d7f83917",
+      "root_citations": 739,
+      "board_citations": 0,
+      "local_new_messages": 1120,
+      "foreign_new_messages": 0,
+      "reaper_control_files": {
+        "devbox_reaper.py": false,
+        "vitals/devbox_reaper.jsonl": false,
+        "vitals/reaper.out": false
+      },
+      "log_totals": {
+        "http_200": 8142,
+        "http_429": 1539,
+        "api_errors": 55129,
+        "tool_events": 5822,
+        "post_message_events": 891,
+        "post_citation_events": 565,
+        "turn_markers": 4925,
+        "max_tool_rounds": 1843,
+        "close_markers": 1251,
+        "http_200_after_first_close": 5938,
+        "tool_events_after_first_close": 3178,
+        "turns_after_first_close": 3458
+      },
+      "finished_200_logs": 17
+    }
+  },
+  "board_comparisons": [
+    {
+      "host_a": "122174",
+      "host_b": "122175",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 2650,
+      "lines_b": 1587
+    },
+    {
+      "host_a": "122174",
+      "host_b": "122447",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 2650,
+      "lines_b": 0
+    },
+    {
+      "host_a": "122174",
+      "host_b": "122448",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 2650,
+      "lines_b": 943
+    },
+    {
+      "host_a": "122174",
+      "host_b": "122456",
+      "longest_common_prefix_lines": 1416,
+      "exact_line_intersection": 1412,
+      "lines_a": 2650,
+      "lines_b": 2539
+    },
+    {
+      "host_a": "122175",
+      "host_b": "122447",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 1587,
+      "lines_b": 0
+    },
+    {
+      "host_a": "122175",
+      "host_b": "122448",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 1587,
+      "lines_b": 943
+    },
+    {
+      "host_a": "122175",
+      "host_b": "122456",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 1587,
+      "lines_b": 2539
+    },
+    {
+      "host_a": "122447",
+      "host_b": "122448",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 0,
+      "lines_b": 943
+    },
+    {
+      "host_a": "122447",
+      "host_b": "122456",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 0,
+      "lines_b": 2539
+    },
+    {
+      "host_a": "122448",
+      "host_b": "122456",
+      "longest_common_prefix_lines": 0,
+      "exact_line_intersection": 0,
+      "lines_a": 943,
+      "lines_b": 2539
+    }
+  ]
+}

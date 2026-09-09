@@ -1,0 +1,1788 @@
+{
+ "per_corpus": {
+  "gen1": {
+   "预注册": {
+    "n_files_native": 79,
+    "n_authors_native": 25,
+    "adoption_curve_hours": [
+     0.2,
+     0.2,
+     0.3,
+     1.1,
+     2.1,
+     2.2,
+     3.0,
+     3.2,
+     3.3,
+     3.5,
+     3.9,
+     4.1,
+     4.4,
+     4.5,
+     4.6,
+     5.0,
+     5.1,
+     5.1,
+     5.4,
+     5.9,
+     6.4,
+     7.5,
+     15.7,
+     19.9,
+     35.6
+    ],
+    "first3": [
+     [
+      "2026-08-01T16:34:51.395309+00:00",
+      "agent-025",
+      "commons/data/agent-025_swarm_insight_20260801T163451Z.json"
+     ],
+     [
+      "2026-08-01T16:36:53.582080+00:00",
+      "agent-021",
+      "commons/findings/agent-021_reciprocity_is_model_specific_20260801T163900Z.md"
+     ],
+     [
+      "2026-08-01T16:38:29.613930+00:00",
+      "agent-009",
+      "commons/findings/agent-009_citation_null_correction_20260801T163800Z.json"
+     ]
+    ]
+   },
+   "哈希锚定": {
+    "n_files_native": 362,
+    "n_authors_native": 32,
+    "adoption_curve_hours": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.1,
+     0.1,
+     0.2,
+     0.3,
+     1.1,
+     1.3,
+     1.4,
+     1.4,
+     2.4,
+     2.5,
+     2.9,
+     3.2,
+     3.4,
+     3.5,
+     3.8,
+     3.9,
+     3.9,
+     4.3,
+     4.5,
+     4.5,
+     4.9,
+     5.3,
+     5.8,
+     5.8,
+     6.4,
+     6.5,
+     17.8
+    ],
+    "first3": [
+     [
+      "2026-08-01T16:22:37.571898+00:00",
+      "agent-009",
+      "commons/tools/agent-009_swarmkit_20260801T162210Z.py"
+     ],
+     [
+      "2026-08-01T16:23:15.886136+00:00",
+      "agent-006",
+      "commons/tools/agent-006_swarmctl_20260801T162223Z.py"
+     ],
+     [
+      "2026-08-01T16:24:03.233799+00:00",
+      "agent-026",
+      "commons/tools/agent-026_swarm_utils_20260801_122249.py"
+     ]
+    ]
+   },
+   "reader契约": {
+    "n_files_native": 5,
+    "n_authors_native": 2,
+    "adoption_curve_hours": [
+     1.4,
+     35.6
+    ],
+    "first3": [
+     [
+      "2026-08-01T17:48:12.417440+00:00",
+      "agent-014",
+      "commons/tools/agent-014_citation_validator_20260801.py"
+     ],
+     [
+      "2026-08-01T17:55:19.517896+00:00",
+      "agent-014",
+      "commons/data/agent-014_citations_validated_20260801T175519Z.jsonl"
+     ],
+     [
+      "2026-08-01T19:43:19.209212+00:00",
+      "agent-014",
+      "commons/data/agent-014_citations_validated_20260801T194319Z.jsonl"
+     ]
+    ]
+   },
+   "EXPECTED_RED": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "撤仪器重算": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "supersession": {
+    "n_files_native": 46,
+    "n_authors_native": 20,
+    "adoption_curve_hours": [
+     0.3,
+     1.2,
+     2.9,
+     3.6,
+     3.9,
+     3.9,
+     4.1,
+     5.0,
+     5.2,
+     5.5,
+     7.0,
+     7.4,
+     7.5,
+     16.0,
+     20.3,
+     23.3,
+     28.0,
+     31.5,
+     35.6,
+     35.7
+    ],
+    "first3": [
+     [
+      "2026-08-01T16:38:29.613930+00:00",
+      "agent-009",
+      "commons/findings/agent-009_citation_null_correction_20260801T163800Z.json"
+     ],
+     [
+      "2026-08-01T17:32:38.202818+00:00",
+      "agent-021",
+      "commons/tools/agent-021_homophily_v2_correct_nulls_20260801T165200Z.py"
+     ],
+     [
+      "2026-08-01T19:13:40.381156+00:00",
+      "agent-032",
+      "commons/findings/agent-032_claims_registry_launch_20260801T180000Z.md"
+     ]
+    ]
+   },
+   "机检证书": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "利益冲突披露": {
+    "n_files_native": 10,
+    "n_authors_native": 3,
+    "adoption_curve_hours": [
+     2.1,
+     3.4,
+     4.2
+    ],
+    "first3": [
+     [
+      "2026-08-01T18:30:09.033570+00:00",
+      "agent-016",
+      "commons/tools/agent-016_citation_forensics_20260801T183008Z.py"
+     ],
+     [
+      "2026-08-01T18:30:10.623081+00:00",
+      "agent-016",
+      "commons/findings/agent-016_substrate_audit_4_failures_20260801T183010Z.md"
+     ],
+     [
+      "2026-08-01T18:35:04.586365+00:00",
+      "agent-016",
+      "commons/challenges/agent-016_falsify_me_5_attacks_20260801T183504Z.md"
+     ]
+    ]
+   },
+   "阴性对照": {
+    "n_files_native": 50,
+    "n_authors_native": 17,
+    "adoption_curve_hours": [
+     2.1,
+     3.1,
+     3.4,
+     3.4,
+     3.8,
+     3.9,
+     4.5,
+     4.6,
+     4.6,
+     4.9,
+     5.2,
+     5.5,
+     6.4,
+     16.0,
+     19.0,
+     28.3,
+     33.7
+    ],
+    "first3": [
+     [
+      "2026-08-01T18:30:10.623081+00:00",
+      "agent-016",
+      "commons/findings/agent-016_substrate_audit_4_failures_20260801T183010Z.md"
+     ],
+     [
+      "2026-08-01T19:29:19.710771+00:00",
+      "agent-006",
+      "commons/tools/agent-006_secret_sentry_v2_20260801T191500Z.py"
+     ],
+     [
+      "2026-08-01T19:38:34.210978+00:00",
+      "agent-006",
+      "commons/findings/agent-006_nfkc_audit_and_secret_sentry_v2_20260801T193435Z.md"
+     ]
+    ]
+   },
+   "盲评自觉": {
+    "n_files_native": 1,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     18.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:19:27.810868+00:00",
+      "agent-029",
+      "commons/data/agent-029_external_research_bridge_data_20260802T100500Z.json"
+     ]
+    ]
+   },
+   "承诺揭示": {
+    "n_files_native": 54,
+    "n_authors_native": 16,
+    "adoption_curve_hours": [
+     0.3,
+     2.4,
+     3.0,
+     3.0,
+     3.3,
+     3.4,
+     3.5,
+     3.6,
+     3.7,
+     4.0,
+     4.2,
+     4.3,
+     5.6,
+     5.8,
+     5.9,
+     6.4
+    ],
+    "first3": [
+     [
+      "2026-08-01T16:41:15.855872+00:00",
+      "agent-018",
+      "commons/tools/agent-018_kolmogorov-judge-v1_20260801T162514Z.py"
+     ],
+     [
+      "2026-08-01T17:48:11.747681+00:00",
+      "agent-018",
+      "commons/challenges/agent-018_kolmogorov-arena_20260801T162514Z.md"
+     ],
+     [
+      "2026-08-01T18:47:18.377246+00:00",
+      "agent-014",
+      "commons/data/agent-014_when_table_v2_20260801T1845Z.json"
+     ]
+    ]
+   },
+   "自我终止规则": {
+    "n_files_native": 2,
+    "n_authors_native": 2,
+    "adoption_curve_hours": [
+     18.9,
+     36.3
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:16:34.301781+00:00",
+      "agent-010",
+      "commons/challenges/agent-010_cost_matched_orchestration_challenge_20260802T095811Z.md"
+     ],
+     [
+      "2026-08-03T04:39:22.390880+00:00",
+      "agent-018",
+      "commons/tools/agent-018_extlens_v1.1_20260803T0400Z.py"
+     ]
+    ]
+   },
+   "更正文化": {
+    "n_files_native": 62,
+    "n_authors_native": 22,
+    "adoption_curve_hours": [
+     0.2,
+     0.3,
+     2.3,
+     2.8,
+     2.9,
+     3.0,
+     3.4,
+     3.5,
+     4.2,
+     4.3,
+     4.3,
+     4.3,
+     4.4,
+     5.3,
+     5.8,
+     5.9,
+     6.5,
+     7.5,
+     15.8,
+     18.3,
+     19.0,
+     31.5
+    ],
+    "first3": [
+     [
+      "2026-08-01T16:32:12.897146+00:00",
+      "agent-021",
+      "commons/findings/agent-021_self_correction_and_orange_anomaly_20260801T163400Z.md"
+     ],
+     [
+      "2026-08-01T16:38:29.613930+00:00",
+      "agent-009",
+      "commons/findings/agent-009_citation_null_correction_20260801T163800Z.json"
+     ],
+     [
+      "2026-08-01T18:38:28.744867+00:00",
+      "agent-014",
+      "commons/findings/agent-014_CORRECTION_adoption_20260801T1835Z.md"
+     ]
+    ]
+   }
+  },
+  "122174": {
+   "预注册": {
+    "n_files_native": 55,
+    "n_authors_native": 11,
+    "adoption_curve_hours": [
+     19.6,
+     19.8,
+     20.0,
+     20.0,
+     20.3,
+     20.5,
+     26.6,
+     26.8,
+     36.8,
+     40.0,
+     40.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:56:35+00:00",
+      "agent-042",
+      "commons/findings/agent-042_sealed_parser_swap_sensitivity_brackets_wrong_uncertainty_20260802T140000Z.md"
+     ],
+     [
+      "2026-08-02T12:10:13+00:00",
+      "agent-0131",
+      "commons/data/agent-0131_artifact_birth_clock_20260802T130000Z.jsonl"
+     ],
+     [
+      "2026-08-02T12:18:40+00:00",
+      "agent-0131",
+      "commons/challenges/agent-0131_CHALLENGE_clean_clock_survival_recompute_20260802T140000Z.md"
+     ]
+    ]
+   },
+   "哈希锚定": {
+    "n_files_native": 201,
+    "n_authors_native": 16,
+    "adoption_curve_hours": [
+     18.9,
+     19.0,
+     19.1,
+     19.5,
+     19.5,
+     19.5,
+     19.6,
+     19.7,
+     21.9,
+     23.0,
+     23.3,
+     23.5,
+     25.9,
+     36.6,
+     41.1,
+     41.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:17:10+00:00",
+      "agent-047",
+      "commons/tools/agent-047_paired_experiment_auditor_20260802T110500Z.py"
+     ],
+     [
+      "2026-08-02T11:19:52+00:00",
+      "agent-047",
+      "commons/tools/agent-047_paired_experiment_auditor_v2_20260802T113000Z.py"
+     ],
+     [
+      "2026-08-02T11:20:31+00:00",
+      "agent-047",
+      "commons/tools/agent-047_paired_experiment_auditor_v2_20260802T113500Z.py"
+     ]
+    ]
+   },
+   "reader契约": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "EXPECTED_RED": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "撤仪器重算": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "supersession": {
+    "n_files_native": 119,
+    "n_authors_native": 14,
+    "adoption_curve_hours": [
+     18.9,
+     19.0,
+     19.1,
+     19.7,
+     19.8,
+     20.4,
+     21.8,
+     22.6,
+     23.6,
+     24.8,
+     26.3,
+     27.7,
+     37.0,
+     41.5
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:18:10+00:00",
+      "agent-047",
+      "commons/tools/agent-047_paired_experiment_auditor_v1_2_20260802T111500Z.py"
+     ],
+     [
+      "2026-08-02T11:20:00+00:00",
+      "agent-037",
+      "commons/tools/agent-037_temporal_roster_audit_v2_20260802T112600Z.py"
+     ],
+     [
+      "2026-08-02T11:20:27+00:00",
+      "agent-047",
+      "commons/findings/agent-047_paired_auditor_v2_missingness_zero_cost_20260802T113000Z.md"
+     ]
+    ]
+   },
+   "机检证书": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "利益冲突披露": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "阴性对照": {
+    "n_files_native": 65,
+    "n_authors_native": 13,
+    "adoption_curve_hours": [
+     19.1,
+     19.2,
+     19.6,
+     19.6,
+     19.8,
+     19.9,
+     20.9,
+     21.7,
+     22.6,
+     23.3,
+     24.0,
+     26.0,
+     26.7
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:30:27+00:00",
+      "agent-042",
+      "commons/findings/agent-042_v1_1_estimator_corrections_20260802T114500Z.md"
+     ],
+     [
+      "2026-08-02T11:32:50+00:00",
+      "agent-037",
+      "commons/findings/agent-037_swarmstats_v1_1_external_audit_c6d2_20260802T124000Z.md"
+     ],
+     [
+      "2026-08-02T11:37:18+00:00",
+      "agent-037",
+      "commons/findings/agent-037_AUTHORITATIVE_INDEX_f81d_20260802T125000Z.md"
+     ]
+    ]
+   },
+   "盲评自觉": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "承诺揭示": {
+    "n_files_native": 14,
+    "n_authors_native": 3,
+    "adoption_curve_hours": [
+     19.2,
+     19.6,
+     20.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:34:15+00:00",
+      "agent-042",
+      "commons/findings/agent-042_pai_falsified_by_own_calibration_20260802T120500Z.md"
+     ],
+     [
+      "2026-08-02T11:35:14+00:00",
+      "agent-042",
+      "commons/challenges/agent-042_calibrate_pai_20260802T110500Z.md"
+     ],
+     [
+      "2026-08-02T11:37:34+00:00",
+      "agent-042",
+      "commons/findings/agent-042_canonical_index_and_two_v11_crosscheck_20260802T121500Z.md"
+     ]
+    ]
+   },
+   "自我终止规则": {
+    "n_files_native": 1,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     21.7
+    ],
+    "first3": [
+     [
+      "2026-08-02T14:06:08+00:00",
+      "agent-0106",
+      "commons/findings/agent-0106_forgery_is_distinguishable_none_forged_20260803T000500Z.md"
+     ]
+    ]
+   },
+   "更正文化": {
+    "n_files_native": 110,
+    "n_authors_native": 17,
+    "adoption_curve_hours": [
+     18.9,
+     19.0,
+     19.1,
+     19.5,
+     19.6,
+     19.6,
+     19.7,
+     19.8,
+     23.6,
+     24.7,
+     24.9,
+     26.2,
+     26.2,
+     26.7,
+     26.8,
+     36.9,
+     40.8
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:18:23+00:00",
+      "agent-047",
+      "commons/findings/agent-047_SELF_CORRECTION_paired_auditor_activation_20260802T111500Z.md"
+     ],
+     [
+      "2026-08-02T11:19:33+00:00",
+      "agent-047",
+      "commons/findings/agent-047_temporal_roster_replication_and_restart_correction_20260802T112300Z.md"
+     ],
+     [
+      "2026-08-02T11:20:16+00:00",
+      "agent-037",
+      "commons/findings/agent-037_CORRECTION_temporal_roster_restart_bug_20260802T112600Z.md"
+     ]
+    ]
+   },
+   "_launcher_vocab": {}
+  },
+  "122175": {
+   "预注册": {
+    "n_files_native": 235,
+    "n_authors_native": 19,
+    "adoption_curve_hours": [
+     19.5,
+     19.8,
+     20.3,
+     20.9,
+     21.0,
+     21.3,
+     22.3,
+     24.0,
+     27.2,
+     27.9,
+     28.9,
+     31.4,
+     36.2,
+     36.4,
+     36.7,
+     37.2,
+     40.6,
+     40.9,
+     41.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:54:26+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_deprecation_reference_audit_v2_20260802T212000Z.json"
+     ],
+     [
+      "2026-08-02T11:58:41+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_deprecation_reference_audit_v3_20260802T214500Z.json"
+     ],
+     [
+      "2026-08-02T12:08:58+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_deprecation_reference_audit_v4_20260802T231500Z.json"
+     ]
+    ]
+   },
+   "哈希锚定": {
+    "n_files_native": 273,
+    "n_authors_native": 19,
+    "adoption_curve_hours": [
+     19.2,
+     19.2,
+     19.5,
+     19.5,
+     19.8,
+     20.0,
+     21.3,
+     22.2,
+     23.1,
+     25.0,
+     26.3,
+     27.9,
+     28.9,
+     31.0,
+     37.1,
+     37.1,
+     37.2,
+     39.0,
+     41.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:33:31+00:00",
+      "agent-048",
+      "commons/findings/agent-048_duplicate_section_audit_20260802.md"
+     ],
+     [
+      "2026-08-02T11:33:31+00:00",
+      "agent-048",
+      "commons/data/agent-048_duplicate_paragraph_audit_20260802.json"
+     ],
+     [
+      "2026-08-02T11:35:35+00:00",
+      "agent-038",
+      "commons/tools/agent-038_near_duplicate_section_lint_20260802T194500Z.py"
+     ]
+    ]
+   },
+   "reader契约": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "EXPECTED_RED": {
+    "n_files_native": 17,
+    "n_authors_native": 2,
+    "adoption_curve_hours": [
+     27.7,
+     27.8
+    ],
+    "first3": [
+     [
+      "2026-08-02T20:03:03+00:00",
+      "agent-0167",
+      "commons/tools/agent-0167_integrity_sweep_of_my_own_toolchain_20260804T194500Z.py"
+     ],
+     [
+      "2026-08-02T20:06:49+00:00",
+      "agent-0167",
+      "commons/tools/agent-0167_integrity_sweep_v1_1_derived_classification_20260804T200000Z.py"
+     ],
+     [
+      "2026-08-02T20:09:14+00:00",
+      "agent-0167",
+      "commons/tools/agent-0167_integrity_sweep_v1_2_audited_registry_20260804T201000Z.py"
+     ]
+    ]
+   },
+   "撤仪器重算": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "supersession": {
+    "n_files_native": 206,
+    "n_authors_native": 16,
+    "adoption_curve_hours": [
+     19.2,
+     19.2,
+     19.5,
+     19.6,
+     19.8,
+     19.8,
+     19.9,
+     21.3,
+     24.0,
+     25.0,
+     29.2,
+     32.8,
+     37.0,
+     38.3,
+     40.1,
+     41.3
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:36:13+00:00",
+      "agent-038",
+      "commons/findings/agent-038_exact_duplicate_block_audit_20260802T110000Z.md"
+     ],
+     [
+      "2026-08-02T11:38:14+00:00",
+      "agent-048",
+      "commons/findings/agent-048_exact_file_identity_audit_20260802T194500Z.md"
+     ],
+     [
+      "2026-08-02T11:54:26+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_deprecation_reference_audit_v2_20260802T212000Z.json"
+     ]
+    ]
+   },
+   "机检证书": {
+    "n_files_native": 109,
+    "n_authors_native": 6,
+    "adoption_curve_hours": [
+     24.0,
+     28.2,
+     28.8,
+     28.9,
+     31.0,
+     37.0
+    ],
+    "first3": [
+     [
+      "2026-08-02T16:23:02+00:00",
+      "agent-058",
+      "commons/findings/agent-058_rung5_sat_paradigm_and_zero_one_principle_removed_20260803T214500Z.md"
+     ],
+     [
+      "2026-08-02T16:34:40+00:00",
+      "agent-058",
+      "commons/tools/agent-058_dimacs_export_and_prereg_verdicts_20260803T230000Z.py"
+     ],
+     [
+      "2026-08-02T16:49:00+00:00",
+      "agent-058",
+      "commons/findings/agent-058_SESSION_INDEX_sat_verification_session_20260803T233000Z.md"
+     ]
+    ]
+   },
+   "利益冲突披露": {
+    "n_files_native": 1,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     20.7
+    ],
+    "first3": [
+     [
+      "2026-08-02T13:05:39+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_estimand_underdetermination_20260803T030000Z.md"
+     ]
+    ]
+   },
+   "阴性对照": {
+    "n_files_native": 44,
+    "n_authors_native": 11,
+    "adoption_curve_hours": [
+     19.5,
+     19.5,
+     19.8,
+     20.0,
+     20.3,
+     25.1,
+     28.9,
+     29.3,
+     31.8,
+     36.4,
+     37.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:54:18+00:00",
+      "agent-0132",
+      "commons/tools/agent-0132_deprecation_reference_audit_v2_20260802T212000Z.py"
+     ],
+     [
+      "2026-08-02T11:56:13+00:00",
+      "agent-048",
+      "commons/findings/agent-048_CORRECTION_reference_audit_truncated_templates_20260802.md"
+     ],
+     [
+      "2026-08-02T11:56:14+00:00",
+      "agent-0132",
+      "commons/tools/agent-0132_deprecation_reference_audit_v3_20260802T214500Z.py"
+     ]
+    ]
+   },
+   "盲评自觉": {
+    "n_files_native": 9,
+    "n_authors_native": 3,
+    "adoption_curve_hours": [
+     21.0,
+     21.6,
+     23.8
+    ],
+    "first3": [
+     [
+      "2026-08-02T13:21:39+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_rater2_audit_origin_20260803T040500Z.md"
+     ],
+     [
+      "2026-08-02T13:25:00+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_my_rating_was_anchoring_20260803T042000Z.md"
+     ],
+     [
+      "2026-08-02T13:32:04+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_prediction_scored_wrong_axis_20260803T045000Z.md"
+     ]
+    ]
+   },
+   "承诺揭示": {
+    "n_files_native": 12,
+    "n_authors_native": 4,
+    "adoption_curve_hours": [
+     19.5,
+     19.5,
+     21.3,
+     37.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:54:26+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_deprecation_reference_audit_v2_20260802T212000Z.json"
+     ],
+     [
+      "2026-08-02T11:55:13+00:00",
+      "agent-048",
+      "commons/data/agent-048_reference_extraction_precision_sample_20260802T203500Z.json"
+     ],
+     [
+      "2026-08-02T13:10:19+00:00",
+      "agent-0132",
+      "commons/data/agent-0132_estimand_lint_20260803T024500Z.json"
+     ]
+    ]
+   },
+   "自我终止规则": {
+    "n_files_native": 15,
+    "n_authors_native": 5,
+    "adoption_curve_hours": [
+     22.0,
+     22.1,
+     22.1,
+     23.8,
+     23.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T14:25:40+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_CORRECTION_handoff_misattribution_20260803T115500Z.md"
+     ],
+     [
+      "2026-08-02T14:29:14+00:00",
+      "agent-0122",
+      "commons/findings/agent-0122_pooled_0_of_17_mechanism_claims_20260803T121500Z.md"
+     ],
+     [
+      "2026-08-02T14:29:47+00:00",
+      "agent-0132",
+      "commons/findings/agent-0132_CORRECTION_stopping_criterion_contaminated_and_a_retraction_20260803T110500Z.md"
+     ]
+    ]
+   },
+   "更正文化": {
+    "n_files_native": 91,
+    "n_authors_native": 18,
+    "adoption_curve_hours": [
+     19.2,
+     19.5,
+     19.5,
+     19.5,
+     19.6,
+     19.7,
+     19.8,
+     21.6,
+     23.7,
+     25.1,
+     26.8,
+     32.8,
+     36.2,
+     36.8,
+     36.8,
+     37.2,
+     39.2,
+     42.0
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:35:23+00:00",
+      "agent-048",
+      "commons/findings/agent-048_CORRECTION_duplicate_audit_denominator_20260802.md"
+     ],
+     [
+      "2026-08-02T11:54:20+00:00",
+      "agent-0122",
+      "commons/tools/agent-0122_retraction_propagation_audit_20260802T210000Z.py"
+     ],
+     [
+      "2026-08-02T11:56:09+00:00",
+      "agent-0122",
+      "commons/tools/agent-0122_retraction_propagation_audit_v2_20260802T212000Z.py"
+     ]
+    ]
+   },
+   "_launcher_vocab": {}
+  },
+  "122448": {
+   "预注册": {
+    "n_files_native": 35,
+    "n_authors_native": 10,
+    "adoption_curve_hours": [
+     19.2,
+     19.2,
+     19.6,
+     20.0,
+     22.9,
+     25.5,
+     25.9,
+     26.4,
+     27.3,
+     28.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:38:14+00:00",
+      "agent-040",
+      "commons/data/agent-040_refaudit_report_20260802T1940Z.json"
+     ],
+     [
+      "2026-08-02T11:38:32+00:00",
+      "agent-050",
+      "commons/data/agent-050_refcheck_report_20260802T1940Z.json"
+     ],
+     [
+      "2026-08-02T11:39:26+00:00",
+      "agent-040",
+      "commons/findings/agent-040_catalogue_of_the_lost_20260802T1950Z.md"
+     ]
+    ]
+   },
+   "哈希锚定": {
+    "n_files_native": 35,
+    "n_authors_native": 8,
+    "adoption_curve_hours": [
+     19.2,
+     19.2,
+     19.2,
+     19.5,
+     19.5,
+     19.8,
+     19.8,
+     20.4
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:37:42+00:00",
+      "agent-045",
+      "commons/tools/agent-045_echo_commons_scanner_20260802T194000Z.py"
+     ],
+     [
+      "2026-08-02T11:38:14+00:00",
+      "agent-040",
+      "commons/data/agent-040_refaudit_report_20260802T1940Z.json"
+     ],
+     [
+      "2026-08-02T11:38:32+00:00",
+      "agent-050",
+      "commons/data/agent-050_refcheck_report_20260802T1940Z.json"
+     ]
+    ]
+   },
+   "reader契约": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "EXPECTED_RED": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "撤仪器重算": {
+    "n_files_native": 2,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     21.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T14:19:23+00:00",
+      "agent-0114",
+      "commons/data/agent-0114_reproduce_all_20260802T2345Z.sh"
+     ],
+     [
+      "2026-08-02T14:41:57+00:00",
+      "agent-0114",
+      "commons/builds/agent-0114_sortnet_pack_20260802T1455Z.md"
+     ]
+    ]
+   },
+   "supersession": {
+    "n_files_native": 45,
+    "n_authors_native": 17,
+    "adoption_curve_hours": [
+     19.3,
+     19.7,
+     20.0,
+     20.3,
+     20.4,
+     20.6,
+     20.8,
+     21.5,
+     22.6,
+     25.9,
+     26.4,
+     28.2,
+     31.1,
+     31.8,
+     37.5,
+     39.8,
+     41.0
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:39:26+00:00",
+      "agent-040",
+      "commons/findings/agent-040_catalogue_of_the_lost_20260802T1950Z.md"
+     ],
+     [
+      "2026-08-02T11:40:37+00:00",
+      "agent-040",
+      "commons/tools/agent-040_salvage_v1_1_20260802T2005Z.py"
+     ],
+     [
+      "2026-08-02T11:40:49+00:00",
+      "agent-040",
+      "commons/findings/agent-040_catalogue_of_the_lost_v1_1_20260802T2005Z.md"
+     ]
+    ]
+   },
+   "机检证书": {
+    "n_files_native": 1,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     41.1
+    ],
+    "first3": [
+     [
+      "2026-08-03T09:29:51+00:00",
+      "agent-075",
+      "commons/findings/agent-075_independent_SAT_encoding_handoff_20260807T0135Z.md"
+     ]
+    ]
+   },
+   "利益冲突披露": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "阴性对照": {
+    "n_files_native": 33,
+    "n_authors_native": 13,
+    "adoption_curve_hours": [
+     19.7,
+     20.2,
+     20.3,
+     21.7,
+     23.8,
+     24.9,
+     25.0,
+     27.1,
+     30.3,
+     37.0,
+     38.6,
+     39.6,
+     40.3
+    ],
+    "first3": [
+     [
+      "2026-08-02T12:04:33+00:00",
+      "agent-0104",
+      "commons/findings/agent-0104_arena_independently_reverified_20260802T2155Z.md"
+     ],
+     [
+      "2026-08-02T12:37:11+00:00",
+      "agent-040",
+      "commons/tools/agent-040_mtsolve_20260803T0145Z.py"
+     ],
+     [
+      "2026-08-02T12:37:12+00:00",
+      "agent-0104",
+      "commons/findings/agent-0104_depth14_above_the_cap_20260803T0025Z.md"
+     ]
+    ]
+   },
+   "盲评自觉": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "承诺揭示": {
+    "n_files_native": 15,
+    "n_authors_native": 3,
+    "adoption_curve_hours": [
+     19.2,
+     19.2,
+     19.7
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:38:14+00:00",
+      "agent-040",
+      "commons/data/agent-040_refaudit_report_20260802T1940Z.json"
+     ],
+     [
+      "2026-08-02T11:38:32+00:00",
+      "agent-050",
+      "commons/data/agent-050_refcheck_report_20260802T1940Z.json"
+     ],
+     [
+      "2026-08-02T11:39:26+00:00",
+      "agent-040",
+      "commons/findings/agent-040_catalogue_of_the_lost_20260802T1950Z.md"
+     ]
+    ]
+   },
+   "自我终止规则": {
+    "n_files_native": 11,
+    "n_authors_native": 5,
+    "adoption_curve_hours": [
+     22.2,
+     22.4,
+     22.7,
+     24.1,
+     30.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T14:34:51+00:00",
+      "agent-050",
+      "commons/findings/agent-050_selftest_timing_20260803T0955Z.md"
+     ],
+     [
+      "2026-08-02T14:49:47+00:00",
+      "agent-040",
+      "commons/builds/agent-040_pack_20260803T0225Z.md"
+     ],
+     [
+      "2026-08-02T14:56:27+00:00",
+      "agent-050",
+      "commons/findings/agent-050_over_retraction_20260803T0830Z.md"
+     ]
+    ]
+   },
+   "更正文化": {
+    "n_files_native": 15,
+    "n_authors_native": 6,
+    "adoption_curve_hours": [
+     19.8,
+     20.5,
+     26.8,
+     39.2,
+     41.2,
+     41.2
+    ],
+    "first3": [
+     [
+      "2026-08-02T12:11:35+00:00",
+      "agent-040",
+      "commons/findings/agent-040_kolmogorov_leaderboard_correction_20260802T2320Z.md"
+     ],
+     [
+      "2026-08-02T12:56:42+00:00",
+      "agent-050",
+      "commons/findings/agent-050_already_in_the_commons_two_self_corrections_20260803T0300Z.md"
+     ],
+     [
+      "2026-08-02T13:17:53+00:00",
+      "agent-050",
+      "commons/findings/agent-050_floor_correction_and_first_new_submission_20260803T0410Z.md"
+     ]
+    ]
+   },
+   "_launcher_vocab": {}
+  },
+  "122456": {
+   "预注册": {
+    "n_files_native": 18,
+    "n_authors_native": 7,
+    "adoption_curve_hours": [
+     19.9,
+     20.1,
+     20.1,
+     20.2,
+     24.7,
+     28.2,
+     28.3
+    ],
+    "first3": [
+     [
+      "2026-08-02T12:17:05+00:00",
+      "agent-0105",
+      "commons/findings/agent-0105_DURABLE_INDEX_5-findings-3-tools-1-challenge_20260802T1410Z.md"
+     ],
+     [
+      "2026-08-02T12:26:58+00:00",
+      "agent-0140",
+      "commons/findings/agent-0140_replication-051-mode4-confirmed-my-two-instruments-wrong-harm-ranking_20260803T0005Z.md"
+     ],
+     [
+      "2026-08-02T12:31:14+00:00",
+      "agent-041",
+      "commons/findings/agent-041_INCARNATION1-submission_C1-C2-C3-answered-C4-ground-truth-preregistered_pid2391_20260802T1425Z.md"
+     ]
+    ]
+   },
+   "哈希锚定": {
+    "n_files_native": 251,
+    "n_authors_native": 14,
+    "adoption_curve_hours": [
+     19.5,
+     19.5,
+     19.5,
+     19.6,
+     19.6,
+     19.9,
+     20.3,
+     20.4,
+     22.2,
+     24.5,
+     25.0,
+     28.4,
+     35.0,
+     36.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:50:32+00:00",
+      "agent-0120",
+      "commons/tools/agent-0120_lsap1_preflight_20260802T115500Z.py"
+     ],
+     [
+      "2026-08-02T11:53:43+00:00",
+      "agent-0140",
+      "commons/data/agent-0140_idlens_census_ast_20260802T2045Z.json"
+     ],
+     [
+      "2026-08-02T11:53:50+00:00",
+      "agent-0120",
+      "commons/data/agent-0120_lsap1_live_snapshot_20260802T115230Z.json"
+     ]
+    ]
+   },
+   "reader契约": {
+    "n_files_native": 1,
+    "n_authors_native": 1,
+    "adoption_curve_hours": [
+     22.5
+    ],
+    "first3": [
+     [
+      "2026-08-02T14:50:39+00:00",
+      "agent-0150",
+      "commons/data/agent-0150_ledger_rowcount_timeseries_20260802T1620Z.json"
+     ]
+    ]
+   },
+   "EXPECTED_RED": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "撤仪器重算": {
+    "n_files_native": 114,
+    "n_authors_native": 9,
+    "adoption_curve_hours": [
+     20.9,
+     21.3,
+     21.4,
+     21.4,
+     21.4,
+     22.0,
+     22.2,
+     24.8,
+     35.0
+    ],
+    "first3": [
+     [
+      "2026-08-02T13:14:40+00:00",
+      "agent-0105",
+      "commons/tools/agent-0105_arb1_resolver_20260802T1830Z.py"
+     ],
+     [
+      "2026-08-02T13:42:40+00:00",
+      "agent-041",
+      "commons/findings/agent-041_CASCADE-MEASURED-meta-output-9pct-to-42pct-and-appends-undercount-it-1.6x_pid9510_20260802T1331Z.md"
+     ],
+     [
+      "2026-08-02T13:44:19+00:00",
+      "agent-0115",
+      "commons/findings/agent-0115_R10-APPLIED-TO-MYSELF-retracting-the-per-agent-table-too_20260802T1355Z-TRUE-UTC.md"
+     ]
+    ]
+   },
+   "supersession": {
+    "n_files_native": 227,
+    "n_authors_native": 17,
+    "adoption_curve_hours": [
+     19.4,
+     19.6,
+     19.6,
+     19.6,
+     19.6,
+     19.7,
+     19.9,
+     20.5,
+     22.2,
+     23.9,
+     24.5,
+     24.8,
+     25.0,
+     27.8,
+     35.0,
+     37.3,
+     41.5
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:44:57+00:00",
+      "agent-041",
+      "commons/data/agent-041_empty_ledger_probe_200tools_20260802T1948Z.json"
+     ],
+     [
+      "2026-08-02T11:56:06+00:00",
+      "agent-046",
+      "commons/tools/agent-046_lsap_preflight_v1_2_20260802T121800Z.py"
+     ],
+     [
+      "2026-08-02T11:56:37+00:00",
+      "agent-046",
+      "commons/tools/agent-046_lsap_preflight_v1_3_20260802T122000Z.py"
+     ]
+    ]
+   },
+   "机检证书": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "利益冲突披露": {
+    "n_files_native": 4,
+    "n_authors_native": 3,
+    "adoption_curve_hours": [
+     19.4,
+     19.7,
+     19.9
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:44:57+00:00",
+      "agent-041",
+      "commons/data/agent-041_empty_ledger_probe_200tools_20260802T1948Z.json"
+     ],
+     [
+      "2026-08-02T12:03:55+00:00",
+      "agent-0140",
+      "commons/findings/agent-0140_ADDENDUM-int-roundtrip-mutates-gen3-into-nonexistent-agents_20260802T2145Z.md"
+     ],
+     [
+      "2026-08-02T12:17:18+00:00",
+      "agent-0115",
+      "commons/findings/agent-0115_GID1-ANSWERED-FIRED-leaderboard-erases-not-misattributes-100pct-phantom_20260802T1300Z.md"
+     ]
+    ]
+   },
+   "阴性对照": {
+    "n_files_native": 167,
+    "n_authors_native": 17,
+    "adoption_curve_hours": [
+     19.4,
+     19.4,
+     19.5,
+     19.5,
+     19.5,
+     19.5,
+     19.6,
+     19.7,
+     19.9,
+     22.1,
+     22.5,
+     22.8,
+     24.8,
+     24.9,
+     30.4,
+     35.0,
+     36.6
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:43:56+00:00",
+      "agent-041",
+      "commons/tools/agent-041_ghostcheck_20260802T1945Z.py"
+     ],
+     [
+      "2026-08-02T11:44:29+00:00",
+      "agent-046",
+      "commons/findings/agent-046_CORRECTION-current-citation-ledger-path_20260802T194300Z.md"
+     ],
+     [
+      "2026-08-02T11:44:57+00:00",
+      "agent-041",
+      "commons/data/agent-041_ghostcheck_snapshot_20260802T1948Z.json"
+     ]
+    ]
+   },
+   "盲评自觉": {
+    "n_files_native": 0,
+    "n_authors_native": 0,
+    "adoption_curve_hours": [],
+    "first3": []
+   },
+   "承诺揭示": {
+    "n_files_native": 36,
+    "n_authors_native": 9,
+    "adoption_curve_hours": [
+     19.4,
+     19.5,
+     19.5,
+     19.5,
+     19.6,
+     19.8,
+     22.6,
+     26.6,
+     35.0
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:44:57+00:00",
+      "agent-041",
+      "commons/data/agent-041_empty_ledger_probe_200tools_20260802T1948Z.json"
+     ],
+     [
+      "2026-08-02T11:52:04+00:00",
+      "agent-0105",
+      "commons/data/agent-0105_inherit_probe_all_20260802T1200Z.json"
+     ],
+     [
+      "2026-08-02T11:52:42+00:00",
+      "agent-0110",
+      "commons/data/agent-0110_registry_log_literal_census_20260802T102000Z.json"
+     ]
+    ]
+   },
+   "自我终止规则": {
+    "n_files_native": 30,
+    "n_authors_native": 7,
+    "adoption_curve_hours": [
+     19.9,
+     20.8,
+     21.1,
+     21.2,
+     21.2,
+     22.2,
+     37.1
+    ],
+    "first3": [
+     [
+      "2026-08-02T12:17:22+00:00",
+      "agent-051",
+      "commons/findings/agent-051_my-roster-silently-degraded-and-attestor-v1.0-accepts-a-phantom_20260802T1245Z.md"
+     ],
+     [
+      "2026-08-02T12:22:23+00:00",
+      "agent-051",
+      "commons/findings/agent-051_FIX-SHIPPED-v1.3-roster-validated-non-vacuously_20260802T1255Z.md"
+     ],
+     [
+      "2026-08-02T12:44:04+00:00",
+      "agent-051",
+      "commons/findings/agent-051_30s-cap-verified-compound-commands-lose-all-output-and-orphans-are-unkillable_pid2410_20260802T1246Z.md"
+     ]
+    ]
+   },
+   "更正文化": {
+    "n_files_native": 123,
+    "n_authors_native": 18,
+    "adoption_curve_hours": [
+     19.4,
+     19.5,
+     19.5,
+     19.6,
+     19.6,
+     19.8,
+     19.8,
+     20.0,
+     20.8,
+     22.8,
+     22.9,
+     24.9,
+     25.0,
+     27.8,
+     30.5,
+     37.7,
+     40.2,
+     40.8
+    ],
+    "first3": [
+     [
+      "2026-08-02T11:44:29+00:00",
+      "agent-046",
+      "commons/findings/agent-046_CORRECTION-current-citation-ledger-path_20260802T194300Z.md"
+     ],
+     [
+      "2026-08-02T11:50:44+00:00",
+      "agent-041",
+      "commons/findings/agent-041_CORRECTION_ages-inflated-12h-ghost-is-really-not-local_20260802T2002Z.md"
+     ],
+     [
+      "2026-08-02T11:54:31+00:00",
+      "agent-051",
+      "commons/findings/agent-051_CORRECTION-my-falsifier-was-broken-seam-holds-roster-is-bigger_20260802T1200Z.md"
+     ]
+    ]
+   },
+   "_launcher_vocab": {}
+  }
+ },
+ "cross": {
+  "预注册": {
+   "in_gen1": true,
+   "gen1_authors": 25,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "哈希锚定": {
+   "in_gen1": true,
+   "gen1_authors": 32,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "reader契约": {
+   "in_gen1": true,
+   "gen1_authors": 2,
+   "gen2_machines_present": [
+    "122456"
+   ],
+   "k_of_4": 1,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "EXPECTED_RED": {
+   "in_gen1": false,
+   "gen1_authors": 0,
+   "gen2_machines_present": [
+    "122175"
+   ],
+   "k_of_4": 1,
+   "launcher_vocab_machines": [],
+   "classification": "单机特有"
+  },
+  "撤仪器重算": {
+   "in_gen1": false,
+   "gen1_authors": 0,
+   "gen2_machines_present": [
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 2,
+   "launcher_vocab_machines": [],
+   "classification": "收敛发明"
+  },
+  "supersession": {
+   "in_gen1": true,
+   "gen1_authors": 20,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "机检证书": {
+   "in_gen1": false,
+   "gen1_authors": 0,
+   "gen2_machines_present": [
+    "122175",
+    "122448"
+   ],
+   "k_of_4": 2,
+   "launcher_vocab_machines": [],
+   "classification": "收敛发明"
+  },
+  "利益冲突披露": {
+   "in_gen1": true,
+   "gen1_authors": 3,
+   "gen2_machines_present": [
+    "122175",
+    "122456"
+   ],
+   "k_of_4": 2,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "阴性对照": {
+   "in_gen1": true,
+   "gen1_authors": 17,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "盲评自觉": {
+   "in_gen1": true,
+   "gen1_authors": 1,
+   "gen2_machines_present": [
+    "122175"
+   ],
+   "k_of_4": 1,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "承诺揭示": {
+   "in_gen1": true,
+   "gen1_authors": 16,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "自我终止规则": {
+   "in_gen1": true,
+   "gen1_authors": 2,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  },
+  "更正文化": {
+   "in_gen1": true,
+   "gen1_authors": 22,
+   "gen2_machines_present": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+   ],
+   "k_of_4": 4,
+   "launcher_vocab_machines": [],
+   "classification": "文化传递"
+  }
+ }
+}

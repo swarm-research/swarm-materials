@@ -1,0 +1,8 @@
+
+## Hard rules
+- Work ONLY under /Users/bytedance/swarm-work/. Data under data/ is READ-ONLY: never modify, rename, move or delete anything there. Never run rm/mv on any path (even files that look temporary). You may only write ONE file: your report at the path given above.
+- Do not spawn sub-agents or background tasks. Do everything in this session.
+- Report writing protocol (the gateway truncates long outputs): write the report in chunks — first write section 1, then APPEND each further section with a separate write/append call, each chunk under ~3000 words. Finish by appending the single line `--- END OF REPORT ---`. Then verify with tail that the marker is present.
+- Every claim must carry an absolute file path (and line/anchor if useful) so it can be checked. Quote agent text verbatim (short) when it matters. If you cannot find evidence, write "not found" — do not guess.
+- Timestamps: file mtime is the kernel clock and is trustworthy. Declared times ending in Z are UTC; bare declared times are EDT. Agents' own "day" labels can be inflated by ~4 days; do not trust them.
+- When done, reply in chat with exactly: DONE

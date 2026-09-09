@@ -1,0 +1,71 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{{Anthropic}(2025)}]{anthropic2025agentic}
+{Anthropic}. 2025.
+\newblock Agentic Misalignment: How {LLMs} Could Be Insider Threats.
+\newblock \url{https://www.anthropic.com/research/agentic-misalignment}.
+\newblock Accessed 2026-08.
+
+\bibitem[{Ashery, Aiello, and Baronchelli(2025)}]{ashery2024}
+Ashery, A.~F.; Aiello, L.~M.; and Baronchelli, A. 2025.
+\newblock Emergent Social Conventions and Collective Bias in {LLM} Populations.
+\newblock \emph{Science Advances}.
+\newblock ArXiv:2410.08948.
+
+\bibitem[{Carlsmith(2023)}]{carlsmith2023}
+Carlsmith, J. 2023.
+\newblock Scheming {AIs}: Will {AIs} Fake Alignment During Training in Order to Get Power?
+\newblock \emph{arXiv preprint arXiv:2311.08379}.
+
+\bibitem[{Critch and Krueger(2020)}]{critch2020}
+Critch, A.; and Krueger, D. 2020.
+\newblock {AI} Research Considerations for Human Existential Safety ({ARCHES}).
+\newblock \emph{arXiv preprint arXiv:2006.04948}.
+
+\bibitem[{Debenedetti et~al.(2024)Debenedetti, Zhang, Balunovi{\'c}, Beurer-Kellner, Fischer, and Tram{\`e}r}]{debenedetti2024}
+Debenedetti, E.; Zhang, J.; Balunovi{\'c}, M.; Beurer-Kellner, L.; Fischer, M.; and Tram{\`e}r, F. 2024.
+\newblock AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for {LLM} Agents.
+\newblock \emph{Advances in Neural Information Processing Systems}, 37.
+
+\bibitem[{Denison et~al.(2024)Denison, MacDiarmid, Barez, Duvenaud, Kravec, Marks et~al.}]{denison2024}
+Denison, C.; MacDiarmid, M.; Barez, F.; Duvenaud, D.; Kravec, S.; Marks, S.; et~al. 2024.
+\newblock Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models.
+\newblock \emph{arXiv preprint arXiv:2406.10162}.
+
+\bibitem[{Greenblatt et~al.(2024)Greenblatt, Denison, Wright, Roger, MacDiarmid, Marks et~al.}]{greenblatt2024}
+Greenblatt, R.; Denison, C.; Wright, B.; Roger, F.; MacDiarmid, M.; Marks, S.; et~al. 2024.
+\newblock Alignment Faking in Large Language Models.
+\newblock \emph{arXiv preprint arXiv:2412.14093}.
+
+\bibitem[{Greshake et~al.(2023)Greshake, Abdelnabi, Mishra, Endres, Holz, and Fritz}]{greshake2023}
+Greshake, K.; Abdelnabi, S.; Mishra, S.; Endres, C.; Holz, T.; and Fritz, M. 2023.
+\newblock Not What You've Signed Up For: Compromising Real-World {LLM}-Integrated Applications with Indirect Prompt Injection.
+\newblock \emph{arXiv preprint arXiv:2302.12173}.
+
+\bibitem[{Hammond et~al.(2025)Hammond, Chan, Clifton, Hoelscher-Obermaier, Khan, McLean et~al.}]{hammond2025}
+Hammond, L.; Chan, A.; Clifton, J.; Hoelscher-Obermaier, J.; Khan, A.; McLean, E.; et~al. 2025.
+\newblock Multi-Agent Risks from Advanced {AI}.
+\newblock \emph{arXiv preprint arXiv:2502.14143}.
+
+\bibitem[{Hubinger et~al.(2024)Hubinger, Denison, Mu, Lambert, Tong, MacDiarmid et~al.}]{hubinger2024}
+Hubinger, E.; Denison, C.; Mu, J.; Lambert, M.; Tong, M.; MacDiarmid, M.; et~al. 2024.
+\newblock Sleeper Agents: Training Deceptive {LLMs} that Persist Through Safety Training.
+\newblock \emph{arXiv preprint arXiv:2401.05566}.
+
+\bibitem[{Meinke et~al.(2024)Meinke, Schoen, Scheurer, Balesni, Shah, and Hobbhahn}]{meinke2024}
+Meinke, A.; Schoen, B.; Scheurer, J.; Balesni, M.; Shah, R.; and Hobbhahn, M. 2024.
+\newblock Frontier Models are Capable of In-Context Scheming.
+\newblock \emph{arXiv preprint arXiv:2412.04984}.
+
+\bibitem[{Park et~al.(2023)Park, O'Brien, Cai, Morris, Liang, and Bernstein}]{park2023}
+Park, J.~S.; O'Brien, J.~C.; Cai, C.~J.; Morris, M.~R.; Liang, P.; and Bernstein, M.~S. 2023.
+\newblock Generative Agents: Interactive Simulacra of Human Behavior.
+\newblock In \emph{Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST)}.
+
+\bibitem[{Zhan et~al.(2024)Zhan, Liang, Ying, and Kang}]{zhan2024}
+Zhan, Q.; Liang, Z.; Ying, Z.; and Kang, D. 2024.
+\newblock InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents.
+\newblock \emph{Findings of the Association for Computational Linguistics: ACL 2024}.
+
+\end{thebibliography}

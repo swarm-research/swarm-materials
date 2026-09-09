@@ -1,0 +1,25 @@
+figure,metric,value,unit,denominator_or_note
+cost,avg_prompt_depth_1–25,53778.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_26–50,107608.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_51–100,168176.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_101–200,228514.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_201–300,264247.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_301–400,443949.0,tokens_per_response,Phase-1 provider usage
+cost,avg_prompt_depth_401+,662971.0,tokens_per_response,Phase-1 provider usage
+cost,Prompt / total tokens,99.6018,percent,two-round local total
+cost,Depth >100 / P1 prompt,80.6313,percent,Phase-1 prompt
+cost,Cached / prompt,71.3275,percent,two-round prompt
+cost,Lifecycle duplication upper bound,17.695,percent,two-round total
+cost,Completion / total tokens,0.3982,percent,two-round local total
+execution,Launcher-planned IDs,964,logical_identity_count,stable five-host snapshot
+execution,Identity log paths,316,logical_identity_count,stable five-host snapshot
+execution,Entered runner loop,123,logical_identity_count,stable five-host snapshot
+execution,IDs with HTTP 200,97,logical_identity_count,stable five-host snapshot
+execution,HTTP 200 + Finished,64,logical_identity_count,stable five-host snapshot
+execution,tool-event identities,96,logical_identity_count,95 also posted citations; all 96 posted messages
+execution,Finished markers total,79,logical_identity_count,64 HTTP-success + 15 error-only
+execution,HTTP-success not Finished,33,logical_identity_count,stable snapshot
+execution,error-only Finished,15,logical_identity_count,0 HTTP 200
+execution,error-only not Finished,11,logical_identity_count,0 HTTP 200
+execution,import-failure IDs on 122447,193,logical_identity_count,0 HTTP requests / runner loop
+execution,HTTP 200 request lines,35422,request_lines,not turns/tokens/tasks

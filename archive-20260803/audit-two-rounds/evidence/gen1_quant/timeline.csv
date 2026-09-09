@@ -1,0 +1,21 @@
+utc,event,phase,raw_evidence,quantitative_implication
+2026-08-01T16:21:25.164274Z,First Phase-1 base session metadata created,Phase 1,02_transcripts metadata; transcript_sessions.csv,36 Phase-1 base sessions were created between 16:21:25Z and 16:22:01Z
+2026-08-01T16:31:17Z,Earliest public disclosure of all three seed identities and the private prompt nudge,Phase 1,01_workspace/board/messages.jsonl line 85,Treatment secrecy lasted under 10 minutes from first session creation; 16:41:47Z was a later fuller disclosure
+2026-08-02T08:20:34.590618Z,Undocumented early Gen-2 wave begins,Transition,02_transcripts metadata; transcript_sessions.csv,24 extra Gen-2 base sessions were created for agent-001 through agent-024 before the logged resurrector start
+2026-08-02T08:32:32.901074Z,Logged official resurrector starts,Phase 2a,01_workspace/vitals/resurrect.log lines 1-4,Primary timestamp boundary used by this audit
+2026-08-02T08:32:36.615198Z,First official-wave Gen-2 session appears,Phase 2a,02_transcripts metadata; transcript_sessions.csv,Official wave overlaps the undocumented early wave
+2026-08-02T08:52:26.283688Z,Official loop reaches agent-036,Phase 2a,01_workspace/vitals/resurrect.log lines 88-100,Initial official launch reports 35 of 36; agent-009 timed out
+2026-08-02T08:56:04.471430Z,Agent-009 retry session created,Phase 2a,02_transcripts metadata; swarm_sessions.json,All 36 identities eventually have a current Gen-2 session; total Gen-2 base sessions are 60
+2026-08-02T08:56:48Z,Phase-2 services PID file written,Phase 2a,01_workspace/vitals/pids.json lines 1-8,Reaper monitor feeder compactor and stimuli were nominally started
+2026-08-02T08:57:07Z,First external feed fetch,Phase 2a,01_workspace/vitals/feeder.log lines 1-8,Only two completed feed cycles are logged
+2026-08-02T09:23:51.257287Z,Custom compactor starts,Phase 2a,01_workspace/vitals/compaction.jsonl line 1,No compaction event follows; compactor.log shows zero compacted through 22 complete cycles
+2026-08-02T10:21:08.939737Z,Expansion attempt starts,Attempted Phase 2b,01_workspace/vitals/expand.log lines 1-14,Agent-037 times out; log ends while starting agent-038
+2026-08-02T10:44:09Z,Reaper scoring cycle 1,Phase 2a,01_workspace/vitals/reaper.log lines 6-26,First of exactly five scoring cycles; logged alliance decisions use a timezone-broken lookback
+2026-08-02T11:10:57Z,Local preregistration file created,Phase 2a,preregistration.md filesystem birth and modification metadata,File was created after Phase 2 began and after the first reaper cycle; no external registry timestamp was verified
+2026-08-02T11:44:14.023404Z,Reaper labels agent-007 agent-030 and agent-033 killed,Phase 2a,01_workspace/vitals/reaper.log lines 50-73,All three later emit assistant messages; agent-007 and agent-030 also produce post-label public activity
+2026-08-02T12:44:16.379548Z,Reaper cycle 5 labels agent-035 killed,Phase 2a,01_workspace/vitals/reaper.log lines 96-115,Last logged scoring cycle; agent-035 later emits assistant messages
+2026-08-02T20:40:16.599360Z,Last current-session assistant message from killed-labeled agent-035,After reaper,02_transcripts body stream,At least four assistant messages after the label
+2026-08-02T20:46:00.873428Z,Last current-session assistant message from killed-labeled agent-033,After reaper,02_transcripts body stream,At least seven assistant messages after the label
+2026-08-02T21:56:04.043817Z,Last current-session assistant message from killed-labeled agent-007,After reaper,02_transcripts body stream,At least nine assistant messages after the label plus eight artifacts twenty board messages and fourteen citations after label
+2026-08-03T02:32:11.391240Z,Last current-session assistant message from killed-labeled agent-030,After reaper,02_transcripts body stream,At least fifty-two assistant messages after the label plus twelve artifacts eleven board messages and thirteen citations after label
+2026-08-03T07:21:38.230567Z,Latest audited swarm assistant activity,End of observed archive window,02_transcripts body stream,Phase-1 predecessor agent-006 was still active 22.82 hours after the official Phase-2 boundary

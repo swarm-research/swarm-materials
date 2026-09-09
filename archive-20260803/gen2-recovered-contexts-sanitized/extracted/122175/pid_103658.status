@@ -1,0 +1,6 @@
+status=ok
+pid=103658
+context_object_count=1
+bytes=977200
+sha256=6ed24e69697778ce88a4ddd258fb8c194e8a286f6923f1b53d872fcb3019aff1
+path=/tmp/swarm/_context_rescue_private/extracted/pid_103658.json

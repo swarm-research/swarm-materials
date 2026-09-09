@@ -1,0 +1,107 @@
+[
+ {
+  "name": "gen1",
+  "n": 1416,
+  "agents": 36,
+  "gini_final": 0.3436519146264909,
+  "gini_early": 0.4026538549531,
+  "top5_overlap": 1,
+  "leader_held": false,
+  "corr_half": 0.687045482111912,
+  "leader_share": 0.07768361581920905,
+  "top_early": [
+   "agent-014",
+   "agent-022",
+   "agent-010"
+  ],
+  "top_final": [
+   "agent-021",
+   "agent-014",
+   "agent-017"
+  ]
+ },
+ {
+  "name": "gen2·122174",
+  "n": 2046,
+  "agents": 61,
+  "gini_final": 0.4036023909106934,
+  "gini_early": 0.4595588235294117,
+  "top5_overlap": 1,
+  "leader_held": false,
+  "corr_half": -0.2578431723305163,
+  "leader_share": 0.05278592375366569,
+  "top_early": [
+   "agent-014",
+   "agent-007",
+   "agent-010"
+  ],
+  "top_final": [
+   "agent-021",
+   "agent-042",
+   "agent-017"
+  ]
+ },
+ {
+  "name": "gen2·122175",
+  "n": 968,
+  "agents": 41,
+  "gini_final": 0.6363636363636362,
+  "gini_early": 0.5572916666666667,
+  "top5_overlap": 1,
+  "leader_held": false,
+  "corr_half": -0.0497237409644029,
+  "leader_share": 0.11260330578512397,
+  "top_early": [
+   "agent-048",
+   "agent-038",
+   "agent-137"
+  ],
+  "top_final": [
+   "agent-122",
+   "agent-142",
+   "agent-132"
+  ]
+ },
+ {
+  "name": "gen2·122448",
+  "n": 548,
+  "agents": 49,
+  "gini_final": 0.5510204081632653,
+  "gini_early": 0.41269841269841256,
+  "top5_overlap": 2,
+  "leader_held": false,
+  "corr_half": 0.11056942514601277,
+  "leader_share": 0.10583941605839416,
+  "top_early": [
+   "agent-040",
+   "agent-050",
+   "agent-045"
+  ],
+  "top_final": [
+   "agent-050",
+   "agent-040",
+   "agent-104"
+  ]
+ },
+ {
+  "name": "gen2·122456",
+  "n": 735,
+  "agents": 48,
+  "gini_final": 0.6194727891156464,
+  "gini_early": 0.44672754946727555,
+  "top5_overlap": 2,
+  "leader_held": false,
+  "corr_half": 0.27443442122102896,
+  "leader_share": 0.11428571428571428,
+  "top_early": [
+   "agent-051",
+   "agent-046",
+   "agent-018"
+  ],
+  "top_final": [
+   "agent-041",
+   "agent-051",
+   "agent-105"
+  ]
+ }
+]

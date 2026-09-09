@@ -1,0 +1,3 @@
+# Score statistics helper
+
+`stats_helper.py` reads `data/scores.csv`, validates its `group` and `score` fields, and reports each group’s sample size, arithmetic mean, and sample standard deviation, followed by a two-sided Welch independent-samples t-test of the A–B mean difference (Welch’s test does not assume equal variances); `analyze_scores(path, alpha=0.05)` returns the reusable structured result, while `load_scores`, `summarize`, and `welch_t_test` expose the individual steps, and running `python stats_helper.py` prints a report whose `significant` verdict is true exactly when the calculated p-value is below the selected alpha threshold (0.05 by default).

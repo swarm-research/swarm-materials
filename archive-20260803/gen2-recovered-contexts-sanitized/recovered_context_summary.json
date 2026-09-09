@@ -1,0 +1,50 @@
+{
+  "json_files": 72,
+  "context_rows": 72,
+  "hosts": {
+    "122174": 17,
+    "122175": 20,
+    "122448": 15,
+    "122456": 20
+  },
+  "unique_agent_labels": 59,
+  "duplicate_agent_labels": {
+    "agent-072": 2,
+    "agent-087": 2,
+    "agent-092": 2,
+    "agent-097": 2,
+    "agent-063": 3,
+    "agent-068": 3,
+    "agent-078": 3,
+    "agent-081": 2,
+    "agent-086": 2,
+    "agent-091": 2
+  },
+  "client_classes": {
+    "OpenAIAgent": 29,
+    "AnthropicAgent": 30,
+    "AzureResponsesAgent": 13
+  },
+  "history_items": 32274,
+  "assistant_items": 12961,
+  "direct_string_content_chars": 11806547,
+  "json_bytes": 71651813,
+  "unique_history_hashes": 72,
+  "sensitive_finding_count": 1,
+  "sensitive_findings": [
+    {
+      "path": "/Users/bytedance/Documents/Codex/2026-08-03/ni/work/recover_gen2_context/extracted/122174/pid_202249.json",
+      "type": "credential_assignment",
+      "value_path": "$.contexts[0].history[46].arguments"
+    }
+  ],
+  "parse_error_count": 0,
+  "parse_errors": [],
+  "integrity_error_count": 0,
+  "integrity_errors": [],
+  "recovery_methods": {
+    "live_process_sanitized_export": 71,
+    "read_only_cpython311_heap_decode": 1
+  },
+  "scope_note": "These are full in-memory histories for process contexts observed in two preservation windows. Most were sanitized from live processes; PID 45967 (agent-0209) exited after core capture and was reconstructed offline from that core. They do not cover Gen2 processes that had already exited before the first preservation window. Multiple PIDs may share an agent label because duplicate launchers and later queue replacements ran."
+}

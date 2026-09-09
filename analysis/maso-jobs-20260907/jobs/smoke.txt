@@ -1,0 +1,1 @@
+Smoke test. List the top-level entries of /Users/bytedance/swarm-work/data/gen1 (just names) and report how many subdirectories /Users/bytedance/swarm-work/data/gen1/agents contains. Reply in one short message. Do not create files.

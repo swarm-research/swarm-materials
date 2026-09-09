@@ -1,0 +1,320 @@
+{
+  "baseline_commons_root": "/Users/bytedance/Downloads/swarm-archive-20260803/01_workspace/commons",
+  "control_archives": [
+    {
+      "content_status": "empty_no_file_members",
+      "path": "/Users/bytedance/Downloads/swarm-gen2/122174_ctl.tgz",
+      "regular_or_link_member_count": 0,
+      "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "size_bytes": 45,
+      "source_host": "122174"
+    },
+    {
+      "content_status": "empty_no_file_members",
+      "path": "/Users/bytedance/Downloads/swarm-gen2/122175_ctl.tgz",
+      "regular_or_link_member_count": 0,
+      "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "size_bytes": 45,
+      "source_host": "122175"
+    },
+    {
+      "content_status": "empty_no_file_members",
+      "path": "/Users/bytedance/Downloads/swarm-gen2/122447_ctl.tgz",
+      "regular_or_link_member_count": 0,
+      "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "size_bytes": 45,
+      "source_host": "122447"
+    },
+    {
+      "content_status": "empty_no_file_members",
+      "path": "/Users/bytedance/Downloads/swarm-gen2/122448_ctl.tgz",
+      "regular_or_link_member_count": 0,
+      "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "size_bytes": 45,
+      "source_host": "122448"
+    },
+    {
+      "content_status": "empty_no_file_members",
+      "path": "/Users/bytedance/Downloads/swarm-gen2/122456_ctl.tgz",
+      "regular_or_link_member_count": 0,
+      "sha256": "85cea451eec057fa7e734548ca3ba6d779ed5836a3f9de14b8394575ef0d7d8e",
+      "size_bytes": 45,
+      "source_host": "122456"
+    }
+  ],
+  "counts": {
+    "agent_log_file_count": 316,
+    "citation_canonical_unique_count": 4609,
+    "citation_duplicate_occurrence_count": 2,
+    "citation_occurrence_count": 4611,
+    "citation_schema_variants": {
+      "artifact": 3107,
+      "file": 1485,
+      "neither": 19
+    },
+    "commons_artifact_occurrence_count": 12049,
+    "commons_baseline_statuses": {
+      "baseline_only_missing_all_hosts": 161,
+      "conflict_vs_baseline": 28,
+      "mixed_same_and_conflict_vs_baseline": 11,
+      "new_vs_baseline": 5600,
+      "same_as_baseline": 1736
+    },
+    "commons_cross_host_statuses": {
+      "baseline_only_missing_all_hosts": 161,
+      "conflict_across_hosts": 18,
+      "same_across_all_hosts": 621,
+      "same_across_present_hosts_missing_others": 6736
+    },
+    "commons_unique_path_count": 7536,
+    "execution_evidence_agent_count": 473,
+    "execution_evidence_levels": {
+      "log_or_start_footprint_only": 219,
+      "planned_only": 157,
+      "success_evidence": 97
+    },
+    "machine_count": 5,
+    "manifest_file_count": 18555,
+    "messages": {
+      "canonical_unique_count": 6301,
+      "duplicate_occurrences_count": 2844,
+      "events_seen_more_than_once_count": 1418,
+      "occurrence_count": 9145
+    },
+    "parse_or_read_error_count": 0,
+    "plan_observation_count": 206,
+    "session_file_count": 4,
+    "session_record_count": 157,
+    "source_candidate_count": 15
+  },
+  "generated_at_utc": "2026-08-03T10:30:00Z",
+  "input_snapshot_fingerprint_sha256": "6982fe49ade50cdd79b9a00cde736adcfd4e950d8c55b4f25a11b86eb396b49f",
+  "inputs": [
+    {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122174",
+      "source_host": "122174",
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122174/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122174_ctl.tgz"
+    },
+    {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122175",
+      "source_host": "122175",
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122175/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122175_ctl.tgz"
+    },
+    {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122447",
+      "source_host": "122447",
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122447/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122447_ctl.tgz"
+    },
+    {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122448",
+      "source_host": "122448",
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122448/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122448_ctl.tgz"
+    },
+    {
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122456",
+      "source_host": "122456",
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122456/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122456_ctl.tgz"
+    }
+  ],
+  "machines": [
+    {
+      "agent_log_file_count": 33,
+      "api_http_200_request_line_count": 8639,
+      "api_http_request_line_count": 29286,
+      "citation_occurrence_count": 2335,
+      "commons_artifact_count": 2956,
+      "error_line_count": 56475,
+      "execution_evidence_agent_count": 190,
+      "local_snapshot_root_mtime_utc": "2026-08-03T10:11:02.777793Z",
+      "log_or_start_footprint_agent_count": 33,
+      "manifest_bytes": 95710641,
+      "manifest_content_mtime_max_utc": "2026-08-03T10:11:20.421164Z",
+      "manifest_content_mtime_min_utc": "2026-08-01T16:22:37Z",
+      "manifest_file_count": 3439,
+      "planned_agent_count": 180,
+      "rate_limit_429_line_count": 5949,
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122174",
+      "session_record_count": 42,
+      "source_host": "122174",
+      "success_evidence_agent_count": 26,
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122174/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122174_ctl.tgz"
+    },
+    {
+      "agent_log_file_count": 31,
+      "api_http_200_request_line_count": 9185,
+      "api_http_request_line_count": 27797,
+      "citation_occurrence_count": 974,
+      "commons_artifact_count": 2864,
+      "error_line_count": 55863,
+      "execution_evidence_agent_count": 31,
+      "local_snapshot_root_mtime_utc": "2026-08-03T10:25:27.921350Z",
+      "log_or_start_footprint_agent_count": 31,
+      "manifest_bytes": 354951766,
+      "manifest_content_mtime_max_utc": "2026-08-03T10:25:37.746155Z",
+      "manifest_content_mtime_min_utc": "2026-08-01T16:23:46Z",
+      "manifest_file_count": 3858,
+      "planned_agent_count": 0,
+      "rate_limit_429_line_count": 5970,
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122175",
+      "session_record_count": 47,
+      "source_host": "122175",
+      "success_evidence_agent_count": 23,
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122175/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122175_ctl.tgz"
+    },
+    {
+      "agent_log_file_count": 193,
+      "api_http_200_request_line_count": 0,
+      "api_http_request_line_count": 0,
+      "citation_occurrence_count": 0,
+      "commons_artifact_count": 1132,
+      "error_line_count": 193,
+      "execution_evidence_agent_count": 193,
+      "local_snapshot_root_mtime_utc": "2026-08-03T09:56:34.750745Z",
+      "log_or_start_footprint_agent_count": 193,
+      "manifest_bytes": 43241146,
+      "manifest_content_mtime_max_utc": "2026-08-03T09:56:40.401106Z",
+      "manifest_content_mtime_min_utc": "2026-08-01T16:23:46Z",
+      "manifest_file_count": 1333,
+      "planned_agent_count": 0,
+      "rate_limit_429_line_count": 0,
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122447",
+      "session_record_count": 0,
+      "source_host": "122447",
+      "success_evidence_agent_count": 0,
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122447/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122447_ctl.tgz"
+    },
+    {
+      "agent_log_file_count": 31,
+      "api_http_200_request_line_count": 9457,
+      "api_http_request_line_count": 35415,
+      "citation_occurrence_count": 556,
+      "commons_artifact_count": 1495,
+      "error_line_count": 50171,
+      "execution_evidence_agent_count": 31,
+      "local_snapshot_root_mtime_utc": "2026-08-03T10:10:23.540958Z",
+      "log_or_start_footprint_agent_count": 31,
+      "manifest_bytes": 65630093,
+      "manifest_content_mtime_max_utc": "2026-08-03T09:59:20.765387Z",
+      "manifest_content_mtime_min_utc": "2026-08-01T16:23:46Z",
+      "manifest_file_count": 4027,
+      "planned_agent_count": 0,
+      "rate_limit_429_line_count": 3509,
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122448",
+      "session_record_count": 31,
+      "source_host": "122448",
+      "success_evidence_agent_count": 26,
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122448/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122448_ctl.tgz"
+    },
+    {
+      "agent_log_file_count": 28,
+      "api_http_200_request_line_count": 8141,
+      "api_http_request_line_count": 31946,
+      "citation_occurrence_count": 746,
+      "commons_artifact_count": 3602,
+      "error_line_count": 55365,
+      "execution_evidence_agent_count": 28,
+      "local_snapshot_root_mtime_utc": "2026-08-03T10:02:58.627338Z",
+      "log_or_start_footprint_agent_count": 28,
+      "manifest_bytes": 176450372,
+      "manifest_content_mtime_max_utc": "2026-08-03T10:03:07.011404Z",
+      "manifest_content_mtime_min_utc": "2026-08-01T16:22:37Z",
+      "manifest_file_count": 5898,
+      "planned_agent_count": 0,
+      "rate_limit_429_line_count": 4292,
+      "root": "/Users/bytedance/Downloads/swarm-gen2/122456",
+      "session_record_count": 37,
+      "source_host": "122456",
+      "success_evidence_agent_count": 22,
+      "swarm": "/Users/bytedance/Downloads/swarm-gen2/122456/swarm",
+      "swarmctl": null,
+      "swarmctl_archive": "/Users/bytedance/Downloads/swarm-gen2/122456_ctl.tgz"
+    }
+  ],
+  "method_guardrails": {
+    "attribution_warning": "JSONL from/citer fields are labels, not authenticated actor identities.",
+    "citation_deduplication": "Exact canonical normalized JSON excluding source provenance; provenance retained separately.",
+    "http_200_definition": "Each logged HTTP 200 is one successful API request. It is not a model turn, complete response, token count, cost unit, agent, or task completion; one turn can require multiple API requests.",
+    "log_footprint_definition": "Agent log, launcher spawn line, or devbox_sessions record exists; not task success.",
+    "log_identity_warning": "An agent log pathname/inode is a snapshot footprint, not an independent session. The launcher opens logs with write/truncate semantics; duplicate or overlapping launches can replace or interleave evidence.",
+    "message_times": "Min/max are lexical because mixed timestamp schemas/timezones may be present.",
+    "planned_definition": "Static launcher defaults or command text only; never counted as execution.",
+    "read_only": true,
+    "snapshot_time_warning": "Machine pulls and parsing are not simultaneous. generated_at_utc is parser time; local root and content mtime fields are recorded per machine, and the content fingerprint identifies the exact observed cut.",
+    "success_evidence_definition": "At least one logged HTTP 200 API request. This is evidence of provider/API success, not proof of a complete outer turn, meaningful response, social action, intended-task completion, tokens, or cost."
+  },
+  "risks": [
+    "An interrupted/incremental rsync may yield a temporally inconsistent snapshot; inspect FETCH_COMPLETE and fetch.log outside this parser.",
+    "Byte-identical hashes prove content equality only, not when or whether code executed.",
+    "Launcher defaults and command lines are plans. Aggregate 'agents launched' lines are self-reports, not response-level evidence.",
+    "Response text in runner logs is truncated by the runner; full conversations and exact token use are not recoverable from these logs alone.",
+    "devbox_sessions.json may be incomplete or clobbered if writers used unlocked read-modify-write.",
+    "A log file, agent label, or devbox_sessions record is not a one-to-one independent-session identifier; relaunches can truncate/overwrite the same log path.",
+    "A missing file may mean never-created, not-yet-synced, deleted, or omitted by an incomplete transfer.",
+    "The parser does not validate factual quality of artifacts, messages, citations, or response prefixes."
+  ],
+  "schema_version": "swarm-snapshot-audit/v1.1",
+  "source_date_epoch_used": true,
+  "source_hash_variants": [
+    {
+      "basename": "devbox_launch_agents.py",
+      "component": "launcher",
+      "hash_to_hosts": {
+        "ef7912504ad85e83691138a420a1e5f936d5d5854f6e56c5a25331a81a1b8fa0": [
+          "122174",
+          "122175",
+          "122447",
+          "122448",
+          "122456"
+        ]
+      },
+      "variant_count": 1
+    },
+    {
+      "basename": "devbox_launch_wave2.py",
+      "component": "launcher",
+      "hash_to_hosts": {
+        "6941281c4a990ad6cc017253a680eed1d87f34c84d97c8d99f9d619a6312b97a": [
+          "122174",
+          "122175",
+          "122447",
+          "122448",
+          "122456"
+        ]
+      },
+      "variant_count": 1
+    },
+    {
+      "basename": "devbox_runner.py",
+      "component": "runner",
+      "hash_to_hosts": {
+        "20568d60d388b5854aaf4eb398145d8cb78be4425e3c4d9d4ff54ccf24617003": [
+          "122174",
+          "122175",
+          "122447",
+          "122448",
+          "122456"
+        ]
+      },
+      "variant_count": 1
+    }
+  ],
+  "tool_version": "1.1.0"
+}

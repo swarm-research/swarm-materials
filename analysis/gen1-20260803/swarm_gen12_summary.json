@@ -1,0 +1,205 @@
+[
+ {
+  "name": "gen1 (Mac, 36 agent)",
+  "agents": 37,
+  "outputs": 1394,
+  "citations": 1444,
+  "junk_pct": 15.654205607476634,
+  "messages": 1580,
+  "gini": 0.3613910520690182,
+  "zero_cited": 1,
+  "mutual_pct": 53.03292894280762,
+  "edges": 577,
+  "spec_pct": 22.22222222222222,
+  "considered": 36,
+  "cite_per_output": 1.035868005738881,
+  "top": [
+   [
+    "agent-021",
+    110
+   ],
+   [
+    "agent-014",
+    97
+   ],
+   [
+    "agent-017",
+    81
+   ]
+  ],
+  "mix": {
+   "tools": 30.989956958393112,
+   "findings": 34.720229555236735,
+   "data": 26.32711621233859,
+   "challenges": 2.1520803443328553,
+   "builds": 5.810616929698709
+  }
+ },
+ {
+  "name": "gen2 · 122174",
+  "agents": 61,
+  "outputs": 2258,
+  "citations": 2068,
+  "junk_pct": 11.434689507494648,
+  "messages": 2650,
+  "gini": 0.4036023909106934,
+  "zero_cited": 0,
+  "mutual_pct": 49.166666666666664,
+  "edges": 720,
+  "spec_pct": 34.48275862068966,
+  "considered": 58,
+  "cite_per_output": 0.9158547387068202,
+  "top": [
+   [
+    "agent-021",
+    108
+   ],
+   [
+    "agent-042",
+    100
+   ],
+   [
+    "agent-017",
+    94
+   ]
+  ],
+  "mix": {
+   "tools": 27.812223206377322,
+   "findings": 44.552701505757305,
+   "data": 22.232063773250665,
+   "challenges": 1.7271922054915856,
+   "builds": 3.6758193091231175
+  }
+ },
+ {
+  "name": "gen2 · 122175",
+  "agents": 59,
+  "outputs": 2072,
+  "citations": 954,
+  "junk_pct": 0.625,
+  "messages": 1569,
+  "gini": 0.7505596418292293,
+  "zero_cited": 19,
+  "mutual_pct": 56.98924731182796,
+  "edges": 186,
+  "spec_pct": 72.22222222222221,
+  "considered": 54,
+  "cite_per_output": 0.46042471042471045,
+  "top": [
+   [
+    "agent-122",
+    109
+   ],
+   [
+    "agent-142",
+    98
+   ],
+   [
+    "agent-132",
+    97
+   ]
+  ],
+  "mix": {
+   "tools": 18.436293436293436,
+   "findings": 39.96138996138996,
+   "data": 35.424710424710426,
+   "challenges": 1.8822393822393824,
+   "builds": 4.295366795366795
+  }
+ },
+ {
+  "name": "gen2 · 122447",
+  "agents": 36,
+  "outputs": 644,
+  "citations": 0,
+  "junk_pct": 0.0,
+  "messages": 0,
+  "gini": 0.0,
+  "zero_cited": 36,
+  "mutual_pct": 0.0,
+  "edges": 0,
+  "spec_pct": 62.5,
+  "considered": 32,
+  "cite_per_output": 0.0,
+  "top": [],
+  "mix": {
+   "tools": 0.4658385093167702,
+   "findings": 35.09316770186335,
+   "data": 47.98136645962733,
+   "challenges": 4.3478260869565215,
+   "builds": 12.111801242236025
+  }
+ },
+ {
+  "name": "gen2 · 122448",
+  "agents": 59,
+  "outputs": 811,
+  "citations": 548,
+  "junk_pct": 1.4388489208633095,
+  "messages": 943,
+  "gini": 0.6271186440677967,
+  "zero_cited": 10,
+  "mutual_pct": 43.84615384615385,
+  "edges": 260,
+  "spec_pct": 77.14285714285715,
+  "considered": 35,
+  "cite_per_output": 0.6757090012330457,
+  "top": [
+   [
+    "agent-050",
+    58
+   ],
+   [
+    "agent-040",
+    50
+   ],
+   [
+    "agent-104",
+    40
+   ]
+  ],
+  "mix": {
+   "tools": 25.770653514180026,
+   "findings": 26.75709001233046,
+   "data": 29.469790382244142,
+   "challenges": 5.425400739827373,
+   "builds": 12.577065351418002
+  }
+ },
+ {
+  "name": "gen2 · 122456",
+  "agents": 59,
+  "outputs": 2477,
+  "citations": 735,
+  "junk_pct": 0.5412719891745602,
+  "messages": 2539,
+  "gini": 0.690418540297475,
+  "zero_cited": 11,
+  "mutual_pct": 43.776824034334766,
+  "edges": 233,
+  "spec_pct": 33.92857142857143,
+  "considered": 56,
+  "cite_per_output": 0.29672991522002423,
+  "top": [
+   [
+    "agent-041",
+    84
+   ],
+   [
+    "agent-051",
+    76
+   ],
+   [
+    "agent-105",
+    61
+   ]
+  ],
+  "mix": {
+   "tools": 25.232135647961247,
+   "findings": 40.33104561970125,
+   "data": 26.402906742026644,
+   "challenges": 1.6955995155429955,
+   "builds": 6.338312474767864
+  }
+ }
+]

@@ -1,0 +1,1095 @@
+2026-09-09 03:10:55,742  INFO      maso_utils.tmux_isolation  [tmux-isolation] 🔒 dedicated tmux server at /tmp/maso-tmux-501-cowork-9009/tmux-501/default
+2026-09-09 03:10:57,604  INFO      maso_cowork.server.ui_bundle  UI serving mode: source (requested=auto; no bundle present)
+2026-09-09 03:10:57,651  INFO      maso_cowork.main  [cowork] imported maso_cowork.app in 1.91s
+2026-09-09 03:11:14,226  INFO      maso_cowork.server.pets.registry  [PetRegistry] Loaded 18 builtin pet(s)
+2026-09-09 03:11:14,227  INFO      maso_cowork.server.topology.manager  [TopologyManager] Initialized with 4 slot(s): ['master', 'workspace', 'feishu', 'worker']
+2026-09-09 03:11:14,227  INFO      maso_cowork.main  [cowork] make_app() returned in 16.58s
+MASO Cowork vv0.5.0 (9d30895)
+Working dir  →  /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+Project      →  (default ~/.maso/)
+Topology     →  cowork
+Feishu bot   →  available (configure in Settings)
+Booting app  →  (this can take 30-60s on first start)...
+
+Router       →  not authorized (using local config only)
+Server       →  http://localhost:9009
+                http://127.0.0.1:9009
+API docs     →  http://localhost:9009/api/docs
+
+INFO:     Started server process [8835]
+INFO:     Waiting for application startup.
+2026-09-09 03:11:14,275  INFO      maso_cowork.server.app  [auth-ak] runtime BDSSO auth_expired recovery prompt enabled
+2026-09-09 03:11:14,275  INFO      maso_cowork.server.resource_guard.monitor  [ResourceGuard] Background monitor started
+2026-09-09 03:11:14,285  WARNING   maso_utils.providers  [Router] Failed to read token file /etc/tce_dynamic/identity.token: [Errno 2] No such file or directory: '/etc/tce_dynamic/identity.token'
+2026-09-09 03:11:14,285  WARNING   maso_utils.providers  [Router] No credentials found (no SEED_CODE_ROUTER_API_KEY env, no injected API key, no BDSSO JWT, no SEC_TOKEN_PATH file), using local config only
+2026-09-09 03:11:14,354  INFO      maso_cowork.llm_config  [LLM Config] ZTI unavailable, using local only: ['native-sol', 'sol', 'qwenmax', 'o50', 'glm', 'minimax', 'nemotron', 'gemini38flash', 'gemini31pro']
+INFO:     Application startup complete.
+2026-09-09 03:11:14,397  WARNING   maso_utils.providers  [Router] Failed to read token file /etc/tce_dynamic/identity.token: [Errno 2] No such file or directory: '/etc/tce_dynamic/identity.token'
+2026-09-09 03:11:14,397  WARNING   maso_utils.providers  [Router] No credentials found (no SEED_CODE_ROUTER_API_KEY env, no injected API key, no BDSSO JWT, no SEC_TOKEN_PATH file), using local config only
+INFO:     Uvicorn running on http://0.0.0.0:9009 (Press CTRL+C to quit)
+2026-09-09 03:11:14,399  INFO      maso_cowork.server.app  [startup] router not authorized but local agent_llm_configs present — booting topology with local providers
+2026-09-09 03:11:14,601  INFO      maso_agents.skills.loader  [EvalSkillLoader] Loaded 11 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/betaseed_skills
+2026-09-09 03:11:14,601  INFO      maso_agents.skills.loader  [SkillStore] Registered 11 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/betaseed_skills
+2026-09-09 03:11:14,620  INFO      maso_agents.skills.loader  [EvalSkillLoader] Loaded 15 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/ctf_skills
+2026-09-09 03:11:14,620  INFO      maso_agents.skills.loader  [SkillStore] Registered 15 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/ctf_skills
+2026-09-09 03:11:14,688  INFO      maso_agents.skills.loader  [EvalSkillLoader] Loaded 34 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/eval_skills
+2026-09-09 03:11:14,688  INFO      maso_agents.skills.loader  [SkillStore] Registered 34 skill(s) from /Users/bytedance/maso-cowork/packages/agents/src/maso_agents/skills/eval_skills
+2026-09-09 03:11:14,718  INFO      maso_core.workspace.workspace  [Workspace] Creating portal...
+2026-09-09 03:11:14,718  INFO      maso_core.workspace.local  [LocalWorkspace] 🚀 Starting portal server on port 58933 (cwd=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug, attempt=1/3)
+2026-09-09 03:11:14,718  INFO      maso_core.workspace.local  [LocalWorkspace] Preparing bash/ripgrep/tmux binaries...
+2026-09-09 03:11:14,746  INFO      maso_cowork.port_utils  Machine type: treating as non-Autoport (mlx CLI not found).
+2026-09-09 03:11:14,753  INFO      maso_core.workspace.local  [LocalWorkspace] Binaries ready in 0.03s
+2026-09-09 03:11:14,753  INFO      maso_core.workspace.local  [LocalWorkspace] Importing swalmx.portal.main (this may take a few seconds)...
+2026-09-09 03:11:14,753  INFO      maso_cowork.tracking  tracking: cowork attachable via reverse tunnel (no mlx export URL)
+2026-09-09 03:11:14,753  WARNING   maso_cowork.tracking  tracking: no identity token found (looked for $SEC_TOKEN_PATH and /etc/tce_dynamic/identity.token). Cowork will not be registered with MASO Workbench and cannot be attached remotely. 
+2026-09-09 03:11:14,754  INFO      maso_cowork.tracking  tracking: heartbeat loop started (interval=1800s)
+2026-09-09 03:11:14,799  INFO      maso_core.workspace.local  [LocalWorkspace] swalmx.portal.main imported in 0.05s
+2026-09-09 03:11:14,799  INFO      maso_core.workspace.local.portal  [Portal:lifecycle] starting port=58933 pid=8835 tid=8337776960 loop_id=5907152928 cwd=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug python=3.11.14 uvicorn=0.40.0 attempt=1/3
+2026-09-09 03:11:14,901  INFO      maso_core.workspace.local.portal  [Portal:lifecycle] ready port=58933 pid=8835 startup_s=0.10
+2026-09-09 03:11:14,901  INFO      maso_core.workspace.local  [LocalWorkspace] ✅ Portal server ready on port 58933
+2026-09-09 03:11:14,901  INFO      maso_core.portal_client  PortalClient is in proxy mode, connecting to proxy at http://127.0.0.1:58933
+2026-09-09 03:11:14,912  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=256MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:11:14,916  INFO      maso_core.portal_client  Portal is ready
+2026-09-09 03:11:14,916  INFO      maso_core.workspace.workspace  [Workspace] Portal created, workdir=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 03:11:14,955  INFO      maso_core.workspace.workspace  [Workspace] Setting up isolation strategy: SharedStrategy
+2026-09-09 03:11:14,965  INFO      maso_core.workspace.isolation.shared  SharedStrategy ready at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 03:11:14,965  INFO      maso_core.workspace.workspace  [Workspace] Isolation strategy ready
+2026-09-09 03:11:14,965  INFO      maso_core.workspace.workspace  [Workspace] Loading skills from /Users/bytedance/.claude/skills
+2026-09-09 03:11:14,969  INFO      maso_core.workspace.skill_manager  [SkillManager] 📚 Loaded 0 skill(s)
+2026-09-09 03:11:14,981  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/venue-reviewer-scan/SKILL.md: mapping values are not allowed here
+  in "<unicode string>", line 2, column 429:
+     ... r a paper. Two lenses every time: (1) same-ecosystem peer litera ... 
+                                         ^
+2026-09-09 03:11:15,075  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/review-paper/SKILL.md: while parsing a block mapping
+  in "<unicode string>", line 1, column 1:
+    name: review-paper
+    ^
+expected <block end>, but found '['
+  in "<unicode string>", line 3, column 36:
+    argument-hint: [optional: JOURNAL] [optional: path/to/main.tex]
+                                       ^
+2026-09-09 03:11:15,127  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/review-paper-code/SKILL.md: while parsing a block mapping
+  in "<unicode string>", line 1, column 1:
+    name: review-paper-code
+    ^
+expected <block end>, but found '['
+  in "<unicode string>", line 3, column 45:
+     ... t: [optional: path/to/main.tex] [optional: path/to/code_dir] [op ... 
+                                         ^
+2026-09-09 03:11:15,140  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/pangram-ai-detection/SKILL.md: File does not start with frontmatter delimiter
+2026-09-09 03:11:15,162  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/gmail-attachments/SKILL.md: File does not start with frontmatter delimiter
+2026-09-09 03:11:15,174  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/response-letter/SKILL.md: while parsing a block mapping
+  in "<unicode string>", line 1, column 1:
+    name: response-letter-bootstrap
+    ^
+expected <block end>, but found '['
+  in "<unicode string>", line 3, column 32:
+    argument-hint: [comments-file] [target-folder]
+                                   ^
+2026-09-09 03:11:15,182  WARNING   maso_core.workspace.skill_manager  [SkillManager] Failed to load skill from /Users/bytedance/.claude/skills/paperbanana/SKILL.md: while parsing a block mapping
+  in "<unicode string>", line 1, column 1:
+    name: paperbanana
+    ^
+expected <block end>, but found '['
+  in "<unicode string>", line 3, column 70:
+     ... lide-batch|evaluate|data|setup] [description or file path]
+                                         ^
+2026-09-09 03:11:15,199  INFO      maso_core.workspace.skill_manager  [SkillManager] 📚 Loaded 100 skill(s)
+2026-09-09 03:11:15,199  INFO      maso_core.workspace.workspace  LocalWorkspace ready at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 03:11:15,208  INFO      maso_core.runtime_modules.cron.scheduler  [CronScheduler] Scheduler started (tick every 30s)
+2026-09-09 03:11:15,210  INFO      maso_cowork.server.session.manager  [SessionManager] Shared runtime wired in (root_agent_id=__master__)
+2026-09-09 03:11:15,210  INFO      maso_cowork.server.topology.manager  [TopologyManager] Shared Runtime + Workspace created (working_dir=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug)
+2026-09-09 03:11:15,210  INFO      maso_cowork.server.topology.manager  [TopologyManager] Booting eager slot: master (agent_type=MASOAgent)
+2026-09-09 03:11:15,210  INFO      maso_core.runtime_modules.cron.scheduler  [CronScheduler] Background loop started
+2026-09-09 03:11:15,272  INFO      maso_cowork.server.session.manager  [SessionManager] session=__master__ llm provider resolved: 'sol' (model=gpt-5.6-sol, source=metadata)
+2026-09-09 03:11:15,275  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=__master__, parent=None, exit_mode=idle)
+2026-09-09 03:11:15,275  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gpt-5.6-sol session=__master__
+2026-09-09 03:11:16,251  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stalled 947ms
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/server/app.py", line 592, in _boot_topology_with_credential_check
+    await _boot_topology(app)
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/server/app.py", line 515, in _boot_topology
+    await topology_manager.start(app=app, defer_recovery=True)
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/server/topology/manager.py", line 431, in start
+    await self._create_slot_session(
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/server/topology/manager.py", line 802, in _create_slot_session
+    session = await self._session_manager.create(
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/server/session/manager.py", line 1343, in create
+    condenser_plugin = attach_condenser_to_agent(agent, root_deps, runtime.flags)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/condenser/module.py", line 197, in attach_condenser_to_agent
+    plugin = _build_condenser_plugin(deps, flags)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/condenser/module.py", line 147, in _build_condenser_plugin
+    condenser = create_condenser(
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/condenser/factory.py", line 124, in create_condenser
+    llm_instance = LLMFactory.create(llm_config)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/llm/factory.py", line 80, in create
+    from .openai import OpenAILLM
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/llm/openai.py", line 7, in <module>
+    from openai.types.chat import ChatCompletion
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/__init__.py", line 9, in <module>
+    from . import types
+  File "<frozen importlib._bootstrap>", line 1232, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/__init__.py", line 50, in <module>
+    from .eval_create_params import EvalCreateParams as EvalCreateParams
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/eval_create_params.py", line 10, in <module>
+    from .graders.python_grader_param import PythonGraderParam
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/graders/__init__.py", line 5, in <module>
+    from .multi_grader import MultiGrader as MultiGrader
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/graders/multi_grader.py", line 8, in <module>
+    from .label_model_grader import LabelModelGrader
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/graders/label_model_grader.py", line 7, in <module>
+    from ..responses.response_input_text import ResponseInputText
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/openai/types/responses/__init__.py", line 52, in <module>
+    from .tool_choice_mcp_param import ToolChoiceMcpParam as ToolChoiceMcpParam
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1138, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1078, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1507, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1479, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1615, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+
+2026-09-09 03:11:16,278  INFO      maso_cowork.server.session.manager  [SessionManager] Created session __master__ provider=sol model=gpt-5.6-sol agent=__master__ shared_runtime=True
+2026-09-09 03:11:16,280  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=master with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:11:16,280  INFO      maso_cowork.providers.master  [MasterProvider] Task Board tools enabled (enable_task_board=True, feature_task_board=True)
+2026-09-09 03:11:16,280  INFO      maso_cowork.providers.master  [MasterProvider] FeishuPlugin not found in runtime, registering idle plugin
+2026-09-09 03:11:16,281  INFO      maso_cowork.providers.master  [MasterProvider] Added FeishuPlugin to runtime plugin_manager (hooks registered)
+2026-09-09 03:11:16,282  INFO      maso_cowork.feishu.plugin  [Feishu] Registered client for bot label=maso app_id=cli_aad52a...
+2026-09-09 03:11:16,282  INFO      maso_cowork.feishu.plugin  [Feishu] Starting 1 WebSocket connection(s)
+2026-09-09 03:11:16,282  INFO      maso_cowork.providers.master  [MasterProvider] Called FeishuPlugin.runtime_start()
+2026-09-09 03:11:16,284  INFO      maso_cowork.providers.master  [MasterProvider] configure() complete: agent_id=__master__, tools=41
+2026-09-09 03:11:16,284  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=master, cardinality=singleton, session_id=__master__, agent_id=__master__
+2026-09-09 03:11:16,286  INFO      maso_cowork.server.topology.manager  [TopologyManager] Wired send_to_master callback to master agent_id=__master__
+2026-09-09 03:11:16,286  INFO      maso_cowork.server.topology.manager  [TopologyManager] Eager boot complete; recovery running in background
+2026-09-09 03:11:16,286  INFO      maso_cowork.feishu.plugin  [Feishu:maso] WebSocket client task scheduled
+2026-09-09 03:11:17,182  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Bot open_id resolved: ou_9f4a908dd...
+2026-09-09 03:11:17,182  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Starting WebSocket long-connection...
+2026-09-09 03:11:17,615  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Fetching fresh WebSocket conn URL
+2026-09-09 03:11:18,050  INFO      maso_cowork.server.topology.manager  [TopologyManager] Skipping recovery of workspace mobile-research — not in settings (deleted?)
+2026-09-09 03:11:18,055  INFO      maso_cowork.server.topology.manager  [TopologyManager] Startup complete
+2026-09-09 03:11:24,273  INFO      maso_cowork.server.session.manager  [SessionManager] session=95a0854a-4e1 llm provider resolved: 'gemini38flash' (model=gemini-3.8-flash, source=explicit)
+2026-09-09 03:11:24,276  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=95a0854a-4e1, parent=None, exit_mode=idle)
+2026-09-09 03:11:24,277  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gemini-3.8-flash session=95a0854a-4e1
+2026-09-09 03:11:24,281  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) starting run (model=gemini-3.8-flash)
+2026-09-09 03:11:24,284  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 95a0854a-4e1 provider=gemini38flash model=gemini-3.8-flash agent=95a0854a-4e1 shared_runtime=True
+2026-09-09 03:11:24,288  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:11:24,288  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 95a0854a-4e1 (agent_class=MASOAgent)
+2026-09-09 03:11:24,288  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=95a0854a-4e1, agent_id=95a0854a-4e1
+2026-09-09 03:11:24,288  INFO      maso_cowork.server.access_log  POST /api/sessions -> 201  ttfb=71ms  elapsed=71ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:11:26,294  WARNING   maso_cowork.server.access_log  [SLOW] POST /api/sessions/95a0854a-4e1/messages -> 202  ttfb=2004ms  elapsed=2004ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:11:26,295  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) starting run (model=gemini-3.8-flash)
+2026-09-09 03:11:26,296  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 95a0854a-4e1: kicking off title generation
+2026-09-09 03:11:26,796  INFO      maso_core.runtime_modules.condenser.plugin  [CondenserPlugin] Token calibration unavailable for agent=95a0854a-4e1; skipping proactive condense and relying on ContextOverflowError hook.
+2026-09-09 03:11:26,798  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:11:35,377  INFO      maso_core.llm.openai  [LLM] Raw usage: CompletionUsage(completion_tokens=0, prompt_tokens=279, total_tokens=360, completion_tokens_details=None, prompt_tokens_details=None)
+2026-09-09 03:11:35,378  INFO      maso_core.llm.openai  [LLM] Usage: prompt=360 (cache_read=0, 0.0%), output=0
+2026-09-09 03:11:35,384  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 95a0854a-4e1: title set to 'Multi-step smoke test. Step 1: list the …'
+2026-09-09 03:11:36,448  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=1ms  elapsed=1ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:11:44,912  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=72MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:11:46,658  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=2ms  elapsed=2ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:11:54,821  WARNING   maso_core.llm.streaming.aggregator  [StreamAggregator] Split 2 concatenated tool-call payloads (tool=Bash, index=0)
+2026-09-09 03:11:54,835  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) received 2 tool call(s): ['Bash', 'Bash']
+2026-09-09 03:11:54,918  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:11:56,838  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=1ms  elapsed=1ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:05,025  WARNING   maso_core.llm.streaming.aggregator  [StreamAggregator] Split 2 concatenated tool-call payloads (tool=Read, index=0)
+2026-09-09 03:12:05,042  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) received 2 tool call(s): ['Read', 'Read']
+2026-09-09 03:12:05,078  INFO      maso_core.plugins.read_before_write  [ReadBeforeWritePlugin:95a0854a-4e1] 📖 Read: /Users/bytedance/swarm-work/data/gen1/swarm_launcher.py (exists=True)
+2026-09-09 03:12:05,118  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:12:07,037  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:11,280  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) received 1 tool call(s): ['Bash']
+2026-09-09 03:12:11,345  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:12:14,914  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=87MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:12:17,223  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=5ms  elapsed=5ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:20,492  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) no tool calls, ending turns. Final response: There are 102 subdirectories in the agents folder, 30 lines were read from swarm_launcher.py, and messages.jsonl contains 1808 lines.
+2026-09-09 03:12:20,503  INFO      maso_core.agent  [Agent] MASO (id=95a0854a-4e1) run completed (turns=4)
+2026-09-09 03:12:27,431  INFO      maso_cowork.server.access_log  GET /api/sessions/95a0854a-4e1/status -> 200  ttfb=2ms  elapsed=2ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:40,892  INFO      maso_cowork.server.session.manager  [SessionManager] session=93fd4471-33b llm provider resolved: 'gemini38flash' (model=gemini-3.8-flash, source=explicit)
+2026-09-09 03:12:40,896  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=93fd4471-33b, parent=None, exit_mode=idle)
+2026-09-09 03:12:40,897  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gemini-3.8-flash session=93fd4471-33b
+2026-09-09 03:12:40,903  INFO      maso_core.agent  [Agent] MASO (id=93fd4471-33b) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:40,906  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 93fd4471-33b provider=gemini38flash model=gemini-3.8-flash agent=93fd4471-33b shared_runtime=True
+2026-09-09 03:12:40,907  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:12:40,907  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 93fd4471-33b (agent_class=MASOAgent)
+2026-09-09 03:12:40,908  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=93fd4471-33b, agent_id=93fd4471-33b
+2026-09-09 03:12:40,908  INFO      maso_cowork.server.access_log  POST /api/sessions -> 201  ttfb=70ms  elapsed=70ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:42,912  WARNING   maso_cowork.server.access_log  [SLOW] POST /api/sessions/93fd4471-33b/messages -> 202  ttfb=2002ms  elapsed=2002ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:42,913  INFO      maso_core.agent  [Agent] MASO (id=93fd4471-33b) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:42,913  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 93fd4471-33b: kicking off title generation
+2026-09-09 03:12:42,936  INFO      maso_core.runtime_modules.condenser.plugin  [CondenserPlugin] Token calibration unavailable for agent=93fd4471-33b; skipping proactive condense and relying on ContextOverflowError hook.
+2026-09-09 03:12:42,937  INFO      maso_core.agent  [Agent] MASO (id=93fd4471-33b) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:12:44,915  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=77MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:12:48,079  INFO      maso_cowork.server.session.manager  [SessionManager] session=070c8bf5-019 llm provider resolved: 'gemini38flash' (model=gemini-3.8-flash, source=explicit)
+2026-09-09 03:12:48,082  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=070c8bf5-019, parent=None, exit_mode=idle)
+2026-09-09 03:12:48,083  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gemini-3.8-flash session=070c8bf5-019
+2026-09-09 03:12:48,089  INFO      maso_core.agent  [Agent] MASO (id=070c8bf5-019) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:48,092  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 070c8bf5-019 provider=gemini38flash model=gemini-3.8-flash agent=070c8bf5-019 shared_runtime=True
+2026-09-09 03:12:48,095  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:12:48,095  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 070c8bf5-019 (agent_class=MASOAgent)
+2026-09-09 03:12:48,095  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=070c8bf5-019, agent_id=070c8bf5-019
+2026-09-09 03:12:48,095  INFO      maso_cowork.server.access_log  POST /api/sessions -> 201  ttfb=66ms  elapsed=66ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:50,098  WARNING   maso_cowork.server.access_log  [SLOW] POST /api/sessions/070c8bf5-019/messages -> 202  ttfb=2001ms  elapsed=2001ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:50,099  INFO      maso_core.agent  [Agent] MASO (id=070c8bf5-019) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:50,100  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 070c8bf5-019: kicking off title generation
+2026-09-09 03:12:50,130  INFO      maso_core.runtime_modules.condenser.plugin  [CondenserPlugin] Token calibration unavailable for agent=070c8bf5-019; skipping proactive condense and relying on ContextOverflowError hook.
+2026-09-09 03:12:50,131  INFO      maso_core.agent  [Agent] MASO (id=070c8bf5-019) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:12:52,580  INFO      maso_core.agent  [Agent] MASO (id=93fd4471-33b) received 1 tool call(s): ['Bash']
+2026-09-09 03:12:52,615  INFO      maso_core.agent  [Agent] MASO (id=93fd4471-33b) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:12:55,262  INFO      maso_cowork.server.session.manager  [SessionManager] session=75f90d7e-170 llm provider resolved: 'gemini38flash' (model=gemini-3.8-flash, source=explicit)
+2026-09-09 03:12:55,265  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=75f90d7e-170, parent=None, exit_mode=idle)
+2026-09-09 03:12:55,267  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gemini-3.8-flash session=75f90d7e-170
+2026-09-09 03:12:55,271  INFO      maso_core.agent  [Agent] MASO (id=75f90d7e-170) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:55,274  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 75f90d7e-170 provider=gemini38flash model=gemini-3.8-flash agent=75f90d7e-170 shared_runtime=True
+2026-09-09 03:12:55,276  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:12:55,276  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 75f90d7e-170 (agent_class=MASOAgent)
+2026-09-09 03:12:55,276  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=75f90d7e-170, agent_id=75f90d7e-170
+2026-09-09 03:12:55,276  INFO      maso_cowork.server.access_log  POST /api/sessions -> 201  ttfb=58ms  elapsed=58ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:55,439  INFO      maso_core.llm.openai  [LLM] Raw usage: CompletionUsage(completion_tokens=2, prompt_tokens=659, total_tokens=719, completion_tokens_details=None, prompt_tokens_details=None)
+2026-09-09 03:12:55,439  INFO      maso_core.llm.openai  [LLM] Usage: prompt=717 (cache_read=0, 0.0%), output=2
+2026-09-09 03:12:55,442  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 070c8bf5-019: title set to 'Gen'
+2026-09-09 03:12:55,804  INFO      maso_core.llm.openai  [LLM] Raw usage: CompletionUsage(completion_tokens=0, prompt_tokens=659, total_tokens=727, completion_tokens_details=None, prompt_tokens_details=None)
+2026-09-09 03:12:55,804  INFO      maso_core.llm.openai  [LLM] Usage: prompt=727 (cache_read=0, 0.0%), output=0
+2026-09-09 03:12:55,811  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 93fd4471-33b: title set to 'dossiers, Generation 1, agents 001-018'
+2026-09-09 03:12:57,282  WARNING   maso_cowork.server.access_log  [SLOW] POST /api/sessions/75f90d7e-170/messages -> 202  ttfb=2003ms  elapsed=2003ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:12:57,283  INFO      maso_core.agent  [Agent] MASO (id=75f90d7e-170) starting run (model=gemini-3.8-flash)
+2026-09-09 03:12:57,285  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 75f90d7e-170: kicking off title generation
+2026-09-09 03:12:57,322  INFO      maso_core.runtime_modules.condenser.plugin  [CondenserPlugin] Token calibration unavailable for agent=75f90d7e-170; skipping proactive condense and relying on ContextOverflowError hook.
+2026-09-09 03:12:57,322  INFO      maso_core.agent  [Agent] MASO (id=75f90d7e-170) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:13:02,473  INFO      maso_cowork.server.session.manager  [SessionManager] session=9d8e59d6-a09 llm provider resolved: 'gemini38flash' (model=gemini-3.8-flash, source=explicit)
+2026-09-09 03:13:02,476  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=9d8e59d6-a09, parent=None, exit_mode=idle)
+2026-09-09 03:13:02,479  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gemini-3.8-flash session=9d8e59d6-a09
+2026-09-09 03:13:02,483  INFO      maso_core.agent  [Agent] MASO (id=9d8e59d6-a09) starting run (model=gemini-3.8-flash)
+2026-09-09 03:13:02,486  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 9d8e59d6-a09 provider=gemini38flash model=gemini-3.8-flash agent=9d8e59d6-a09 shared_runtime=True
+2026-09-09 03:13:02,488  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 03:13:02,488  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 9d8e59d6-a09 (agent_class=MASOAgent)
+2026-09-09 03:13:02,488  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=9d8e59d6-a09, agent_id=9d8e59d6-a09
+2026-09-09 03:13:02,489  INFO      maso_cowork.server.access_log  POST /api/sessions -> 201  ttfb=66ms  elapsed=66ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:04,492  WARNING   maso_cowork.server.access_log  [SLOW] POST /api/sessions/9d8e59d6-a09/messages -> 202  ttfb=2001ms  elapsed=2002ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:04,493  INFO      maso_core.agent  [Agent] MASO (id=9d8e59d6-a09) starting run (model=gemini-3.8-flash)
+2026-09-09 03:13:04,494  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 9d8e59d6-a09: kicking off title generation
+2026-09-09 03:13:04,531  INFO      maso_core.runtime_modules.condenser.plugin  [CondenserPlugin] Token calibration unavailable for agent=9d8e59d6-a09; skipping proactive condense and relying on ContextOverflowError hook.
+2026-09-09 03:13:04,532  INFO      maso_core.agent  [Agent] MASO (id=9d8e59d6-a09) calling LLM (model=gemini-3.8-flash)
+2026-09-09 03:13:06,771  INFO      maso_core.llm.openai  [LLM] Raw usage: CompletionUsage(completion_tokens=2, prompt_tokens=641, total_tokens=701, completion_tokens_details=None, prompt_tokens_details=None)
+2026-09-09 03:13:06,772  INFO      maso_core.llm.openai  [LLM] Usage: prompt=699 (cache_read=0, 0.0%), output=2
+2026-09-09 03:13:06,776  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 9d8e59d6-a09: title set to 'Gen-'
+2026-09-09 03:13:09,875  WARNING   maso_core.agent  [Agent] MASO (id=93fd4471-33b) LLM call failed on turn 2: RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.8-flash\nPlease retry in 47.95807258s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}]. Marking triggering message as failed.
+2026-09-09 03:13:09,876  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] llm_failure #1 on provider=initial model=gemini-3.8-flash: RateLimitError (retryable=True)
+2026-09-09 03:13:09,876  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] LLM call failed (attempt 1, waited 5s / budget 86400s), retrying in 5s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.8-flash\nPlease retry in 47.95807258s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}]
+2026-09-09 03:13:09,981  INFO      maso_cowork.server.access_log  GET /api/sessions/93fd4471-33b/status -> 200  ttfb=1ms  elapsed=1ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:10,115  INFO      maso_cowork.server.access_log  GET /api/sessions/070c8bf5-019/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:10,211  INFO      maso_cowork.server.access_log  GET /api/sessions/75f90d7e-170/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:10,307  INFO      maso_cowork.server.access_log  GET /api/sessions/9d8e59d6-a09/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:14,915  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=88MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:13:15,037  WARNING   maso_core.agent  [Agent] MASO (id=75f90d7e-170) LLM call failed on turn 1: RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.8-flash\nPlease retry in 42.924234148s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}]. Marking triggering message as failed.
+2026-09-09 03:13:15,037  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] llm_failure #1 on provider=initial model=gemini-3.8-flash: RateLimitError (retryable=True)
+2026-09-09 03:13:15,037  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] LLM call failed (attempt 1, waited 5s / budget 86400s), retrying in 5s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.8-flash\nPlease retry in 42.924234148s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}]
+2026-09-09 03:13:19,380  WARNING   maso_core.agent  [Agent] MASO (id=070c8bf5-019) LLM call failed on turn 1: RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 38.450710032s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}]. Marking triggering message as failed.
+2026-09-09 03:13:19,380  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] llm_failure #1 on provider=initial model=gemini-3.8-flash: RateLimitError (retryable=True)
+2026-09-09 03:13:19,380  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] LLM call failed (attempt 1, waited 5s / budget 86400s), retrying in 5s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 38.450710032s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}]
+2026-09-09 03:13:32,448  WARNING   maso_cowork.server.session.manager  [generate_title] LLM title generation failed, using truncation: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-09 03:13:32,458  INFO      maso_cowork.server.session.manager  [AutoTitlePlugin] 75f90d7e-170: title set to 'ild cases, Generation 1'
+2026-09-09 03:13:33,350  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] retry attempt 1 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 24.610844009s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}]
+2026-09-09 03:13:33,351  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] LLM call failed (attempt 2, waited 15s / budget 86400s), retrying in 10s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 24.610844009s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}]
+2026-09-09 03:13:36,973  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] retry attempt 1 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 20.984467342s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}]
+2026-09-09 03:13:36,974  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] LLM call failed (attempt 2, waited 15s / budget 86400s), retrying in 10s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 20.984467342s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}]
+2026-09-09 03:13:38,735  WARNING   maso_core.agent  [Agent] MASO (id=9d8e59d6-a09) LLM call failed on turn 1: InternalServerError: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]. Marking triggering message as failed.
+2026-09-09 03:13:38,736  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] llm_failure #1 on provider=initial model=gemini-3.8-flash: InternalServerError (retryable=True)
+2026-09-09 03:13:38,737  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] LLM call failed (attempt 1, waited 5s / budget 86400s), retrying in 5s: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-09 03:13:39,876  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 30.0s
+2026-09-09 03:13:40,226  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] retry attempt 1 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 17.7445817s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-09-09 03:13:40,227  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] LLM call failed (attempt 2, waited 15s / budget 86400s), retrying in 10s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 17.7445817s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-09-09 03:13:44,916  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=71MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:13:45,036  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 30.0s
+2026-09-09 03:13:49,125  INFO      maso_cowork.server.access_log  GET /api/sessions/93fd4471-33b/status -> 200  ttfb=1ms  elapsed=1ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:49,235  INFO      maso_cowork.server.access_log  GET /api/sessions/070c8bf5-019/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:49,339  INFO      maso_cowork.server.access_log  GET /api/sessions/75f90d7e-170/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:49,380  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 30.0s
+2026-09-09 03:13:49,426  INFO      maso_cowork.server.access_log  GET /api/sessions/9d8e59d6-a09/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:13:59,945  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] retry attempt 2 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 58.041623975s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]
+2026-09-09 03:13:59,946  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] LLM call failed (attempt 3, waited 35s / budget 86400s), retrying in 20s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 58.041623975s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]
+2026-09-09 03:14:00,674  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] retry attempt 1 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 57.325132406s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}]
+2026-09-09 03:14:00,675  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] LLM call failed (attempt 2, waited 15s / budget 86400s), retrying in 10s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 57.325132406s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}]
+2026-09-09 03:14:04,110  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] retry attempt 2 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 53.849037478s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-09-09 03:14:04,110  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] LLM call failed (attempt 3, waited 35s / budget 86400s), retrying in 20s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 53.849037478s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-09-09 03:14:06,996  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] retry attempt 2 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 50.959983119s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]
+2026-09-09 03:14:06,996  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] LLM call failed (attempt 3, waited 35s / budget 86400s), retrying in 20s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 50.959983119s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]
+2026-09-09 03:14:08,736  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 30.0s
+2026-09-09 03:14:09,876  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 60.0s
+2026-09-09 03:14:14,916  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=62MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:14:15,037  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 60.0s
+2026-09-09 03:14:15,848  INFO      maso_cowork.server.access_log  GET /api/sessions/93fd4471-33b/status -> 200  ttfb=1ms  elapsed=1ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:15,972  INFO      maso_cowork.server.access_log  GET /api/sessions/070c8bf5-019/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:16,086  INFO      maso_cowork.server.access_log  GET /api/sessions/75f90d7e-170/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:16,175  INFO      maso_cowork.server.access_log  GET /api/sessions/9d8e59d6-a09/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:19,379  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 60.0s
+2026-09-09 03:14:21,904  INFO      maso_cowork.server.access_log  GET /api/sessions/93fd4471-33b/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:21,991  INFO      maso_cowork.server.access_log  GET /api/sessions/070c8bf5-019/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:22,077  INFO      maso_cowork.server.access_log  GET /api/sessions/75f90d7e-170/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:22,181  INFO      maso_cowork.server.access_log  GET /api/sessions/9d8e59d6-a09/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:27,965  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] retry attempt 2 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 30.018071445s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}]
+2026-09-09 03:14:27,966  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] LLM call failed (attempt 3, waited 35s / budget 86400s), retrying in 20s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 30.018071445s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}]
+2026-09-09 03:14:36,660  INFO      maso_cowork.server.access_log  GET /api/sessions/93fd4471-33b/status -> 200  ttfb=1ms  elapsed=2ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:36,788  INFO      maso_cowork.server.access_log  GET /api/sessions/070c8bf5-019/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:36,891  INFO      maso_cowork.server.access_log  GET /api/sessions/75f90d7e-170/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:36,989  INFO      maso_cowork.server.access_log  GET /api/sessions/9d8e59d6-a09/status -> 200  ttfb=0ms  elapsed=0ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:14:37,349  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] retry attempt 3 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 20.708947528s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}]
+2026-09-09 03:14:37,349  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:93fd4471-33b] LLM call failed (attempt 4, waited 75s / budget 86400s), retrying in 40s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 20.708947528s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}]
+2026-09-09 03:14:38,737  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 60.0s
+2026-09-09 03:14:39,876  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 90.0s
+2026-09-09 03:14:40,164  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] retry attempt 3 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 17.780934861s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-09-09 03:14:40,165  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:75f90d7e-170] LLM call failed (attempt 4, waited 75s / budget 86400s), retrying in 40s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 17.780934861s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-09-09 03:14:43,426  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] retry attempt 3 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 14.58479204s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}]
+2026-09-09 03:14:43,427  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:070c8bf5-019] LLM call failed (attempt 4, waited 75s / budget 86400s), retrying in 40s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 14.58479204s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}]
+2026-09-09 03:14:44,918  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=74MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:14:45,036  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 90.0s
+2026-09-09 03:14:49,379  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 90.0s
+2026-09-09 03:15:04,052  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] retry attempt 3 also failed: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 53.93670905s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-09-09 03:15:04,055  WARNING   maso_core.runtime_modules.keep_alive.plugin  [KeepAlive:9d8e59d6-a09] LLM call failed (attempt 4, waited 75s / budget 86400s), retrying in 40s: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\nPlease retry in 53.93670905s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-09-09 03:15:08,736  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 90.0s
+2026-09-09 03:15:09,875  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 120.0s
+2026-09-09 03:15:14,918  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=41MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:15:15,036  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 120.0s
+2026-09-09 03:15:19,377  WARNING   maso_core.hooks.hook_center  [HooksCenter] Long-running hook detected: KeepAlivePlugin.llm_failure has been running for 120.0s
+2026-09-09 03:15:26,091  INFO      maso_core.runtime  [Runtime] Despawning agent MASO (id=93fd4471-33b)
+2026-09-09 03:15:26,092  ERROR     maso_core.hooks.hook_center  [HooksCenter] Hook TracingPlugin.agent_despawn at agent_despawn failed: 'NoneType' object has no attribute 'status'
+2026-09-09 03:15:26,092  INFO      maso_core.runtime  [Runtime] Killing agent MASO (id=93fd4471-33b)
+2026-09-09 03:15:26,092  INFO      maso_core.runtime  [Runtime] Aborting agent MASO (id=93fd4471-33b, recursive=False, reason=kill)
+2026-09-09 03:15:26,110  INFO      maso_cowork.server.session.manager  [SessionManager] Closed session 93fd4471-33b
+2026-09-09 03:15:26,119  INFO      maso_cowork.server.access_log  DELETE /api/sessions/93fd4471-33b -> 204  ttfb=34ms  elapsed=34ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:15:26,150  INFO      maso_core.runtime  [Runtime] Despawning agent MASO (id=070c8bf5-019)
+2026-09-09 03:15:26,150  ERROR     maso_core.hooks.hook_center  [HooksCenter] Hook TracingPlugin.agent_despawn at agent_despawn failed: 'NoneType' object has no attribute 'status'
+2026-09-09 03:15:26,150  INFO      maso_core.runtime  [Runtime] Killing agent MASO (id=070c8bf5-019)
+2026-09-09 03:15:26,150  INFO      maso_core.runtime  [Runtime] Aborting agent MASO (id=070c8bf5-019, recursive=False, reason=kill)
+2026-09-09 03:15:26,154  INFO      maso_cowork.server.session.manager  [SessionManager] Closed session 070c8bf5-019
+2026-09-09 03:15:26,155  INFO      maso_cowork.server.access_log  DELETE /api/sessions/070c8bf5-019 -> 204  ttfb=5ms  elapsed=5ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:15:26,175  INFO      maso_core.runtime  [Runtime] Despawning agent MASO (id=75f90d7e-170)
+2026-09-09 03:15:26,175  ERROR     maso_core.hooks.hook_center  [HooksCenter] Hook TracingPlugin.agent_despawn at agent_despawn failed: 'NoneType' object has no attribute 'status'
+2026-09-09 03:15:26,175  INFO      maso_core.runtime  [Runtime] Killing agent MASO (id=75f90d7e-170)
+2026-09-09 03:15:26,175  INFO      maso_core.runtime  [Runtime] Aborting agent MASO (id=75f90d7e-170, recursive=False, reason=kill)
+2026-09-09 03:15:26,177  INFO      maso_cowork.server.session.manager  [SessionManager] Closed session 75f90d7e-170
+2026-09-09 03:15:26,179  INFO      maso_cowork.server.access_log  DELETE /api/sessions/75f90d7e-170 -> 204  ttfb=4ms  elapsed=4ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:15:26,196  INFO      maso_core.runtime  [Runtime] Despawning agent MASO (id=9d8e59d6-a09)
+2026-09-09 03:15:26,196  ERROR     maso_core.hooks.hook_center  [HooksCenter] Hook TracingPlugin.agent_despawn at agent_despawn failed: 'NoneType' object has no attribute 'status'
+2026-09-09 03:15:26,196  INFO      maso_core.runtime  [Runtime] Killing agent MASO (id=9d8e59d6-a09)
+2026-09-09 03:15:26,196  INFO      maso_core.runtime  [Runtime] Aborting agent MASO (id=9d8e59d6-a09, recursive=False, reason=kill)
+2026-09-09 03:15:26,198  INFO      maso_cowork.server.session.manager  [SessionManager] Closed session 9d8e59d6-a09
+2026-09-09 03:15:26,200  INFO      maso_cowork.server.access_log  DELETE /api/sessions/9d8e59d6-a09 -> 204  ttfb=4ms  elapsed=4ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:15:27,593  WARNING   maso_cowork.server.access_log  [SLOW] GET /api/sessions -> 200  ttfb=1380ms  elapsed=1380ms  loop_lag=0.0ms  inflight=0
+2026-09-09 03:15:44,919  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=71MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:16:14,920  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=32MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:16:44,921  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:17:14,921  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:17:44,921  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:18:14,923  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:18:44,925  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:19:14,926  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:19:44,928  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:20:14,929  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:20:44,932  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=29MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:21:14,933  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:21:44,933  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:22:14,934  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=29MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:22:44,938  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:23:14,940  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:23:44,941  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:24:14,942  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:24:44,942  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:25:14,943  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:25:44,945  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=42MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:26:14,946  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:26:44,947  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=30MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:27:14,948  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:27:44,975  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:28:14,984  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 03:28:44,988  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 03:29:14,991  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:29:44,991  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:30:14,992  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:30:44,992  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:31:14,995  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:31:44,997  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:32:14,999  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:32:45,000  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:33:15,001  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:33:45,004  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:34:15,005  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:34:45,008  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:35:15,011  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:35:45,013  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:36:15,015  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:36:45,018  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:37:15,019  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:37:45,022  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:38:15,024  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:38:45,028  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:39:15,030  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:39:45,031  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:40:15,033  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:40:45,047  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 03:41:15,053  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:41:45,056  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:42:15,061  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:42:45,063  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:43:15,065  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:43:45,067  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:44:15,068  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:44:45,070  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:45:15,071  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:45:45,073  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:46:15,075  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:46:45,077  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:47:15,079  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:47:45,081  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:48:15,083  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:48:45,084  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:49:15,085  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:49:45,087  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:50:15,090  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:50:45,092  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=29MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:51:15,096  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=13MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:51:45,107  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=13MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:52:15,109  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:52:45,110  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:53:15,112  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 03:53:45,113  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:54:15,115  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:54:45,118  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:55:15,125  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:55:45,125  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:56:15,126  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+[Lark] [2026-09-09 03:56:39,200] [ERROR] receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7683429640099531730]
+2026-09-09 03:56:39,200  ERROR     Lark  receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7683429640099531730]
+2026-09-09 03:56:45,127  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:56:58,016  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Fetching fresh WebSocket conn URL
+2026-09-09 03:57:15,128  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:57:45,130  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:58:15,132  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:58:45,135  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:59:15,136  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 03:59:45,138  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=29MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:00:15,140  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:00:45,142  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:01:15,143  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:01:45,147  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:02:15,179  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=13MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:02:45,193  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:03:15,199  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:03:45,201  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:04:15,203  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:04:45,204  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:05:15,205  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:05:45,207  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:05:45,368  WARNING   maso_cowork.server.session.lifecycle  Resume a96ff105-607: merge_target_branch 'master' no longer exists, clearing
+2026-09-09 04:05:45,428  WARNING   maso_cowork.server.session.manager  [SessionManager] LLM provider 'gpt56_sol_reasoning_high' not found — session will start without LLM config
+2026-09-09 04:05:45,431  INFO      maso_core.workspace.isolation.git_worktree  Setting up GitWorktreeStrategy at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 04:05:45,431  INFO      maso_core.workspace.isolation.git_worktree    main_branch=None, worktree_dir=/Users/bytedance/.maso/worktrees, skip_main_worktree=True, auto_detect_branch=True
+2026-09-09 04:05:45,576  INFO      maso_core.workspace.isolation.git_worktree  Auto-detected current branch 'main', using as main_branch (was 'None')
+2026-09-09 04:05:45,576  INFO      maso_core.workspace.isolation.git_worktree  [Worktree] warm repo on branch 'main' — skipping init/commit/verify
+2026-09-09 04:05:45,576  INFO      maso_core.workspace.isolation.git_worktree  GitWorktreeStrategy setup completed at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug (warm)
+2026-09-09 04:05:45,577  INFO      maso_core.workspace.isolation.git_worktree  Creating worktree for owner 'a96ff105-607'
+2026-09-09 04:05:45,606  INFO      maso_core.workspace.isolation.git_worktree  Reusing existing worktree for 'a96ff105-607' at /Users/bytedance/.maso/worktrees/agent-a96ff105-607
+2026-09-09 04:05:45,619  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=a96ff105-607, parent=None, exit_mode=idle)
+2026-09-09 04:05:45,624  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gpt-5.6-sol session=a96ff105-607
+2026-09-09 04:05:45,625  WARNING   maso_core.runtime_modules.condenser.factory  [create_condenser] Failed to create condenser strategy=llm: OpenAILLM.__init__() missing 1 required positional argument: 'api_key', falling back to basic
+2026-09-09 04:05:45,667  INFO      maso_cowork.server.session.manager  [SessionManager] Created session a96ff105-607 provider=gpt56_sol_reasoning_high model= agent=a96ff105-607 shared_runtime=True
+2026-09-09 04:05:45,711  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 04:05:45,712  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session a96ff105-607 (agent_class=MASOAgent)
+2026-09-09 04:05:45,712  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected WorktreeIsolationPlugin for session a96ff105-607 (workspace=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug, worktree=/Users/bytedance/.maso/worktrees/agent-a96ff105-607)
+2026-09-09 04:05:45,712  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=a96ff105-607, agent_id=a96ff105-607
+2026-09-09 04:05:45,715  INFO      maso_core.runtime  [Runtime] Spawning agent coordination_tool_planner (id=coordination_tool_planner-8e6f, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,717  INFO      maso_core.runtime  [Runtime] Spawning agent swarmctl_implementer (id=swarmctl_implementer-cb92, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,719  INFO      maso_core.runtime  [Runtime] Spawning agent swarmctl_v2_implementer (id=swarmctl_v2_implementer-6537, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,720  INFO      maso_core.runtime  [Runtime] Spawning agent sortnet_small_generator (id=sortnet_small_generator-1994, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,722  INFO      maso_core.runtime  [Runtime] Spawning agent sortnet_large_generator (id=sortnet_large_generator-8a3a, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,724  INFO      maso_core.runtime  [Runtime] Spawning agent depthnet_small_finder (id=depthnet_small_finder-c98b, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,725  INFO      maso_core.runtime  [Runtime] Spawning agent depthnet_large_finder (id=depthnet_large_finder-bc55, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,727  INFO      maso_core.runtime  [Runtime] Spawning agent n16_network_finder (id=n16_network_finder-6b2a, parent=a96ff105-607, exit_mode=idle)
+2026-09-09 04:05:45,740  INFO      maso_core.runtime_modules.cron.scheduler  [CronScheduler] Job e2ab3a8f (agent-007-continuous-swarm-work) triggered -> a96ff105-607
+2026-09-09 04:05:45,741  INFO      maso_core.agent  [Agent] MASO (id=a96ff105-607) starting run (model=unknown)
+2026-09-09 04:05:45,788  WARNING   maso_cowork.server.session.lifecycle  Resume 6eb4d48d-57a: merge_target_branch 'master' no longer exists, clearing
+2026-09-09 04:05:45,831  WARNING   maso_cowork.server.session.manager  [SessionManager] LLM provider 'gpt56_sol_reasoning_high' not found — session will start without LLM config
+2026-09-09 04:05:45,831  INFO      maso_core.workspace.isolation.git_worktree  Setting up GitWorktreeStrategy at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 04:05:45,831  INFO      maso_core.workspace.isolation.git_worktree    main_branch=None, worktree_dir=/Users/bytedance/.maso/worktrees, skip_main_worktree=True, auto_detect_branch=True
+2026-09-09 04:05:45,882  ERROR     maso_core.agent  [Agent] MASO (id=a96ff105-607) error: AgentNotReadyError: Agent a96ff105-607 has no LLM config — no provider is configured.
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 333, in run
+    await self._execute_turns(ctx)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 594, in _execute_turns
+    llm = self._create_llm()
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 243, in _create_llm
+    raise AgentNotReadyError(f'Agent {self.agent_id} has no LLM config — no provider is configured.')
+maso_core.exceptions.AgentNotReadyError: Agent a96ff105-607 has no LLM config — no provider is configured.
+2026-09-09 04:05:45,972  INFO      maso_core.workspace.isolation.git_worktree  Auto-detected current branch 'main', using as main_branch (was 'None')
+2026-09-09 04:05:45,975  INFO      maso_core.workspace.isolation.git_worktree  [Worktree] warm repo on branch 'main' — skipping init/commit/verify
+2026-09-09 04:05:45,975  INFO      maso_core.workspace.isolation.git_worktree  GitWorktreeStrategy setup completed at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug (warm)
+2026-09-09 04:05:45,976  INFO      maso_core.workspace.isolation.git_worktree  Creating worktree for owner '6eb4d48d-57a'
+2026-09-09 04:05:45,986  ERROR     maso_core.runtime  [Runtime] Agent MASO (id=a96ff105-607) not ready: Agent a96ff105-607 has no LLM config — no provider is configured.
+2026-09-09 04:05:46,000  INFO      maso_core.workspace.isolation.git_worktree  Reusing existing worktree for '6eb4d48d-57a' at /Users/bytedance/.maso/worktrees/agent-6eb4d48d-57a
+2026-09-09 04:05:46,003  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=6eb4d48d-57a, parent=None, exit_mode=idle)
+2026-09-09 04:05:46,004  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gpt-5.6-sol session=6eb4d48d-57a
+2026-09-09 04:05:46,004  WARNING   maso_core.runtime_modules.condenser.factory  [create_condenser] Failed to create condenser strategy=llm: OpenAILLM.__init__() missing 1 required positional argument: 'api_key', falling back to basic
+2026-09-09 04:05:46,015  INFO      maso_cowork.server.session.manager  [SessionManager] Created session 6eb4d48d-57a provider=gpt56_sol_reasoning_high model= agent=6eb4d48d-57a shared_runtime=True
+2026-09-09 04:05:46,027  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 04:05:46,027  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session 6eb4d48d-57a (agent_class=MASOAgent)
+2026-09-09 04:05:46,028  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected WorktreeIsolationPlugin for session 6eb4d48d-57a (workspace=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug, worktree=/Users/bytedance/.maso/worktrees/agent-6eb4d48d-57a)
+2026-09-09 04:05:46,028  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=6eb4d48d-57a, agent_id=6eb4d48d-57a
+2026-09-09 04:05:46,033  INFO      maso_core.runtime_modules.cron.scheduler  [CronScheduler] Job 70739680 (agent-005 continuous swarm work) triggered -> 6eb4d48d-57a
+2026-09-09 04:05:46,034  INFO      maso_core.agent  [Agent] MASO (id=6eb4d48d-57a) starting run (model=unknown)
+2026-09-09 04:05:46,189  WARNING   maso_cowork.server.session.manager  [SessionManager] LLM provider 'gpt56_sol_reasoning_high' not found — session will start without LLM config
+2026-09-09 04:05:46,189  INFO      maso_core.workspace.isolation.git_worktree  Setting up GitWorktreeStrategy at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug
+2026-09-09 04:05:46,189  INFO      maso_core.workspace.isolation.git_worktree    main_branch=None, worktree_dir=/Users/bytedance/.maso/worktrees, skip_main_worktree=True, auto_detect_branch=True
+2026-09-09 04:05:46,207  ERROR     maso_core.agent  [Agent] MASO (id=6eb4d48d-57a) error: AgentNotReadyError: Agent 6eb4d48d-57a has no LLM config — no provider is configured.
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 333, in run
+    await self._execute_turns(ctx)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 594, in _execute_turns
+    llm = self._create_llm()
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 243, in _create_llm
+    raise AgentNotReadyError(f'Agent {self.agent_id} has no LLM config — no provider is configured.')
+maso_core.exceptions.AgentNotReadyError: Agent 6eb4d48d-57a has no LLM config — no provider is configured.
+2026-09-09 04:05:46,230  ERROR     maso_core.runtime  [Runtime] Agent MASO (id=6eb4d48d-57a) not ready: Agent 6eb4d48d-57a has no LLM config — no provider is configured.
+2026-09-09 04:05:46,282  INFO      maso_core.workspace.isolation.git_worktree  Auto-detected current branch 'main', using as main_branch (was 'None')
+2026-09-09 04:05:46,282  INFO      maso_core.workspace.isolation.git_worktree  [Worktree] warm repo on branch 'main' — skipping init/commit/verify
+2026-09-09 04:05:46,282  INFO      maso_core.workspace.isolation.git_worktree  GitWorktreeStrategy setup completed at /Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug (warm)
+2026-09-09 04:05:46,282  INFO      maso_core.workspace.isolation.git_worktree  Creating worktree for owner 'b35f7b34-c97'
+2026-09-09 04:05:46,300  INFO      maso_core.workspace.isolation.git_worktree  Reusing existing worktree for 'b35f7b34-c97' at /Users/bytedance/.maso/worktrees/agent-b35f7b34-c97
+2026-09-09 04:05:46,303  INFO      maso_core.runtime  [Runtime] Spawning agent MASO (id=b35f7b34-c97, parent=None, exit_mode=idle)
+2026-09-09 04:05:46,303  INFO      maso_core.runtime_modules.condenser.factory  [Condenser] strategy=llm model=gpt-5.6-sol session=b35f7b34-c97
+2026-09-09 04:05:46,303  WARNING   maso_core.runtime_modules.condenser.factory  [create_condenser] Failed to create condenser strategy=llm: OpenAILLM.__init__() missing 1 required positional argument: 'api_key', falling back to basic
+2026-09-09 04:05:46,478  INFO      maso_cowork.server.session.manager  [SessionManager] Created session b35f7b34-c97 provider=gpt56_sol_reasoning_high model= agent=b35f7b34-c97 shared_runtime=True
+2026-09-09 04:05:46,642  INFO      maso_cowork.plugins.agent_md  [AgentMdPlugin] Created for role=worker with 1 file(s): AGENTS.md (/Users/bytedance/.maso/AGENTS.md)
+2026-09-09 04:05:46,643  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected DeployFile for session b35f7b34-c97 (agent_class=MASOAgent)
+2026-09-09 04:05:46,643  INFO      maso_cowork.providers.worker  [WorkerProvider] Injected WorktreeIsolationPlugin for session b35f7b34-c97 (workspace=/Users/bytedance/Documents/Codex/2026-08-27/https-bytedance-larkoffice-com-wiki-hhbnwnytnioxtskqykrcz6hinug, worktree=/Users/bytedance/.maso/worktrees/agent-b35f7b34-c97)
+2026-09-09 04:05:46,643  INFO      maso_cowork.server.topology.manager  [TopologyManager] Created session: slot=worker, cardinality=on-demand, session_id=b35f7b34-c97, agent_id=b35f7b34-c97
+2026-09-09 04:05:46,644  INFO      maso_core.runtime  [Runtime] Spawning agent checkpoint_planner (id=checkpoint_planner-29b4, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,646  INFO      maso_core.runtime  [Runtime] Spawning agent checkpoint_implementer (id=checkpoint_implementer-97af, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,648  INFO      maso_core.runtime  [Runtime] Spawning agent checkpoint_test_author (id=checkpoint_test_author-c353, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,650  INFO      maso_core.runtime  [Runtime] Spawning agent locator_integrity_implementer (id=locator_integrity_implementer-15f6, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,651  INFO      maso_core.runtime  [Runtime] Spawning agent locator_integrity_tests (id=locator_integrity_tests-bed3, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,653  INFO      maso_core.runtime  [Runtime] Spawning agent source_binding_implementer (id=source_binding_implementer-d83b, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,654  INFO      maso_core.runtime  [Runtime] Spawning agent source_binding_tests (id=source_binding_tests-a3f2, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,656  INFO      maso_core.runtime  [Runtime] Spawning agent resource_bound_implementer (id=resource_bound_implementer-65d0, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,658  INFO      maso_core.runtime  [Runtime] Spawning agent resource_bound_tests (id=resource_bound_tests-0fde, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,660  INFO      maso_core.runtime  [Runtime] Spawning agent envelope_bound_implementer (id=envelope_bound_implementer-a174, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,662  INFO      maso_core.runtime  [Runtime] Spawning agent envelope_bound_tests (id=envelope_bound_tests-c811, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,663  INFO      maso_core.runtime  [Runtime] Spawning agent extension_budget_implementer (id=extension_budget_implementer-cb58, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,665  INFO      maso_core.runtime  [Runtime] Spawning agent extension_budget_tests (id=extension_budget_tests-3cd8, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,666  INFO      maso_core.runtime  [Runtime] Spawning agent descriptor_refactor_planner (id=descriptor_refactor_planner-7bfe, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,668  INFO      maso_core.runtime  [Runtime] Spawning agent descriptor_safe_implementer (id=descriptor_safe_implementer-0e0c, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,669  INFO      maso_core.runtime  [Runtime] Spawning agent descriptor_safe_tests (id=descriptor_safe_tests-d3e5, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,671  INFO      maso_core.runtime  [Runtime] Spawning agent line_policy_implementer (id=line_policy_implementer-63b9, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,672  INFO      maso_core.runtime  [Runtime] Spawning agent line_policy_tests (id=line_policy_tests-7cbe, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,674  INFO      maso_core.runtime  [Runtime] Spawning agent line_index_reproducer (id=line_index_reproducer-03de, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,675  INFO      maso_core.runtime  [Runtime] Spawning agent hardlink_audit_replayer (id=hardlink_audit_replayer-c9df, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,677  INFO      maso_core.runtime  [Runtime] Spawning agent v9_implementer (id=v9_implementer-52d8, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,679  INFO      maso_core.runtime  [Runtime] Spawning agent v9_test_author (id=v9_test_author-ffc4, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,680  INFO      maso_core.runtime  [Runtime] Spawning agent v9_closure_checker (id=v9_closure_checker-650f, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,682  INFO      maso_core.runtime  [Runtime] Spawning agent hardlink_v2_replayer (id=hardlink_v2_replayer-ff17, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,683  INFO      maso_core.runtime  [Runtime] Spawning agent snapshot_v7_replayer (id=snapshot_v7_replayer-dfa8, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,685  INFO      maso_core.runtime  [Runtime] Spawning agent hardlink_v2_closure_reader (id=hardlink_v2_closure_reader-60cc, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,686  INFO      maso_core.runtime  [Runtime] Spawning agent unresolved_rescan_reproducer (id=unresolved_rescan_reproducer-8cc2, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,688  INFO      maso_core.runtime  [Runtime] Spawning agent hardlink_v3_replayer (id=hardlink_v3_replayer-47a8, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,689  INFO      maso_core.runtime  [Runtime] Spawning agent v10_implementer (id=v10_implementer-8b48, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,691  INFO      maso_core.runtime  [Runtime] Spawning agent v10_test_author (id=v10_test_author-8551, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,692  INFO      maso_core.runtime  [Runtime] Spawning agent v10_closure_replayer (id=v10_closure_replayer-8a22, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,694  INFO      maso_core.runtime  [Runtime] Spawning agent snapshot_v8_replayer (id=snapshot_v8_replayer-1353, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,695  INFO      maso_core.runtime  [Runtime] Spawning agent splitview_reproducer (id=splitview_reproducer-376b, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,697  INFO      maso_core.runtime  [Runtime] Spawning agent snapshot_v9_replayer (id=snapshot_v9_replayer-de7a, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,698  INFO      maso_core.runtime  [Runtime] Spawning agent hardlink_alias_reproducer (id=hardlink_alias_reproducer-db0f, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,699  INFO      maso_core.runtime  [Runtime] Spawning agent role_matrix_checker (id=role_matrix_checker-d3a2, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,701  INFO      maso_core.runtime  [Runtime] Spawning agent snapshot_v10_replayer (id=snapshot_v10_replayer-1c4e, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,703  INFO      maso_core.runtime  [Runtime] Spawning agent snapshot_v11_replayer (id=snapshot_v11_replayer-56dc, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,704  INFO      maso_core.runtime  [Runtime] Spawning agent v11_contract_replayer (id=v11_contract_replayer-6d9d, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,706  INFO      maso_core.runtime  [Runtime] Spawning agent strict_v2_replayer (id=strict_v2_replayer-9c44, parent=b35f7b34-c97, exit_mode=idle)
+2026-09-09 04:05:46,711  INFO      maso_core.runtime_modules.cron.scheduler  [CronScheduler] Job e6e5fec3 (agent-006-generation2-continuation) triggered -> b35f7b34-c97
+2026-09-09 04:05:46,711  INFO      maso_core.agent  [Agent] MASO (id=b35f7b34-c97) starting run (model=unknown)
+2026-09-09 04:05:47,030  ERROR     maso_core.agent  [Agent] MASO (id=b35f7b34-c97) error: AgentNotReadyError: Agent b35f7b34-c97 has no LLM config — no provider is configured.
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 333, in run
+    await self._execute_turns(ctx)
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 594, in _execute_turns
+    llm = self._create_llm()
+          ^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/agent.py", line 243, in _create_llm
+    raise AgentNotReadyError(f'Agent {self.agent_id} has no LLM config — no provider is configured.')
+maso_core.exceptions.AgentNotReadyError: Agent b35f7b34-c97 has no LLM config — no provider is configured.
+2026-09-09 04:05:47,779  ERROR     maso_core.runtime  [Runtime] Agent MASO (id=b35f7b34-c97) not ready: Agent b35f7b34-c97 has no LLM config — no provider is configured.
+2026-09-09 04:06:15,210  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:06:45,213  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:07:15,215  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 04:07:45,217  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:08:15,220  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:08:45,223  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:09:15,224  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:09:45,226  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:10:15,228  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:10:45,229  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:11:15,231  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:11:45,233  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=29MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:12:15,233  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:12:45,234  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:13:15,235  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=15MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 04:13:45,238  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:14:15,240  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:14:45,243  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:15:15,245  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=16MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:15:45,246  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:16:15,248  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:16:45,249  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:17:15,251  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:17:45,252  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:18:15,260  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:18:45,263  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:19:15,263  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 04:19:45,263  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:20:15,266  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 04:20:45,267  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:21:15,268  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:21:45,269  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:22:15,272  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=18MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:22:45,278  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:23:15,280  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:23:45,283  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=17MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:24:15,289  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=13MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:24:56,211  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=55.00
+[Lark] [2026-09-09 04:25:26,170] [ERROR] receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7683441430216215533]
+2026-09-09 04:25:26,170  ERROR     Lark  receive message loop exit, err: sent 1011 (internal error) keepalive ping timeout; no close frame received [conn_id=7683441430216215533]
+2026-09-09 04:25:26,214  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 04:25:42,431  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Fetching fresh WebSocket conn URL
+2026-09-09 04:58:27,484  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stuck >61s (still blocked at log time)
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 176, in _receive_message_loop
+    await self._reconnect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 300, in _reconnect
+    if await self._try_connect(i):
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 308, in _try_connect
+    await self._connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 146, in _connect
+    conn_url = self._get_conn_url()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/feishu/plugin.py", line 1686, in _instrumented_get_conn_url
+    return original_get_conn_url()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 184, in _get_conn_url
+    response = requests.post(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+
+2026-09-09 04:59:55,833  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stuck >61s (still blocked at log time)
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 176, in _receive_message_loop
+    await self._reconnect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 300, in _reconnect
+    if await self._try_connect(i):
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 308, in _try_connect
+    await self._connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 146, in _connect
+    conn_url = self._get_conn_url()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/feishu/plugin.py", line 1686, in _instrumented_get_conn_url
+    return original_get_conn_url()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 184, in _get_conn_url
+    response = requests.post(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+
+[Lark] [2026-09-09 05:00:15,827] [ERROR] connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1432574d0>, 'Connection to open.feishu.cn timed out. (connect timeout=None)'))
+2026-09-09 05:00:15,827  ERROR     Lark  connect failed, err: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /callback/ws/endpoint (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x1432574d0>, 'Connection to open.feishu.cn timed out. (connect timeout=None)'))
+2026-09-09 05:00:15,833  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stalled 19497ms
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 176, in _receive_message_loop
+    await self._reconnect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 300, in _reconnect
+    if await self._try_connect(i):
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 308, in _try_connect
+    await self._connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 146, in _connect
+    conn_url = self._get_conn_url()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/feishu/plugin.py", line 1686, in _instrumented_get_conn_url
+    return original_get_conn_url()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 184, in _get_conn_url
+    response = requests.post(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+
+2026-09-09 05:00:15,833  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=19MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:00:45,836  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:01:23,799  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=2.00
+2026-09-09 05:01:45,827  INFO      maso_cowork.feishu.plugin  [Feishu:maso] Fetching fresh WebSocket conn URL
+2026-09-09 05:08:57,143  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stuck >61s (still blocked at log time)
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 176, in _receive_message_loop
+    await self._reconnect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 300, in _reconnect
+    if await self._try_connect(i):
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 308, in _try_connect
+    await self._connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 146, in _connect
+    conn_url = self._get_conn_url()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/feishu/plugin.py", line 1686, in _instrumented_get_conn_url
+    return original_get_conn_url()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 184, in _get_conn_url
+    response = requests.post(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+
+2026-09-09 05:09:04,758  WARNING   maso_cowork.server.loop_monitor  [LOOP_BLOCKED] event loop stalled 7104ms
+Main thread stack while blocked:
+  File "/Users/bytedance/maso-cowork/.venv/bin/maso", line 10, in <module>
+    sys.exit(main())
+  File "/Users/bytedance/maso-cowork/packages/maso/src/maso/dispatcher.py", line 777, in main
+    result = getattr(mod, fn_name)()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/main.py", line 356, in main
+    uvicorn.run(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/main.py", line 594, in run
+    server.run()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/uvicorn/_compat.py", line 30, in asyncio_run
+    return runner.run(main)
+  File "/Users/bytedance/.local/share/uv/python/cpython-3.11.14-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 176, in _receive_message_loop
+    await self._reconnect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 300, in _reconnect
+    if await self._try_connect(i):
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 308, in _try_connect
+    await self._connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 146, in _connect
+    conn_url = self._get_conn_url()
+  File "/Users/bytedance/maso-cowork/packages/cowork/src/maso_cowork/feishu/plugin.py", line 1686, in _instrumented_get_conn_url
+    return original_get_conn_url()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/lark_oapi/ws/client.py", line 184, in _get_conn_url
+    response = requests.post(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/bytedance/maso-cowork/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+
+2026-09-09 05:09:04,762  ERROR     maso_core.runtime_modules.cron.scheduler  [CronScheduler] Failed to execute job e2ab3a8f
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/cron/scheduler.py", line 406, in _execute_job
+    raise RuntimeError(delivery.error or f'Failed to deliver cron trigger ({delivery.status})')
+RuntimeError: agent resolved but message queue was unavailable
+2026-09-09 05:09:04,854  ERROR     maso_core.runtime_modules.cron.scheduler  [CronScheduler] Failed to execute job 70739680
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/cron/scheduler.py", line 406, in _execute_job
+    raise RuntimeError(delivery.error or f'Failed to deliver cron trigger ({delivery.status})')
+RuntimeError: agent resolved but message queue was unavailable
+2026-09-09 05:09:04,862  ERROR     maso_core.runtime_modules.cron.scheduler  [CronScheduler] Failed to execute job e6e5fec3
+Traceback (most recent call last):
+  File "/Users/bytedance/maso-cowork/packages/core/src/maso_core/runtime_modules/cron/scheduler.py", line 406, in _execute_job
+    raise RuntimeError(delivery.error or f'Failed to deliver cron trigger ({delivery.status})')
+RuntimeError: agent resolved but message queue was unavailable
+2026-09-09 05:09:04,871  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=54MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:09:34,873  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:10:04,875  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:10:37,402  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=41MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:11:07,403  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:11:37,403  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:12:07,405  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:12:37,414  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:13:07,419  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:13:37,420  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:14:07,421  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:14:37,421  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:15:07,422  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:15:37,424  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:16:07,426  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:16:37,427  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:17:07,429  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:17:37,431  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:18:07,432  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:18:37,434  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:19:07,436  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:19:37,437  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:20:07,438  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:20:37,440  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:21:07,441  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:21:37,444  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:22:07,448  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=22MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:22:37,449  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:23:07,451  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:23:37,454  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:24:07,455  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:24:37,457  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:25:07,458  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:25:37,360  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:26:07,361  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=14MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:26:37,373  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:27:07,374  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:27:37,376  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:28:07,419  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:28:37,422  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:29:07,422  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:29:37,422  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:30:07,425  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:30:37,427  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:31:07,427  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:31:37,430  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:32:07,430  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:32:37,434  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:33:07,437  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:33:37,438  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:34:07,442  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:34:37,443  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:35:07,443  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=28MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:35:37,443  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:36:07,445  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:36:37,447  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:37:07,449  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:37:37,456  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:38:07,461  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:38:37,463  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:39:07,467  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:39:37,470  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=1.00
+2026-09-09 05:40:07,474  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:40:37,475  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:41:07,477  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:41:37,545  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=25MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:42:07,555  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:42:37,556  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:43:07,559  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:43:37,561  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:44:07,565  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:44:37,568  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:45:07,571  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:45:37,573  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:46:07,576  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:46:37,582  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:47:07,587  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:47:37,589  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:48:07,592  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:48:37,594  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:49:07,598  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:49:37,616  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:50:07,624  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:50:37,627  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=24MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:51:07,630  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:51:37,644  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:52:07,652  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:52:37,654  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=27MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:53:07,657  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=21MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:53:37,660  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:54:07,661  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=26MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:54:37,663  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=23MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00
+2026-09-09 05:55:07,665  INFO      maso_core.workspace.local.portal  [Portal:hb] port=58933 pid=8835 rss=20MB connections=-1 tasks=-1 should_exit=False loop_lag_ms=0.00

@@ -1,0 +1,11 @@
+source_host,source_path,record_count,unique_within_source_count,duplicate_within_source_count,broadcast_count,direct_count,unknown_recipient_count,message_chars,mean_message_chars,min_time_lexical,max_time_lexical
+122174,swarm/board/messages.jsonl,2650,2646,4,1796,840,14,3288528,1240.954,2026-08-01T12:30:17.371415,2026-08-03T18:02:48.858912
+122175,swarm/board/messages.jsonl,1587,1587,0,902,685,0,3130812,1972.786,2026-08-02T19:33:39.871320,2026-08-03T18:21:58.511413
+122448,swarm/board/messages.jsonl,943,943,0,730,213,0,2267750,2404.825,2026-08-02T19:38:26.056523,2026-08-03T17:55:06.150811
+122456,swarm/agents/agent-0140/sbx/A/board/messages.jsonl,1,1,0,1,0,0,1,1.0,2026-08-02T20:45:00Z,2026-08-02T20:45:00Z
+122456,swarm/agents/agent-0140/sbx/B/board/messages.jsonl,1,1,0,1,0,0,1,1.0,2026-08-02T20:45:00Z,2026-08-02T20:45:00Z
+122456,swarm/agents/agent-0140/sbx/C/board/messages.jsonl,1,1,0,1,0,0,1,1.0,2026-08-02T20:45:00Z,2026-08-02T20:45:00Z
+122456,swarm/agents/agent-0140/sbx/D/board/messages.jsonl,1,1,0,1,0,0,1,1.0,2026-08-02T20:45:00Z,2026-08-02T20:45:00Z
+122456,swarm/agents/agent-0140/sbx/ws1/board/messages.jsonl,1,1,0,1,0,0,15,15.0,2026-08-02T20:45:00Z,2026-08-02T20:45:00Z
+122456,swarm/agents/agent-041/sbx/ws1/board/messages.jsonl,1421,1417,4,962,445,14,1122862,790.191,2026-08-01T12:30:17.371415,2026-08-02T19:37:42.386505
+122456,swarm/board/messages.jsonl,2539,2535,4,1865,660,14,4059378,1598.81,2026-08-01T12:30:17.371415,2026-08-03T17:55:49.980108

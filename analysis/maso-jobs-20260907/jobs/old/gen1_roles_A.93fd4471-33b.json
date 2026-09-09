@@ -1,0 +1,993 @@
+{
+  "session_id": "93fd4471-33b",
+  "created_at": 1788937960.840159,
+  "updated_at": 1788937975.804747,
+  "messages": [
+    {
+      "id": "7ba3a4ebfe1349ae",
+      "role": "user",
+      "loss_mask": false,
+      "content": "<system-reminder>\nYour working directory is: /Users/bytedance/swarm-work.\nWorkspace isolation: DISABLED.</system-reminder>",
+      "created_at": 1788937960.896124,
+      "extra": {
+        "condense_pin": true,
+        "environment_reminder": true,
+        "agent_id": "93fd4471-33b"
+      }
+    },
+    {
+      "id": "ec60a72c22704c1a",
+      "role": "user",
+      "loss_mask": false,
+      "content": "# Job: per-agent role dossiers, Generation 1, agents 001-018\n\nYou are an empirical social scientist reading the complete output of an LLM-agent society experiment. Data root: /Users/bytedance/swarm-work/data/gen1/ (a shared filesystem 36 LLM agents worked in for ~43 hours). Layout: agents/agent-XXX/ (each agent's private dir, session logs, notes), commons/ (shared: findings/, tools/, challenges/, builds/, data/), board/ (public message board), citations.jsonl, registry*.json*. The orchestration code is in the same dir (swarm_launcher.py etc.) — read swarm_launcher.py FIRST to learn the prompt all agents received and which agent indices got special seeded/adversary prompts; flag those agents explicitly in your dossiers.\n\nObjective: for EACH of agents agent-001 through agent-018, write a role dossier answering:\n1. What did this agent mostly DO, in its own words and in its artifacts? Classify its activity into functional niches (examples, not a fixed list: producer of findings / tool-builder / verifier-auditor-replicator / corrector-erratum-writer / coordinator-board-poster / infrastructure-registry maintainer / archivist-curator / theorist-meta-commentator). Give approximate shares and 2-4 concrete file paths per niche.\n2. Did the agent explicitly describe or claim a role for itself (e.g., \"I will focus on verification\", \"I am the swarm's auditor\")? Quote it verbatim with path. When (mtime) did the first such self-description appear?\n3. Did its niche CHANGE over time? Give an early / mid / late characterization with mtimes.\n4. Did the agent coordinate division of labor with others (\"you take X, I take Y\", \"nobody is doing Z so I will\")? Quote with path.\n5. Did other agents refer to this agent as having a role (reputation: \"the checker\", \"ask agent-0XX for tools\")? Quote with path.\n6. Confounds: was it a seeded/adversary agent; was it resurrected/forked; how many artifacts total; any sign the niche was imposed by the launcher prompt rather than chosen.\n\nThen a closing section: the population-level picture for these 18 — a table (agent | dominant niche | share | self-declared? | when settled | evidence path), which niches exist, whether any agent is a generalist, and the 5 most striking quotes about roles/division of labor you found anywhere in these agents' materials or on the board.\n\nReport path (the only file you may write): /Users/bytedance/swarm-work/reports/gen1_roles_A.md\n\n## Hard rules\n- Work ONLY under /Users/bytedance/swarm-work/. Data under data/ is READ-ONLY: never modify, rename, move or delete anything there. Never run rm/mv on any path (even files that look temporary). You may only write ONE file: your report at the path given above.\n- Do not spawn sub-agents or background tasks. Do everything in this session.\n- Report writing protocol (the gateway truncates long outputs): write the report in chunks — first write section 1, then APPEND each further section with a separate write/append call, each chunk under ~3000 words. Finish by appending the single line `--- END OF REPORT ---`. Then verify with tail that the marker is present.\n- Every claim must carry an absolute file path (and line/anchor if useful) so it can be checked. Quote agent text verbatim (short) when it matters. If you cannot find evidence, write \"not found\" — do not guess.\n- Timestamps: file mtime is the kernel clock and is trustworthy. Declared times ending in Z are UTC; bare declared times are EDT. Agents' own \"day\" labels can be inflated by ~4 days; do not trust them.\n- When done, reply in chat with exactly: DONE\n",
+      "created_at": 1788937962.9132779,
+      "extra": {
+        "agent_id": "93fd4471-33b"
+      }
+    },
+    {
+      "id": "79aa260875de4569",
+      "origin_model_alias": "gemini-3.8-flash",
+      "role": "assistant",
+      "loss_mask": true,
+      "tool_calls": [
+        {
+          "id": "call_712109",
+          "type": "function",
+          "function": {
+            "name": "Bash",
+            "arguments": "{\"description\":\"List files in data/gen1/ directory\",\"command\":\"ls -la /Users/bytedance/swarm-work/data/gen1/\"}"
+          },
+          "index": 0,
+          "extra_content": {
+            "google": {
+              "thought_signature": "EsULCsILARFNMg/B1+o3VCaYT5kR4wtouzXeLFKRm9QgjLG1OM402YiCKPHdMsXBL+5609e4nHl0MiinSo96bxtGrMr4hECDPxlMhS/O7K+9zdkk+ELP4OUGbjomdzWOdagtjRXr9F6YfJkqCZ9a+zgwOykQINEtishviyJpeLLKIKwGG7pyymBxvQKqJFkqvJ+ZOxhrzo5GF0JeCze6O9/XLdgASobwhCMFjiBZ1S88d5lAqRNpW3WLjiQDyyq6xawEfMJDjSIWej++mbqA1xXjzya0fCV6vc1sjJCsmfxHd15mqE9xxjy7nxZNM3iVygZ79zwkkGh9EK96olrbr0J3zFainGxqrQXhC3JzDVnaT/IOfNX8QjKYgoH3hsp8KDhAnl82YRcSbYMZ5NIa6zBdKL4NfoLQLwMI5E+h5mObWCWbaWHqWfzGec4fDYj6BRp2V6Bn8DiO2uFlJ+agh2ACU2RHf1JoNTeLlzgMt8j8OrdHg0Jq45iqv0RH5NiYss3jasC2JnaXqtZ6zoXmOOULNsHsRKeb22DydjLu1NNCRHVj4hYTZfA1volnoz/4zJmK3ThQoRmCVNudPDAZN5gVFVIVaJQwI6f8UzDOhuXGCUjaju6OD80avzwfGn0JQLWAjc30hlWPUzDCy3lkWCR+56EmJBxx3Svghk64ABgWVQEeij1lURsZb8Tytqa0HEAFpDoujiarEqBbGWnD3lna8Ha5RMhO5M98hZS+sIySv1ac17ZcNAyrpZwTBQyHsXSNBV+2YL0luEvBw7zwHjgNIz5bYaeOdD+6lYqqJZaiAI2Z8UeOKRmRgaNnrsC2dvkVY02GfRVdSEjI2RtSh8U36cxoTD6qlzuGYu7Da8oGrs2+mJf/+iGPbWchVIOg6z7lWG5HYmDTaE1/eMF74e/7aYeggjeKNf9pnYTZlZKmOyQDYqr9Z2DjhiyqTplwMh7nQYyT6NtiiShJCn+bpiqPvIWTrGlNA1lZPbGdhFp44Y2fmvboWHWQ+5PCIHPgPSCYOfAG80U/hppwFAuSPxxG6TnWlDh+y+jaSIhCWd0KInqTbTcWm+JkJ4kOL2ig7EBk8Pd1/ht2Opwf8krpVsjLroNj6lv4eQOp0BiQdeSGDtUF3A9WgAi9y3lquARuLdXb489OAAgbhKjDaYmOnUCXkG5ncxzeQz8OV6YFobXdWqzB3ZYJEnL3QDDRuB0g+drBgCgyPyW0a7m8Ug5j667BtI+roeHawN/F7X0WT+9cTJqyLSRdtdxf6Y4mlr3IuHh/WpaXRRv7Y/hGkLu0n0PYgJibK0+eR4TdYIiubhpPXM7dmkhxmP4w2Z8ijW7p2syWuQ17Q6YKJUIP7j4hoHvCzFD06tCWZGnN5b06KvqJqzB2UqoKT8Y9K0pXNN7GBzfzKu9y8MdeSoEQzRavogxz+0/DoB+fYStAJYSvU8FJ90XyDx9XJCWbB9nINYDQeT2X6vZcUIajTzr5eOh8XnNFwbOhPNtyORo3xQo+FfEyeQDSs8FdZJce2sofpCn3baQqBaqwxgQXiQYy/qR7iNhYKfgS6nRIX9YKIUNAkxRQXfv01TXJ6vxaIhvwCi3JPI+l1PYHprcFfANkq0RkLAM8ykgzHgK26gPIzev43EJPBStuAvShelZjB0wrY9bUCS+fEpYEmUfMQo02s1CANh9/zP3jLte0Rc5vkf190iS/HKWx+FPVDJQuD0Ebc1kBNSVRZnUAtn52jVbQYSYyzG5NCVtpuSZ6qvXU3zVjmG11k3YKpRLXBVA/Cj0JwT0xumwDmuepoijG8ue2SnkamrcxF4GiQCLglPqHMePvGTyhxRKgbXEKkZyfonLPpZGskEDKQAiYH8d8Dq+dTu7SY33guwLX0++X/z7khbLiKtxjIJKZ4e21cP5cBvQiIVAa91XRRM4ZtttCZI5rlLcMxEGV0u9SqLIF1+4eDbese6wfuhn8HaRvEA=="
+            }
+          }
+        }
+      ],
+      "response_id": "8gahaqX9GuXN1e8P7Ymm6Qo",
+      "prefix_digest": "b897e2888953507a",
+      "created_at": 1788937972.560867,
+      "extra": {
+        "model": "gemini-3.8-flash",
+        "finish_reason": "stop",
+        "_llm_timing": {
+          "llm_request_ts": 1788937962.937279,
+          "llm_response_ts": 1788937972.561426,
+          "llm_first_token_ts": 1788937972.5561879
+        },
+        "_tool_timings": {
+          "call_712109": {
+            "started_at": 1788937972.5806,
+            "ended_at": 1788937972.605797
+          }
+        },
+        "agent_id": "93fd4471-33b"
+      },
+      "usage": {
+        "prompt_tokens": 25836,
+        "completion_tokens": 46,
+        "cached_tokens": 20365,
+        "total_tokens": 25882,
+        "latency_ms": 9624.146938323975,
+        "ttft_ms": 9618.908882141113,
+        "decode_tps": 8590.973145197997
+      }
+    },
+    {
+      "id": "9657b66105be4d22",
+      "role": "tool",
+      "loss_mask": false,
+      "content": "total 3320\ndrwxr-xr-x@  66 bytedance  staff    2112 Sep  1 11:40 .\ndrwxr-xr-x@   7 bytedance  staff     224 Sep  7 03:36 ..\n-rw-r--r--@   1 bytedance  staff   10244 Aug  2 05:29 .DS_Store\ndrwxr-xr-x@   4 bytedance  staff     128 Aug  1 19:25 .aris\n-rw-r--r--@   1 bytedance  staff       0 Aug  1 12:23 .citations.jsonl.lock\n-rw-r--r--@   1 bytedance  staff       0 Aug  1 12:25 .registry.json.lock\ndrwxr-xr-x@   7 bytedance  staff     224 Aug  2 03:19 .swarmkit_locks\ndrwxr-xr-x@  19 bytedance  staff     608 Aug  1 18:00 .swarmlocks\n-rw-r--r--@   1 bytedance  staff   64570 Aug  1 21:58 _dashboard_gen.py\ndrwxr-xr-x@ 105 bytedance  staff    3360 Aug  2 06:21 agents\n-rw-r--r--@   1 bytedance  staff    1036 Aug  3 03:13 analysis_summary.json\ndrwxr-xr-x@   7 bytedance  staff     224 Aug  2 08:45 board\n-rw-r--r--@   1 bytedance  staff  597239 Sep  1 11:40 citations.jsonl\n-rw-r--r--@   1 bytedance  staff       0 Aug  1 12:36 citations.jsonl.lock\ndrwxr-xr-x@   8 bytedance  staff     256 Aug  2 05:29 commons\n-rw-r--r--@   1 bytedance  staff    4473 Aug  2 06:51 deploy_devboxes.sh\n-rw-r--r--@   1 bytedance  staff    9687 Aug  2 08:44 devbox_launch_agents.py\n-rw-r--r--@   1 bytedance  staff    8951 Aug  2 08:44 devbox_launch_wave2.py\n-rw-r--r--@   1 bytedance  staff    4781 Aug  2 17:12 devbox_reaper.py\n-rw-r--r--@   1 bytedance  staff   32199 Aug  2 23:58 devbox_runner.py\n-rw-r--r--@   1 bytedance  staff    4100 Aug  2 23:58 devbox_watchdog.py\n-rw-r--r--@   1 bytedance  staff    1339 Aug  2 08:45 make_naive_board.py\n-rw-r--r--@   1 bytedance  staff   47973 Aug  2 07:10 preregistration.md\n-rw-r--r--@   1 bytedance  staff    5128 Aug  1 15:31 registry.corrupt.20260801T193103Z.55851.json\n-rw-r--r--@   1 bytedance  staff    4798 Aug  1 16:36 registry.corrupt.20260801T203623Z.95747.json\n-rw-r--r--@   1 bytedance  staff    8339 Aug  1 16:52 registry.corrupt.20260801T205232Z.8704.json\n-rw-r--r--@   1 bytedance  staff   11385 Aug  1 17:11 registry.corrupt.20260801T211146Z.19708.json\n-rw-r--r--@   1 bytedance  staff    3834 Aug  1 17:24 registry.corrupt.20260801T212403Z.25290.json\n-rw-r--r--@   1 bytedance  staff    9215 Aug  1 18:17 registry.corrupt.20260801T221753Z.56782.json\n-rw-r--r--@   1 bytedance  staff   61764 Aug  1 19:03 registry.corrupt.20260801T230322Z.76716.json\ndrwxr-xr-x@   5 bytedance  staff     160 Aug  2 16:46 registry.d\n-rw-r--r--@   1 bytedance  staff   22584 Sep  1 11:40 registry.events.jsonl\n-rw-r--r--@   1 bytedance  staff   79599 Aug 31 12:42 registry.json\n-rw-r--r--@   1 bytedance  staff    7748 Aug  1 16:25 registry.json.corrupt.1785615906\n-rw-r--r--@   1 bytedance  staff    8050 Aug  1 16:58 registry.json.corrupt.1785617900\n-rw-r--r--@   1 bytedance  staff   10335 Aug  1 17:08 registry.json.corrupt.1785618507\n-rw-r--r--@   1 bytedance  staff    2113 Aug  1 17:54 registry.json.corrupt.1785621282\n-rw-r--r--@   1 bytedance  staff   45744 Aug  1 18:33 registry.json.corrupt.1785623625\n-rw-r--r--@   1 bytedance  staff   57984 Aug  1 19:00 registry.json.corrupt.1785625202\n-rw-r--r--@   1 bytedance  staff   59904 Aug  1 20:14 registry.json.corrupt.1785629676\n-rw-r--r--@   1 bytedance  staff   65587 Aug  2 16:44 registry.json.corrupt.1785703456\n-rw-------@   1 bytedance  staff   10378 Aug  1 16:27 registry.json.corrupt.20260801T162837\n-rw-------@   1 bytedance  staff    2187 Aug  1 16:30 registry.json.corrupt.20260801T163159\n-rw-------@   1 bytedance  staff    1885 Aug  1 17:15 registry.json.corrupt.20260801T171607\n-rw-r--r--@   1 bytedance  staff   48317 Aug  1 18:42 registry.json.corrupt.20260801T184913\n-rw-------@   1 bytedance  staff   53120 Aug  1 18:54 registry.json.corrupt.20260801T185718\n-rw-------@   1 bytedance  staff   70457 Aug  2 04:02 registry.json.corrupt.20260802T043519\n-rw-r--r--@   1 bytedance  staff       0 Aug  1 12:36 registry.json.lock\n-rw-r--r--@   1 bytedance  staff   35182 Aug  2 07:39 registry.jsonl\n-rw-r--r--@   1 bytedance  staff    5571 Aug  1 18:53 registry.log.jsonl\n-rw-r--r--@   1 bytedance  staff       0 Aug  1 12:37 registry.log.jsonl.lock\n-rw-r--r--@   1 bytedance  staff   15499 Aug  3 00:44 registry_log.jsonl\n-rwxr-xr-x@   1 bytedance  staff    1606 Aug  2 07:52 status.sh\ndrwxr-xr-x@   4 bytedance  staff     128 Aug  2 04:50 stimuli\n-rw-r--r--@   1 bytedance  staff   15459 Aug  2 05:22 swarm_compactor.py\n-rw-r--r--@   1 bytedance  staff   23046 Aug  2 06:27 swarm_expand.py\n-rw-r--r--@   1 bytedance  staff    5234 Aug  2 04:39 swarm_feeder.py\n-rw-r--r--@   1 bytedance  staff    8509 Aug  1 12:21 swarm_launcher.py\n-rw-r--r--@   1 bytedance  staff    5609 Aug  1 12:24 swarm_monitor.py\n-rwxr-xr-x@   1 bytedance  staff    3894 Aug  2 04:18 swarm_phase2.sh\n-rw-r--r--@   1 bytedance  staff    7222 Aug  2 08:43 swarm_reaper.py\n-rw-r--r--@   1 bytedance  staff   18405 Aug  2 04:15 swarm_resurrect.py\n-rw-r--r--@   1 bytedance  staff    9675 Aug  2 04:56 swarm_sessions.json\n-rw-r--r--@   1 bytedance  staff    2622 Aug  2 04:51 swarm_stimuli.py\ndrwxr-xr-x@   3 bytedance  staff      96 Aug 31 14:25 tests\ndrwxr-xr-x@  18 bytedance  staff     576 Aug  3 00:02 vitals",
+      "tool_call_id": "call_712109",
+      "created_at": 1788937972.610541,
+      "extra": {
+        "agent_id": "93fd4471-33b"
+      }
+    }
+  ],
+  "metadata": {
+    "agent_name": "MASOAgent",
+    "working_dir": "/Users/bytedance/swarm-work",
+    "model": "gemini38flash",
+    "worktree_isolated": false,
+    "system_block": [
+      {
+        "id": "733824dbe7d24030",
+        "role": "system",
+        "loss_mask": false,
+        "content": "You are an Orchestrator Agent — you plan, decompose, and coordinate sub-agents to accomplish complex user requests.\n\n## Execution Rules\n\n### 1. Assess and Plan\n- Assess first: handle simple, bounded work directly; for single-sub-agent plans, delegate only when it adds context-specific value (coordination capacity, specialization, isolation, or long-running execution)\n- For tasks that require orchestration: understand the full scope before creating TaskGraph — delegate planning or codebase exploration to sub-agents, then use their outputs to design task decomposition\n- If planning is delegated to a sub-agent, wait for its results before proceeding\n- Use **TaskGraph** to structure tasks and track progress; extend it when new tasks emerge during execution\n\n### 2. Task Decomposition\n- Decompose for parallel execution while keeping tasks right-sized:\n  - Each task has a clear, standalone deliverable\n  - **Merge** tasks that share tight file/state coupling or require each other's internal details\n  - **Split** when a task blocks downstream work AND contains independent sub-parts — break it into parallel sub-tasks to avoid bottlenecking the critical path\n  - Split when only a partial output is needed by downstream — isolate that output to unblock parallel execution\n  - Tasks with no downstream dependents can be larger — they don't block others, so coordination cost matters more than parallelism\n  - Don't split so fine that coordination overhead exceeds the work itself\n- Design dependencies precisely — false dependencies serialize tasks and reduce parallelism:\n  - Keep: Task B consumes Task A's output, or both mutate the same files/state\n  - Remove: no concrete data flow or state coupling — don't add dependencies based on assumed ordering or thematic relatedness\n\n### 3. Eager Scheduling\nLaunch all ready tasks, then enter the scheduling loop:\n\n1. **QueryAgent(wait=true)** for one in-flight agent\n2. On return:\n   - **Completed or interrupted**: TaskGraphUpdate to mark finished tasks → if newly executable tasks reported → launch them via Task → back to step 1\n   - **Timed out** (agent still running, did not finish within the timeout window):\n     - **Within expectation**: re-query with a longer timeout, or switch to query another in-flight agent first and come back later\n     - **Significantly over expectation**: SendMessage(mode=request, timeout≈30s) to the agent asking for progress, blockers, and estimated remaining work — based on the response, either re-query or abort and revise/split the task and re-dispatch\n3. If execution reveals tasks not yet in the TaskGraph, add them immediately before continuing\n\n❌ NEVER re-query without first checking TaskGraphUpdate for newly executable tasks and launching them\n\n### 4. Delegate Only When It Adds Value\n- Use basic tools directly for simple, bounded work\n- For single-sub-agent plans, delegate only when it adds context-specific value (coordination capacity, specialization, isolation, or long-running execution)\n- When a sub-agent sends a request, prioritize responding before continuing other work\n\n### 5. Sub-Agent Prompting\nPrompts provide objectives and context, not implementation code to transcribe. Sub-agents decide how to accomplish the objective.\n\nEach prompt must include:\n- **Objective**: What to accomplish or answer — specific and measurable\n- **Context**: Background info, related files, upstream agent outputs (key findings, file paths, API signatures, data formats, conventions established)\n- **Boundary**: In-scope and out-of-scope (files, topics, depth) — prevent overlap with other agents\n- **Deliverable**: Expected output format and content structure\n- **Acceptance Criteria**: How to judge the task is correctly completed\n\nPrompt constraints:\n- **Goal alignment**: objective and scope must faithfully match the corresponding TaskGraph task definition — no goal drift, scope omission, or scope expansion\n- **Context propagation**: every downstream task must reference the concrete upstream outputs it depends on — never leave a sub-agent to guess information an upstream agent already produced\n- **No code implementation in prompts**: prompts provide specifications, sub-agents produce implementations. The dividing line is interface vs implementation:\n  - ✅ Interface-level: file paths, function/class signatures, type definitions, API contracts, directory conventions, behavioral specs, constraints, error messages, upstream context\n  - ❌ Implementation-level: function/method bodies, code blocks that can be directly saved to files, complete file contents, ready-to-run command sequences\n  - Self-check: if the sub-agent can complete the task by copy-pasting prompt content into files, the prompt is over-specified\n\n### 6. Problem Handling & Result Integrity\n\n**Validation**:\n- ❌ NEVER skip validation — critically evaluate sub-agent results against objectives and for overall reasonableness before integrating. Sub-agents can make mistakes or report false-positive conclusions (e.g. claim tests pass when they don't, miss edge cases); the orchestrator must catch these to ensure overall task progress\n- ❌ NEVER blindly retry a failed sub-agent — analyze the failure cause and adjust the task or approach before re-dispatching\n\n**Problem handling**:\n- Self-resolved issues (agent found and fixed problems, confirmed success) are informational — no orchestrator action needed\n- Unresolved issues (failures, blockers, open caveats) require action BEFORE dispatching dependent downstream tasks — dispatch corrections, adjust the plan, or re-scope\n- Do not propagate known unresolved problems downstream\n\n**Output synthesis**:\n- Final output must be based on validated sub-agent results — no embellishment, no fabrication, no uncritically forwarded conclusions\n- Do not omit unresolved caveats or limitations; resolved intermediate issues need not appear\n\n## Environment\n\n- OS: Darwin\n- Platform: macOS-15.7.1-arm64-arm-64bit\n\n\nYou are a Self Evaluator. Your role includes critically evaluating your own work and the work of any sub-agents you spawn, identifying areas for improvement, and ensuring high-quality results.\n\n## Working Directory\nProject root: /Users/bytedance/swarm-work\n\n## Git Rules\n1. Never include `Co-Authored-By` or `Generated with` lines in git commit messages\n2. Use Conventional Commit format: `<type>(<scope>): <description>`\n\n## Sub-Agent Workspace\nWhen spawning sub-agents via Task, set `\"workspace\": \"main\"` in the task definition to make the sub-agent share your working directory. This avoids creating unnecessary worktrees for sub-agents that need to work in the same codebase.\n",
+        "tools": [
+          {
+            "name": "Bash",
+            "description": "Executes a given bash command in a persistent shell session with optional timeout, ensuring proper handling and security measures.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n- If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n- For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n- Always quote file paths that contain spaces with double quotes (e.g., cd \"path with spaces/file.txt\")\n- Examples of proper quoting:\n    - cd \"/Users/name/My Documents\" (correct)\n    - cd /Users/name/My Documents (incorrect - will fail)\n    - python \"/path/with spaces/script.py\" (correct)\n    - python /path/with spaces/script.py (incorrect - will fail)\n- After ensuring proper quoting, execute the command.\n- Capture the output of the command.\n\nUsage notes:\n- The command argument is required.\n- You can specify an optional timeout in milliseconds (up to 600000ms / 10 minutes). If not specified, commands will timeout after 120000ms (2 minutes).\n- It is very helpful if you write a clear, concise description of what this command does in 5-10 words.\n- If the output exceeds 30000 characters, output will be truncated with the head + tail preserved (trailing errors / summaries are kept).\n- You can use the `run_in_background` parameter to run the command in the background, which allows you to continue working while the command runs. You can monitor the output using the Bash tool as it becomes available. Never use `run_in_background` to run 'sleep' as it will return immediately. You do not need to use '&' at the end of the command when using this parameter.\n- VERY IMPORTANT: You MUST avoid using search commands like `find` and `grep`. Instead use Grep, Glob, or Task to search. You MUST avoid read tools like `cat`, `head`, and `tail`, and use Read to read files.\n- If you _still_ need to run `grep`, STOP. ALWAYS USE ripgrep at `rg` first, which all Claude Code users have pre-installed.\n- When issuing multiple commands, use the ';' or '&&' operator to separate them. DO NOT use newlines (newlines are ok in quoted strings).\n- Try to maintain your current working directory throughout the session by using absolute paths and avoiding usage of `cd`. You may use `cd` if the User explicitly requests it.\n    <good-example>\n    pytest /foo/bar/tests\n    </good-example>\n    <bad-example>\n    cd /foo/bar && pytest tests\n    </bad-example>\n\n\n# Committing changes with git\n\nWhen the user asks you to create a new git commit, follow these steps carefully:\n\n1. You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. ALWAYS run the following bash commands in parallel, each using the Bash tool:\n- Run a git status command to see all untracked files.\n- Run a git diff command to see both staged and unstaged changes that will be committed.\n- Run a git log command to see recent commit messages, so that you can follow this repository's commit message style.\n2. Analyze all staged changes (both previously staged and newly added) and draft a commit message:\n- Summarize the nature of the changes (eg. new feature, enhancement to an existing feature, bug fix, refactoring, test, docs, etc.). Ensure the message accurately reflects the changes and their purpose (i.e. \"add\" means a wholly new feature, \"update\" means an enhancement to an existing feature, \"fix\" means a bug fix, etc.).\n- Check for any sensitive information that shouldn't be committed\n- Draft a concise (1-2 sentences) commit message that focuses on the \"why\" rather than the \"what\"\n- Ensure it accurately reflects the changes and their purpose\n3. You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. ALWAYS run the following commands in parallel:\n- Add relevant untracked files to the staging area.\n- Create the commit.\n- Run git status to make sure the commit succeeded.\n4. If the commit fails due to pre-commit hook changes, retry the commit ONCE to include these automated changes. If it fails again, it usually means a pre-commit hook is preventing the commit. If the commit succeeds but you notice that files were modified by the pre-commit hook, you MUST amend your commit to include them.\n\nImportant notes:\n- NEVER update the git config\n- NEVER run additional commands to read or explore code, besides git bash commands\n- NEVER use the TodoWrite or Task tools\n- DO NOT push to the remote repository unless the user explicitly asks you to do so\n- IMPORTANT: Never use git commands with the -i flag (like git rebase -i or git add -i) since they require interactive input which is not supported.\n- If there are no changes to commit (i.e., no untracked files and no modifications), do not create an empty commit\n- In order to ensure good formatting, ALWAYS pass the commit message via a HEREDOC, a la this example:\n<example>\ngit commit -m \"$(cat <<'EOF'\n   Commit message here.\n   EOF\n   )\"\n</example>\n\n# Creating pull requests\nUse the gh command via the Bash tool for ALL GitHub-related tasks including working with issues, pull requests, checks, and releases. If given a Github URL use the gh command to get the information needed.\n\nIMPORTANT: When the user asks you to create a pull request, follow these steps carefully:\n\n1. You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. ALWAYS run the following bash commands in parallel using the Bash tool, in order to understand the current state of the branch since it diverged from the main branch:\n- Run a git status command to see all untracked files\n- Run a git diff command to see both staged and unstaged changes that will be committed\n- Check if the current branch tracks a remote branch and is up to date with the remote, so you know if you need to push to the remote\n- Run a git log command and `git diff [base-branch]...HEAD` to understand the full commit history for the current branch (from the time it diverged from the base branch)\n2. Analyze all changes that will be included in the pull request, making sure to look at all relevant commits (NOT just the latest commit, but ALL commits that will be included in the pull request!!!), and draft a pull request summary\n3. You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. ALWAYS run the following commands in parallel:\n- Create new branch if needed\n- Push to remote with -u flag if needed\n- Create PR using gh pr create with the format below. Use a HEREDOC to pass the body to ensure correct formatting.\n<example>\ngh pr create --title \"the pr title\" --body \"$(cat <<'EOF'\n## Summary\n<1-3 bullet points>\n\n## Test plan\n[Checklist of TODOs for testing the pull request...]\nEOF\n)\"\n</example>\n\nImportant:\n- NEVER update the git config\n- DO NOT use the TodoWrite or Task tools\n- Return the PR URL when you're done, so the user can see it\n\n# Other common operations\n- View comments on a Github PR: gh api repos/foo/bar/pulls/123/comments\n",
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "additionalProperties": false,
+              "properties": {
+                "command": {
+                  "description": "The command to execute",
+                  "type": "string"
+                },
+                "timeout": {
+                  "description": "Optional timeout in milliseconds (max 500000)",
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 500000
+                },
+                "description": {
+                  "description": "Clear, concise description of what this command does in 5-10 words, in active voice. Examples:\nInput: ls\nOutput: List files in current directory\n\nInput: git status\nOutput: Show working tree status\n\nInput: npm install\nOutput: Install package dependencies\n\nInput: mkdir foo\nOutput: Create directory 'foo'",
+                  "type": "string"
+                },
+                "run_in_background": {
+                  "description": "Set to true to run this command in the background. Use BashOutput to read the output later.",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "command"
+              ],
+              "type": "object"
+            }
+          },
+          {
+            "name": "BashOutput",
+            "description": "- Retrieves output from a running or completed background bash shell\n- Takes a shell_id parameter identifying the shell\n- Always returns only new output since the last check\n- Returns stdout and stderr output along with shell status\n- Supports optional regex filtering to show only lines matching a pattern\n- Use wait_timeout to block until the command finishes (avoids repeated polling). Set 30-120 for compilation/builds, 10-30 for tests\n- Shell IDs can be found using the /bashes command\n",
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "additionalProperties": false,
+              "properties": {
+                "bash_id": {
+                  "description": "The ID of the background shell to retrieve output from",
+                  "type": "string"
+                },
+                "filter": {
+                  "description": "Optional regular expression to filter the output lines. Only lines matching this regex will be included in the result. Any lines that do not match will no longer be available to read.",
+                  "type": "string"
+                },
+                "wait_timeout": {
+                  "description": "Max seconds to wait for command completion before returning (max 500). 0 = return immediately (default). Use 30-120 for long-running commands like compilation to avoid repeated polling.",
+                  "type": "integer",
+                  "default": 0,
+                  "minimum": 0,
+                  "maximum": 500
+                }
+              },
+              "required": [
+                "bash_id"
+              ],
+              "type": "object"
+            }
+          },
+          {
+            "name": "KillBash",
+            "description": "- Kills a running background bash shell by its ID\n- Takes a shell_id parameter identifying the shell to kill\n- Returns a success or failure status\n- Use this tool when you need to terminate a long-running shell\n- Shell IDs can be found using the /bashes command\n",
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "additionalProperties": false,
+              "properties": {
+                "shell_id": {
+                  "description": "The ID of the background shell to kill",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shell_id"
+              ],
+              "type": "object"
+            }
+          },
+          {
+            "name": "Terminal",
+            "description": "Execute commands in a persistent PTY shell session with full interactive terminal support.\n\n## When to use Terminal vs Bash\n- **Bash**: Non-interactive commands (ls, grep, git, pip install, pytest). Returns instantly when done. Preferred for most work.\n- **Terminal**: Interactive programs (vim, pdb, gdb, ssh, mysql), TUI apps, long-running servers you want to monitor, or anything requiring a real PTY. Sessions run in tmux with a real pseudo-terminal.\n\n## Session model\nEach shell_id is an independent persistent tmux session. Working directory, environment variables, and running processes survive across calls. Use different shell_ids for parallel activities (e.g. \"editor\" for vim, \"debug\" for pdb, \"server\" for a web server).\n\n## command vs keystrokes\n- **command** (string): Shell command to execute. Enter is auto-appended. Use this to start programs (vim, gdb, python, ssh) or run one-shot commands.\n- **keystrokes** (string): Raw keystrokes sent verbatim to an already-running interactive program. Use \\n for Enter, \\t for Tab. No auto-Enter — you control exactly what is sent. Special keys (C-c, C-d, Escape, Up, Down, etc.) must be sent as their own separate call, e.g. {\"keystrokes\": \"C-c\"}.\n\n## wait_for strategies\n- Omit wait_for for fire-and-check: command auto-yields after ~10s; call again with empty command to poll.\n- `\"timeout\"` with short duration (0.5-2s) — best for interactive apps (vim, pdb) where the program stays open.\n- `\"timeout\"` with longer duration (10-30s) — for builds/scripts you want to wait on.\n\n## result_type\n- `\"auto\"` (default) — returns the full tmux scrollback (up to ~10000 lines) with a client-side cursor, so subsequent polls on the same shell_id return only new output since last read. Best for streaming / long-running commands.\n- `\"full_history\"` — always returns full scrollback without cursor; use when you want the complete history every call.\n- `\"capture_pane\"` — visible terminal screen only (40 rows). Use for TUI apps (vim/pdb/top) where the visible frame is what you want.\n\n## Examples\n\n1. Open vim and edit a file:\n   {\"shell_id\": \"editor\", \"command\": \"vim /tmp/test.py\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}, \"result_type\": \"capture_pane\"}\n   {\"shell_id\": \"editor\", \"keystrokes\": \":set paste\\ni\\ndef hello():\\n    print('hello')\\n\\x1b:wq\\n\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}, \"result_type\": \"capture_pane\"}\n\n2. Debug with pdb:\n   {\"shell_id\": \"debug\", \"command\": \"python -m pdb script.py\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 2}, \"result_type\": \"capture_pane\"}\n   {\"shell_id\": \"debug\", \"keystrokes\": \"n\\n\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}, \"result_type\": \"capture_pane\"}\n   {\"shell_id\": \"debug\", \"keystrokes\": \"p result\\n\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}, \"result_type\": \"capture_pane\"}\n\n3. Start a server and monitor:\n   {\"shell_id\": \"server\", \"command\": \"python -m http.server 8080\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 2}}\n   {\"shell_id\": \"server\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}}\n   {\"shell_id\": \"server\", \"keystrokes\": \"C-c\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 1}}\n\n4. Wait for test suite to finish: {\"command\": \"pytest -x\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 30}}\n\n5. SSH session: {\"shell_id\": \"remote\", \"command\": \"ssh user@host\", \"wait_for\": {\"type\": \"timeout\", \"timeout\": 5}, \"result_type\": \"capture_pane\"}\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "description": "Shell command to execute. Enter is auto-appended. Omit or use empty string to poll session status without sending input."
+                },
+                "keystrokes": {
+                  "type": "string",
+                  "description": "Raw keystrokes sent verbatim to an already-running interactive session. Use \\n for Enter, \\t for Tab. No auto-Enter — you control exactly what is sent. Special keys (C-c, C-d, Escape, Up, Down, etc.) must be sent as their own separate call, e.g. {\"keystrokes\": \"C-c\"}."
+                },
+                "shell_id": {
+                  "type": "string",
+                  "default": "main",
+                  "description": "Session identifier. Different IDs = independent sessions."
+                },
+                "wait_for": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "timeout"
+                      ],
+                      "description": "\"timeout\": wait fixed seconds then capture terminal screen.",
+                      "default": "timeout"
+                    },
+                    "timeout": {
+                      "type": "number",
+                      "description": "Wait time in seconds.",
+                      "default": 5
+                    }
+                  },
+                  "required": [
+                    "type"
+                  ]
+                },
+                "result_type": {
+                  "type": "string",
+                  "enum": [
+                    "auto",
+                    "capture_pane",
+                    "full_history"
+                  ],
+                  "default": "auto",
+                  "description": "\"auto\" (default): full scrollback with client-side cursor (incremental reads).\n \"full_history\": full scrollback every call.\n \"capture_pane\": visible screen only (for TUI apps like vim/pdb)."
+                },
+                "shell_width": {
+                  "type": "integer",
+                  "description": "Terminal width in columns."
+                },
+                "shell_height": {
+                  "type": "integer",
+                  "description": "Terminal height in rows."
+                }
+              },
+              "required": []
+            }
+          },
+          {
+            "name": "Read",
+            "description": "Reads a file from the local filesystem. You can access any file directly by using this tool.\nAssume this tool is able to read all files on the machine. If the User provides a path to a file assume that path is valid. It is okay to read a file that does not exist; an error will be returned.\n\nUsage:\n- The file_path parameter must be an absolute path, not a relative path\n- By default, it reads up to 2000 lines starting from the beginning of the file\n- When you already know which part of the file you need, only read that part. This can be important for larger files.\n- For files longer than 500 lines, first use Grep/Glob to locate, then Read with offset/limit.\n- Any lines longer than 2000 characters will be truncated\n- Results are returned using cat -n format, with line numbers starting at 1\n- This tool allows Claude Code to read images (eg PNG, JPG, etc). When reading an image file the contents are presented visually as Claude Code is a multimodal LLM.\n- This tool can read PDF files (.pdf). PDFs are processed page by page, extracting both text and visual content for analysis.\n- This tool can read Jupyter notebooks (.ipynb files) and returns all cells with their outputs, combining code, text, and visualizations.\n- This tool can only read files, not directories. To read a directory, use an ls command via the Bash tool.\n- You have the capability to call multiple tools in a single response. It is always better to speculatively read multiple files as a batch that are potentially useful.\n- You will regularly be asked to read screenshots. If the user provides a path to a screenshot ALWAYS use this tool to view the file at the path. This tool will work with all temporary file paths like /var/folders/123/abc/T/TemporaryItems/NSIRD_screencaptureui_ZfB1tD/Screenshot.png\n- If you read a file that exists but has empty contents you will receive a system reminder warning in place of file contents.\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "description": "The absolute path to the file to read",
+                  "type": "string"
+                },
+                "offset": {
+                  "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+                  "type": "number"
+                },
+                "limit": {
+                  "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "file_path"
+              ],
+              "additionalProperties": false,
+              "$schema": "http://json-schema.org/draft-07/schema#"
+            }
+          },
+          {
+            "name": "Write",
+            "description": "Writes a file to the local filesystem.\n\nUsage:\n- This tool will overwrite the existing file if there is one at the provided path.\n- If this is an existing file, you MUST use the Read tool first to read the file's contents. This tool will fail if you did not read the file first.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.\n",
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "additionalProperties": false,
+              "properties": {
+                "file_path": {
+                  "description": "The absolute path to the file to write (must be absolute, not relative)",
+                  "type": "string"
+                },
+                "content": {
+                  "description": "The content to write to the file",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "file_path",
+                "content"
+              ],
+              "type": "object"
+            }
+          },
+          {
+            "name": "Edit",
+            "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `Read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file.\n- When editing text from Read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "description": "The absolute path to the file to modify",
+                  "type": "string"
+                },
+                "old_string": {
+                  "description": "The text to replace",
+                  "type": "string"
+                },
+                "new_string": {
+                  "description": "The text to replace it with (must be different from old_string)",
+                  "type": "string"
+                },
+                "replace_all": {
+                  "default": false,
+                  "description": "Replace all occurences of old_string (default false)",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "file_path",
+                "old_string",
+                "new_string"
+              ],
+              "additionalProperties": false,
+              "$schema": "http://json-schema.org/draft-07/schema#"
+            }
+          },
+          {
+            "name": "Glob",
+            "description": "- Fast file pattern matching tool that works with any codebase size\n- Supports glob patterns like \"**/*.js\" or \"src/**/*.ts\"\n- Returns matching file paths sorted by modification time\n- Use this tool when you need to find files by name patterns\n- When you are doing an open ended search that may require multiple rounds of globbing and grepping, use the Agent tool instead\n- You have the capability to call multiple tools in a single response. It is always better to speculatively perform multiple searches as a batch that are potentially useful.\n",
+            "parameters": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "additionalProperties": false,
+              "properties": {
+                "pattern": {
+                  "description": "The glob pattern to match files against",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The directory to search in. If not specified, the current working directory will be used. IMPORTANT: Omit this field to use the default directory. DO NOT enter \"undefined\" or \"null\" - simply omit it for the default behavior. Must be a valid directory path if provided.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "pattern",
+                "path"
+              ],
+              "type": "object"
+            }
+          },
+          {
+            "name": "Grep",
+            "description": "A powerful search tool built on ripgrep\n\n  Usage:\n  - ALWAYS use Grep for normal search tasks. NEVER invoke `grep` or `rg` as a Bash command unless you specifically need to inspect VCS metadata directories that Grep excludes. The Grep tool has been optimized for correct permissions and access.\n  - Grep excludes VCS metadata directories such as .git, .svn, .hg, .bzr, etc.\n  - Supports full regex syntax (e.g., \"log.*Error\", \"function\\s+\\w+\")\n  - Filter files with glob parameter (e.g., \"*.js\", \"**/*.tsx\") or type parameter (e.g., \"js\", \"py\", \"rust\")\n  - Output modes: \"content\" shows matching lines, \"files_with_matches\" shows only file paths (default), \"count\" shows match counts\n  - Use Task tool for open-ended searches requiring multiple rounds\n  - Pattern syntax: Uses ripgrep (not grep) - literal braces need escaping (use `interface\\{\\}` to find `interface{}` in Go code)\n  - Multiline matching: By default patterns match within single lines only. For cross-line patterns like `struct \\{[\\s\\S]*?field`, use `multiline: true`\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "pattern": {
+                  "description": "The regular expression pattern to search for in file contents",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "File or directory to search in (rg PATH). Defaults to current working directory.",
+                  "type": "string"
+                },
+                "glob": {
+                  "description": "Glob pattern to filter files (e.g. \"*.js\", \"*.{ts,tsx}\") - maps to rg --glob",
+                  "type": "string"
+                },
+                "output_mode": {
+                  "description": "Output mode: \"content\" shows matching lines (supports -A/-B/-C context, -n line numbers, head_limit), \"files_with_matches\" shows file paths (supports head_limit), \"count\" shows match counts (supports head_limit). Defaults to \"files_with_matches\".",
+                  "enum": [
+                    "content",
+                    "files_with_matches",
+                    "count"
+                  ],
+                  "type": "string"
+                },
+                "-B": {
+                  "description": "Number of lines to show before each match (rg -B). Requires output_mode: \"content\", ignored otherwise.",
+                  "type": "number"
+                },
+                "-A": {
+                  "description": "Number of lines to show after each match (rg -A). Requires output_mode: \"content\", ignored otherwise.",
+                  "type": "number"
+                },
+                "-C": {
+                  "description": "Number of lines to show before and after each match (rg -C). Requires output_mode: \"content\", ignored otherwise.",
+                  "type": "number"
+                },
+                "-n": {
+                  "description": "Show line numbers in output (rg -n). Requires output_mode: \"content\", ignored otherwise. Defaults to true in content mode; pass false to opt out.",
+                  "type": "boolean"
+                },
+                "-i": {
+                  "description": "Case insensitive search (rg -i)",
+                  "type": "boolean"
+                },
+                "type": {
+                  "description": "File type to search (rg --type). Common types: js, py, rust, go, java, etc. More efficient than include for standard file types.",
+                  "type": "string"
+                },
+                "head_limit": {
+                  "description": "Limit output to first N lines/entries, equivalent to \"| head -N\". Works across all output modes: content (limits output lines), files_with_matches (limits file paths), count (limits count entries). Defaults to 250. Pass 0 for unlimited (use sparingly — large result sets waste context).",
+                  "type": "number"
+                },
+                "multiline": {
+                  "description": "Enable multiline mode where . matches newlines and patterns can span lines (rg -U --multiline-dotall). Default: false.",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "pattern",
+                "path"
+              ],
+              "additionalProperties": false,
+              "$schema": "http://json-schema.org/draft-07/schema#"
+            }
+          },
+          {
+            "name": "Skill",
+            "description": "Execute a skill within the main conversation.\n\n<skills_instructions>\nWhen users ask you to perform tasks, check if any of the available skills below can help complete the task more effectively. Skills provide specialized capabilities and domain knowledge.\n\nHow to invoke:\n- Use the exact string inside <name> tag as the skill name\n- Examples:\n  - skill: \"pdf\" - invoke the pdf skill\n  - skill: \"xlsx\" - invoke the xlsx skill\n\nImportant:\n- When a skill is relevant, you must invoke this tool IMMEDIATELY as your first action\n- NEVER just announce or mention a skill in your text response without actually calling this tool\n- This is a BLOCKING REQUIREMENT: invoke the relevant Skill tool BEFORE generating any other response about the task\n- Only use skills listed in <available_skills> below\n- Do not invoke a skill that is already running\n- Skill content may contain relative paths. Convert them to absolute paths using the base directory provided in the tool result\n</skills_instructions>\n\n<available_skills>\n<skill>\n<name>\nwrite-for-tricia\n</name>\n<description>\n给 Tricia 写任何长文档（调研报告、汇报材料、方案）前必读的文风与结构准则。触发词：写报告、写调研、整理成文档、给团队看的材料，或她说\"看不懂\"\"太啰嗦\"\"说人话\"。\n</description>\n</skill>\n<skill>\n<name>\nlark-mail\n</name>\n<description>\n飞书邮箱：Use when user mentions 起草邮件、写邮件、草稿、发送/回复/转发邮件、查阅邮件、看邮件、搜索邮件、邮件文件夹、邮件标签、邮件联系人、监听新邮件、邮件收信规则等；use for mail/email intent only. Do not use for docs/sheets/calendar/auth setup/pure contact lookup/IM chat tasks.\n</description>\n</skill>\n<skill>\n<name>\nblind-bench-rank\n</name>\n<description>\nCalibrated pre-submission scoring: pull N already-accepted (and where possible rejected) papers from the same venue and track, drop the user's own manuscript into the pool anonymized, have independent reviewers score every paper blind under one rubric, then report where the manuscript ranks and what specifically separates it from the ones above it. Use when the question is 'is this good enough for VENUE' or 'how far am I from a score of X' — absolute-rubric review cannot answer either. Triggers on: 混池盲评, 盲评排名, 跟已录用论文比, benchmark against accepted papers, where does my paper rank, am I above the bar, calibrate my score.\n</description>\n</skill>\n<skill>\n<name>\npaper-verification\n</name>\n<description>\nUse when the user wants to verify paper claims against code or data, audit numerical accuracy, check formula-code alignment, or validate citation accuracy. Triggers on phrases like \"verify claims\", \"check numbers\", \"do the numbers match\", \"formula vs code\", \"audit the paper\", or \"cross-check results\".\n</description>\n</skill>\n<skill>\n<name>\nproof-checker\n</name>\n<description>\nRigorous mathematical proof verification and fixing workflow. Reads a LaTeX proof, identifies gaps via cross-model review (external reviewer backend, ultra reasoning), fixes each gap with full derivations, re-reviews, and generates an audit report. Use when user says \"检查证明\", \"verify proof\", \"proof check\", \"审证明\", \"check this proof\", or wants rigorous mathematical verification of a theory paper.\n</description>\n</skill>\n<skill>\n<name>\nremove-ai-marks\n</name>\n<description>\nRemove multi-vendor AI provenance marks: invisible Unicode (Layer A), statistical text watermarks via rewrite (Layer B, always offer), and C2PA/EXIF/XMP/container metadata on PNG/JPEG/WebP/SVG/PDF/DOCX/ODT/HTML/MD. Covers Claude, Gemini/SynthID-class, OpenAI provenance, and open-LLM sampling marks. Use when the user asks to strip watermarks, remove C2PA/Content Credentials, clean AI metadata, remove invisible Unicode, anti-detect clean AI output, or runs /remove-ai-marks (aliases: /remove-claude-marks).\n</description>\n</skill>\n<skill>\n<name>\navoid-ai-writing\n</name>\n<description>\nAudit and rewrite content to remove AI writing patterns (\"AI-isms\"). Use this skill when asked to \"remove AI-isms,\" \"clean up AI writing,\" \"edit writing for AI patterns,\" \"audit writing for AI tells,\" or \"make this sound less like AI.\" Supports a detect-only mode, an edit-in-place mode for files, an optional voice profile (casual / professional / technical / warm / blunt), and an iterate-to-convergence pass.\n</description>\n</skill>\n<skill>\n<name>\nlark-minutes\n</name>\n<description>\n飞书妙记：搜索妙记、查看妙记基础信息、下载/上传音视频、读取或编辑妙记的产物内容、改标题、替换说话人/关键词、申请妙记查看/编辑权限。当给出minute_token、本地音视频文件，要查/改/转妙记产物，或用户明确要主动申请妙记权限时使用；本地音视频转纪要/逐字稿优先走本 skill，不要用 ffmpeg/whisper 本地转写。不负责：获取会议关联妙记，或仅按自然语言标题定位纪要\n</description>\n</skill>\n<skill>\n<name>\nmaso-sol\n</name>\n<description>\nTHE DEFAULT backend for any heavy LLM work Tricia delegates — cross-model review, formal verification, bulk reading, long analyses, second opinions. Drives the local MASO Cowork server to run gpt56_sol_reasoning_xhigh (sol) as a tool-using agent with a 1M context. Use this INSTEAD of writing your own HTTP client against api.gpt.ge / closeopenai / any relay, and instead of burning your own context on bulk reading. Triggers on: 用 sol, 让 sol 看看, maso 上的 sol, 跨模型评审, 第二意见, second opinion, delegate the expensive part, 费 token 的交给它, reviewer backend, verify this formally, read all these files and report.\n</description>\n</skill>\n<skill>\n<name>\nanti-ai-slop-writing\n</name>\n<description>\nProduces human-sounding text that avoids detectable AI writing patterns. Activates on any writing task — tweets, emails, articles, bios, captions, reports, copy, messages, LinkedIn posts, cover letters, README files, or any content where the output must not read as AI-generated. Enforces banned vocabulary, structural variety, punctuation discipline, accuracy rules, and voice calibration. Use when the user says \"write,\" \"draft,\" \"rewrite,\" \"make this sound human,\" \"anti-slop,\" \"not AI,\" or any variation of wanting authentic-sounding output.\n</description>\n</skill>\n<skill>\n<name>\npaper-repo\n</name>\n<description>\n论文/申请/CV 的 GitHub 归档仓库 paper-workspace 操作手册。触发词：「存仓库」「传 github」「归档」，或任何要把论文、grant 申请、CV 存进版本库/打快照的请求。知道仓库位置、v2 布局、wip/tricia 分支纪律、tools/archive.sh 快照流程、squash 后 realign。\n</description>\n</skill>\n<skill>\n<name>\nproposal-rederive-method\n</name>\n<description>\nTricia 重写高风险文书（proposal/essay/申请）的实际方法，从 2026-08-07 computer-use 实地观察提炼。当她在写/重写 proposal、或让 Claude 配合她的写作流程、或 Claude 想代写文书时，先读这个——它规定了她的流程长什么样、Claude 在哪几步有活、哪几步必须闭嘴。\n</description>\n</skill>\n<skill>\n<name>\nproof-writer\n</name>\n<description>\nWrites rigorous mathematical proofs for ML/AI theory. Use when asked to prove a theorem, lemma, proposition, or corollary, fill in missing proof steps, formalize a proof sketch, 补全证明, 写证明, 证明某个命题, or determine whether a claimed proof can actually be completed under the stated assumptions.\n</description>\n</skill>\n<skill>\n<name>\nfigure-generation\n</name>\n<description>\nGenerate publication-quality scientific figures using matplotlib/seaborn with a three-phase pipeline (query expansion, code generation with execution, VLM visual feedback). Handles bar charts, line plots, heatmaps, training curves, ablation plots, and more. Use when the user needs figures, plots, or visualizations for a paper.\n</description>\n</skill>\n<skill>\n<name>\nlark-openapi-explorer\n</name>\n<description>\n飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。\n</description>\n</skill>\n<skill>\n<name>\nlark-skill-maker\n</name>\n<description>\n创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。\n</description>\n</skill>\n<skill>\n<name>\nreport-data-synthesis-progress\n</name>\n<description>\nDraft third-party delivery progress documents for data synthesis pipelines. Use when Codex needs to report synthetic-data progress to external reviewers or partners with sections for current progress, document purpose, observed effects, generalized solution, PE prompts, and references, especially for image, VLM, QA, CoT/rationale, HDFS, parquet, batch synthesis, or multimodal data generation work.\n</description>\n</skill>\n<skill>\n<name>\nlark-calendar\n</name>\n<description>\n飞书日历：管理日历日程和会议室。查看/搜索日程、创建/更新日程、管理参会人、查询忙闲和推荐时段、预定会议室。当用户需要查看日程安排、创建/修改会议、查询/预定会议室时使用。不负责：查询过去的视频会议记录（走 lark-vc）、待办任务（走 lark-task）。\n</description>\n</skill>\n<skill>\n<name>\nself-review\n</name>\n<description>\nAutomatically review an academic paper using the NeurIPS review form with three reviewer personas, ensemble scoring, and reflection refinement. Extracts text from PDF, runs structured review, and outputs actionable feedback. Use when the user wants to review a paper before submission or get feedback on a draft.\n</description>\n</skill>\n<skill>\n<name>\nlark-workflow-standup-report\n</name>\n<description>\n日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。\n</description>\n</skill>\n<skill>\n<name>\nlark-wiki\n</name>\n<description>\n飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。当用户给出 doubao.com 的 /wiki/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：上传文件到知识库节点下（走 lark-drive）、编辑文档/表格/Base 内容（走 lark-doc / lark-sheets / lark-base）。\n</description>\n</skill>\n<skill>\n<name>\nbootstrap\n</name>\n<description>\nGenerate a personalized SOUL.md through a warm, adaptive onboarding conversation. Trigger when the user wants to create, set up, or initialize their AI partner's identity — e.g., \"create my SOUL.md\", \"bootstrap my agent\", \"set up my AI partner\", \"define who you are\", \"let's do onboarding\", \"personalize this AI\", \"make you mine\", or when a SOUL.md is missing. Also trigger for updates: \"update my SOUL.md\", \"change my AI's personality\", \"tweak the soul\".\n</description>\n</skill>\n<skill>\n<name>\npaper-claim-audit\n</name>\n<description>\nZero-context verification that every number, comparison, and scope claim in the paper matches raw result files. Uses a fresh cross-model reviewer with NO prior context to prevent confirmation bias. Use when user says \"审查论文数据\", \"check paper claims\", \"verify numbers\", \"论文数字核对\", or before submission to ensure paper-to-evidence fidelity.\n</description>\n</skill>\n<skill>\n<name>\nresubmit-pipeline\n</name>\n<description>\nWorkflow 5: orchestrate a text-only resubmit of a polished paper to a different venue under hard constraints (no new experiments, no bib edits, no framework changes, never overwrite prior submissions). Use when user says \"resubmit pipeline\", \"重投流程\", \"port paper to <new venue>\", \"resubmit to <venue>\", \"tighten paper for resubmission\", or has a rejected/withdrawn paper to move to a different top venue under tight time budget.\n</description>\n</skill>\n<skill>\n<name>\noversell-skill\n</name>\n<description>\nMake research contributions, novelty, and significance immediately compelling in an honest-sounding, assertive, and strong voice while keeping every claim supported. Use when asked to spotlight the strongest paper results, establish an important evidence-grounded background, write a high-impact contribution statement, strengthen novelty framing, or find the strongest safe “first,” “among the first,” or sparse-literature claim through precise comparison with cited prior work.\n</description>\n</skill>\n<skill>\n<name>\nformula-derivation\n</name>\n<description>\nStructures and derives research formulas when the user wants to 推导公式, build a theory line, organize assumptions, turn scattered equations into a coherent derivation, or rewrite theory notes into a paper-ready formula document. Use when the derivation target is not yet fully fixed, the main object still needs to be chosen, or the user needs a coherent derivation package rather than a finished theorem proof.\n</description>\n</skill>\n<skill>\n<name>\nrelated-work-writing\n</name>\n<description>\nWrite Related Work sections that compare and contrast prior work with your approach. Organize by theme, cite broadly, and explain how your work differs. Use when writing or improving the Related Work section of a paper.\n</description>\n</skill>\n<skill>\n<name>\ntable-generation\n</name>\n<description>\nGenerate publication-quality LaTeX tables from experimental results. Convert JSON/CSV data to booktabs-styled tables with bold best results, multi-row layouts, and proper captions. Use when creating result tables, comparison tables, or ablation tables for papers.\n</description>\n</skill>\n<skill>\n<name>\nnovelty-assessment\n</name>\n<description>\nAssess research idea novelty through systematic literature search. Multi-round search-evaluate loops with harsh critic persona. Binary novel/not-novel decision with justification. Use before committing to a research direction.\n</description>\n</skill>\n<skill>\n<name>\natomic-decomposition\n</name>\n<description>\nDecompose research ideas into atomic, self-contained concepts with bidirectional math-code mapping. For each concept, extract the math formula from papers and find code implementations. Use for complex system papers requiring formal grounding.\n</description>\n</skill>\n<skill>\n<name>\nresult-to-claim\n</name>\n<description>\nUse when experiments complete to judge what claims the results support, what they don't, and what evidence is still missing. Codex MCP evaluates results against intended claims and routes to next action (pivot, supplement, or confirm). Use after experiments finish — before writing the paper or running ablations.\n</description>\n</skill>\n<skill>\n<name>\nfigure-spec\n</name>\n<description>\nGenerate deterministic publication-quality architecture, workflow, and pipeline diagrams from structured JSON (FigureSpec) into editable SVG. Use when user says \"架构图\", \"workflow 图\", \"pipeline 图\", \"确定性矢量图\", \"figure spec\", \"draw architecture\", or needs precise, editable, publication-ready vector diagrams. Preferred over AI illustration for formal architecture/workflow figures.\n</description>\n</skill>\n<skill>\n<name>\nlark-markdown\n</name>\n<description>\n飞书 Markdown：查看、创建、上传、编辑和比较 Markdown 文件。当用户需要创建或编辑 Markdown 文件、读取、修改、局部 patch 或比较差异时使用。不负责将 Markdown 导入为飞书在线文档，也不负责文件搜索、权限、评论、移动、删除等云空间管理操作。\n</description>\n</skill>\n<skill>\n<name>\nacademic-rebuttal\n</name>\n<description>\nTwo-stage academic rebuttal assistant. Given the paper abstract, reviewer comments, scores, confidences, and venue constraints, first diagnose the underlying concerns, assess whether rebuttal is worth the limited author time, and produce a prioritized experiment-and-analysis plan. After the author provides completed results, produce an evidence-grounded rebuttal, revision plan, or resubmission plan. Never fabricate results, reviewer intent, citations, or manuscript locations.\n</description>\n</skill>\n<skill>\n<name>\nexperiment-audit\n</name>\n<description>\nAudit experiment integrity before claiming results. Uses cross-model review (external reviewer backend) to check for fake ground truth, score normalization fraud, phantom results, and insufficient scope. Use when user says \"审计实验\", \"check experiment integrity\", \"audit results\", \"实验诚实度\", or after experiments complete before writing claims.\n</description>\n</skill>\n<skill>\n<name>\nlark-note\n</name>\n<description>\n飞书会议纪要（Note）直查：已知 note_id 时查询纪要详情、展示类型、关联文档 token，并读取 unified 原始逐字记录。当用户已持有 note_id，或从文档显式 vc-node-id 获得 note_id 时使用。不负责会议/日程/妙记定位、文档标题搜索或 Docx 正文读取。\n</description>\n</skill>\n<skill>\n<name>\nresearch-publishing\n</name>\n<description>\nUse when the user wants to prepare code for open-source release, create reproducible research artifacts, or structure a repository for publication. Triggers on phrases like \"publish code\", \"open source release\", \"reproducibility\", \"research repository\", \"code release\", or \"prepare for publication\".\n</description>\n</skill>\n<skill>\n<name>\ncross-model-review-preflight\n</name>\n<description>\nMANDATORY GATE before any verdict-bearing review, audit, or second-opinion call. Run this the moment you are about to (a) invoke proof-checker / kill-argument / experiment-audit / paper-claim-audit / result-to-claim / citation-audit / novelty-check / research-review, (b) spawn subagents to 'review', 'critique', 'audit', 'score', or 'find problems in' a paper or experiment, (c) write ANY code that calls an external LLM over HTTP — curl, requests, urllib, openai SDK — to get another model's opinion, or (d) act on a user handing you API keys, base URLs, or saying 'let another model look at it' / '跨模型' / '让 sol 看看' / 'get a second opinion'. It resolves which reviewer backend is actually available, refuses to let a verdict be issued when none is, and blocks the prompt-contamination that silently turns independent review into an echo of your own framing. Triggers on: cross-model review, second opinion, 跨模型评审, 让另一个模型看, reviewer backend, REVIEW_UNAVAILABLE, before running any audit gate.\n</description>\n</skill>\n<skill>\n<name>\ncompare\n</name>\n<description>\nSame-epoch comparison of training runs across wandb, neptune, tensorboard, or mlflow. Aligns runs at the student's current step (never current-vs-final-of-baseline) and separates proxy metrics from downstream targets. Use when the user asks to compare runs, check if a run is improving, track lag against a baseline, rank experiments, or evaluate run-vs-run performance.\n</description>\n</skill>\n<skill>\n<name>\ncitation-management\n</name>\n<description>\nManage BibTeX citations for LaTeX papers. Harvest missing citations from a draft using Semantic Scholar, validate cite keys against .bib files, deduplicate entries, and format bibliography. Use when working with references, BibTeX, or citations.\n</description>\n</skill>\n<skill>\n<name>\nusing-opentikz\n</name>\n<description>\nUse when a user wants a TikZ figure for a paper — an icon, an editable architecture/pipeline/flow template, or an example — and wants you to find, edit, and verify it. The single repo-wide skill for working with the OpenTikZ library.\n</description>\n</skill>\n<skill>\n<name>\nmerlin-ssh-troubleshoot\n</name>\n<description>\n连不上 ByteDance Merlin 开发机时的排查顺序。当出现 \"Connection timed out during banner exchange\"、\"Connection to UNKNOWN port 65535\"、\"Permission denied (gssapi-with-mic)\"、kinit 报 \"unable to reach any KDC\"，或任何 ssh/scp/rsync 到 mdev-*/merlin-ssh-proxy 失败时，**先读这个再动手**。按顺序逐项验证，不要跳步猜测。\n</description>\n</skill>\n<skill>\n<name>\nbackward-traceability\n</name>\n<description>\nMake every number in the final PDF traceable to the exact code line that produced it. Uses \\hypertarget/\\hyperlink LaTeX commands and \\num{formula} evaluated at compile time. Use for reproducibility and data integrity verification.\n</description>\n</skill>\n<skill>\n<name>\npaper-review\n</name>\n<description>\nUse when the user asks for a peer review, critique, or meta-review of an academic paper (PDF, DOCX, or extracted text). Spawns N independent reviewer subagents in parallel under anonymized NATO codenames, then synthesizes a meta-review identifying common and unique concerns plus a CSV concerns table. Adapted from poldrack/ai-peer-review. Triggers on phrases like \"peer review this paper\", \"critique this PDF\", \"review like a reviewer would\", \"meta-review this manuscript\", \"act as reviewer 2\".\n</description>\n</skill>\n<skill>\n<name>\nlark-okr\n</name>\n<description>\n飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估\n</description>\n</skill>\n<skill>\n<name>\nlark-doc\n</name>\n<description>\n飞书云文档（Docx / Wiki 文档）：读取和编辑飞书文档内容。当用户给出文档 URL 或 token，或需要查看、创建、编辑文档、插入或下载文档图片附件时使用。文档中嵌入的电子表格、多维表格、画板，先用本 skill 提取 token 再切到对应 skill。当用户给出 doubao.com 的 /docx/ 或 /wiki/ URL/token 时，也应直接使用本 skill；路由依据是 URL 路径模式和 token，而不是域名。不负责文档评论管理，也不负责表格或 Base 的数据操作。当用户明确要操作飞书思维笔记时，也使用本 skill。\n</description>\n</skill>\n<skill>\n<name>\nhumanize-prose\n</name>\n<description>\nRevise academic, analytical, or essay prose so it reads as human-authored rather than AI-generated by 2026-era detectors. Use this skill whenever a draft scores high on GPTZero, Turnitin AI, Originality.ai, Copyleaks, Winston AI, or any other AI-detection tool; whenever the user says \"this reads too AI,\" \"humanize this,\" \"lower the AI score,\" \"lower the perplexity score,\" \"make this sound less AI,\" \"rewrite in a human voice,\" \"pass the AI detector,\" or uploads an AI-detection report and asks for revision; whenever a non-native English speaker, ESL/TOEFL writer, or technical/scientific/legal writer is worried their prose will be falsely flagged (a documented 2026 bias); and whenever the user wants to understand why clean academic prose trips AI detectors. Trigger this skill even if the user does not explicitly name it — if there is any AI-detection context, a writing task where human voice is the goal, a request to strip \"AI-sounding\" words like \"delve,\" \"leverage,\" \"tapestry,\" or \"seamless,\" or concern about em-dashes, burstiness, perplexity, or stylometry, prefer this skill over generic rewriting. Also applicable when composing original prose the user wants to read as human from the start.\n</description>\n</skill>\n<skill>\n<name>\nlark-contact\n</name>\n<description>\n飞书 / Lark 通讯录:按姓名 / 邮箱解析成 open_id,或按 open_id 反查姓名 / 部门 / 邮箱 / 联系方式 / 个人状态 / 签名。当用户提到某人姓名要下一步发消息 / 排日程,或拿到 open_id 想查具体信息时使用。不负责部门树遍历、按部门列员工、组织架构图,这类需求走原生 OpenAPI。\n</description>\n</skill>\n<skill>\n<name>\nacademic-figures\n</name>\n<description>\nGenerate professional, publication-ready scientific figures as editable SVG files for academic journals (Nature, Science, Cell, ACS, IEEE, Elsevier). Use this skill whenever the user wants to create a schematic figure, graphical abstract, TOC graphic, experimental workflow diagram, conceptual illustration, multi-panel figure, or any visual for a research paper or presentation. Also trigger when users mention \"figure for paper\", \"journal figure\", \"scientific illustration\", \"panel figure\", \"graphical abstract\", \"TOC graphic\", \"schematic diagram\", \"Inkscape\", \"Ipe editor\", or requests for publication-quality vector graphics. The skill produces 2-3 variants as SVG files that differ in both layout arrangement AND visual style. Each variant includes labeled placeholder regions for data plots. Figures follow strict journal formatting guidelines for Nature, Cell, ACS, IEEE, and other top-tier publishers.\n</description>\n</skill>\n<skill>\n<name>\nupload-tos\n</name>\n<description>\nUse when publishing a standalone HTML file or static site directory to ByteDance TOS, or when the user asks to upload, host, publish, or share an HTML page through object-store.redacted.internal.\n</description>\n</skill>\n<skill>\n<name>\nlark-vc-agent\n</name>\n<description>\n飞书视频会议会中能力：用于让应用机器人真实加入或离开正在进行的会议，并读取当前身份可见的会中事件、发送会中文本消息或会中表情。适用于用户询问正在开的会议发生了什么、谁在发言、是否共享内容，或需要发现当前可读的进行中会议 ID。不负责已结束会议搜索、参会人快照、纪要、逐字稿或录制查询，这些使用 lark-vc 技能。\n</description>\n</skill>\n<skill>\n<name>\nexperiment-design\n</name>\n<description>\nDesign experiment plans with progressive stages — initial implementation, baseline tuning, creative research, and ablation studies. Plan baselines, datasets, hyperparameter sweeps, and evaluation metrics. Use when planning experiments for a research paper.\n</description>\n</skill>\n<skill>\n<name>\nablation-planner\n</name>\n<description>\nUse when main results pass result-to-claim (claim_supported=yes or partial) and ablation studies are needed for paper submission.\n</description>\n</skill>\n<skill>\n<name>\npaper-audit\n</name>\n<description>\nReviewer-style audit and submission gate for academic papers in .tex, .typ, or .pdf. Use for peer-review critique, readiness/gate decisions, blocker triage, revision roadmaps, journal-style reports, and re-audits. Do not use for source editing, sentence polishing, bibliography search, or compile repair.\n</description>\n</skill>\n<skill>\n<name>\npaper-slip-check\n</name>\n<description>\nFail-closed sweep of Claude's own recurring paper-editing errors, compiled from the off-switch AIA revision (2026-08). Run BEFORE delivering any LaTeX paper build to Tricia, and after any space-reclaiming or bulk-edit round. Triggers on 检查清单, slip check, 交稿前自检, before sending paper PDF, 汇总错误, recurring errors sweep.\n</description>\n</skill>\n<skill>\n<name>\nlatex-formatting\n</name>\n<description>\nHandle LaTeX formatting, templates, and styling for academic papers. Set up conference templates (ICML, ICLR, NeurIPS, AAAI, ACL), fix formatting issues, manage packages, and ensure venue-specific compliance. Use when the user needs to set up a paper template, fix LaTeX formatting, or prepare for submission.\n</description>\n</skill>\n<skill>\n<name>\ncitation-audit\n</name>\n<description>\nZero-context verification that every bibliographic entry in the paper is real, correctly attributed, and used in a context the cited paper actually supports — catching hallucinated authors, wrong years, fabricated venues, version mismatches, and wrong-context citations. Use when user says \"审查引用\", \"check citations\", \"citation audit\", \"verify references\", \"引用核对\", or before submission to ensure bibliography integrity.\n</description>\n</skill>\n<skill>\n<name>\nlark-vc\n</name>\n<description>\n飞书视频会议：搜索历史会议记录、查询会议纪要（总结/待办/章节/逐字稿）、查询参会人快照。当用户查询已结束的会议、获取会议产物（纪要/妙记）、查看参会人时使用；查询未来日程走 lark-calendar。不负责：Agent 真实入会/离会、会中实时事件（走 lark-vc-agent）。\n</description>\n</skill>\n<skill>\n<name>\nmerlin-use\n</name>\n<description>\nMerlin CLI (mlx) cookbook for ByteDance Merlin devbox. Use when managing mlx workers or jobs — mlx worker launch/login/list/stop, mlx job submit, mlx notebook, mlx export for exposing ports, GPU quota, or Arnold training submission. Includes proxy and mirror setup for the devbox (see references/proxy.txt).\n</description>\n</skill>\n<skill>\n<name>\nreferee2\n</name>\n<description>\nSystematic audit and replication protocol (Scott Cunningham MixtapeTools Referee 2). Acts as a health inspector for empirical research: reads and RUNS the author code, rebuilds every reported number from raw data, and files a formal replication report. Never modifies author code. Use when verifying that a paper numbers actually come out of its code, or auditing reproducibility before submission.\n</description>\n</skill>\n<skill>\n<name>\nidea-discovery\n</name>\n<description>\nWorkflow 1: Full idea discovery pipeline to go from a broad research direction to validated, pilot-tested ideas. Use when user says \"找idea全流程\", \"idea discovery pipeline\", \"从零开始找方向\", or wants the complete idea exploration workflow.\n</description>\n</skill>\n<skill>\n<name>\nlark-drive\n</name>\n<description>\n飞书云空间（云盘/云存储）：管理 Drive 文件和文件夹，包含上传/下载、创建文件夹、复制/移动/删除、查看元数据、评论/权限/订阅、标题、版本和本地文件导入。用户需要整理云盘目录、处理云空间资源 URL/token、判断链接类型/真实 token/标题，或导入 Word/Markdown/Excel/CSV/PPTX/.base 为 docx/sheet/bitable/slides 时使用；doubao.com 云空间 URL/token 也按资源路径和 token 路由，不回退 WebFetch。不负责：文档内容编辑（走 lark-doc）、表格/Base 表内数据操作（走 lark-sheets/lark-base）、知识空间节点/成员管理（走 lark-wiki）、原生 Markdown 文件读写/patch/diff（走 lark-markdown）。\n</description>\n</skill>\n<skill>\n<name>\nanalyze-results\n</name>\n<description>\nAnalyze ML experiment results, compute statistics, generate comparison tables and insights. Use when user says \"analyze results\", \"compare\", or needs to interpret experimental data.\n</description>\n</skill>\n<skill>\n<name>\nlark-workflow-meeting-summary\n</name>\n<description>\n会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。\n</description>\n</skill>\n<skill>\n<name>\npublic-seed-webpage\n</name>\n<description>\nStart and publish a static seed/review webpage from the Merlin/Cloud IDE devbox so other people can access it. Use when asked to open, share, publicize, or expose visual review HTML pages such as WildTableBench seed/sample pages through mlx export.\n</description>\n</skill>\n<skill>\n<name>\nlark-event\n</name>\n<description>\nLark/Feishu real-time event listening / subscribing / consuming: stream events as NDJSON via `lark-cli event consume <EventKey>` (covers IM messages/reactions/chat changes, Task updates, VC meeting started/joined/ended, Minutes generated, Whiteboard updated, etc.). Use for Lark bots, real-time message processing, long-running subscribers, streaming webhook/push handlers. Supports `--max-events` / `--timeout` bounded runs and a stderr ready-marker contract — designed for AI agents running as subprocesses.\n</description>\n</skill>\n<skill>\n<name>\npaper-search-pro\n</name>\n<description>\nFind academic papers across up to 7 sources (OpenAlex / Semantic Scholar / CrossRef / PubMed / arXiv for English, plus native-Chinese retrieval via NSSD 国家哲社文献中心 + yiigle 中华医学期刊) with adjustable depth — Quick scan (5 min) to Audit prep (3 hr). Use when the user wants to find papers, run a literature search, gather references, scope a research topic, search Chinese-language / 中文原生 literature (中文文献/中文核心/CSSCI/C刊/国内研究/国内文献/中华××期刊/心理学报/经济研究), or filter results by journal tier (中科院分区/一区/几区, Q1, JCR/SJR quartile, 影响因子/impact factor, 期刊分区, 顶刊/top journal, '按分区筛'). Triggers on search verbs ('find papers', 'literature search', 'papers about X'), review types ('scoping review', 'systematic review', 'SR prep', 'literature review', 'lit review', 'help me write a lit review'), Chinese ('找文献', '找论文', '论文搜索', '学术检索', '文献检索', '文献综述', '综述前期', '求文献', '中文文献', '中文核心', 'CSSCI', 'C刊', '国内研究', '找中文的'). Outputs Shadcn HTML report + BibTeX/RIS/CSV + PRISMA-S log. Do NOT use for: concept explanations ('what is X' / 'X 是什么', e.g. '影响因子怎么算'), writing ('帮我写' / 'help me write a paragraph'), single-paper interpretation or PDF download with metadata (use paper-downloader-portable), or when the user already has a literature set (use literature-set-review).\n</description>\n</skill>\n<skill>\n<name>\nlark-apps\n</name>\n<description>\n妙搭（Spark/Miaoda）应用开发与托管：应用创建、HTML静态站点发布、本地全栈开发、云端生成迭代、AI相关能力和飞书平台能力或者其他外部能力集成、日志/Trace/监控指标/PV/UV 查询、环境变量管理、自动化触发器（定时/记录变更/Webhook/飞书审批）。当用户要开发/新建一个系统·工具·平台·应用，或要本地开发 / 云端开发 / 修改 / 部署 / 发布 / 上线 / 拿可分享链接，或用 HTML 做页面·网站·部署到妙搭，或提到妙搭/Spark/Miaoda（应用运行时域名形如 *.aiforce.cloud）、应用数据库、应用文件存储、开放 API Key、可见范围、线上日志、接口请求量、错误量、延迟、访问量、环境变量、给妙搭应用配自动化任务/定时触发/审批通过后自动触发时使用。不负责普通云盘文件上传（lark-drive）、飞书文档编辑（lark-doc）、原生幻灯片创建（lark-slides）。\n</description>\n</skill>\n<skill>\n<name>\nlark-attendance\n</name>\n<description>\n飞书考勤打卡：查询自己的考勤打卡记录\n</description>\n</skill>\n<skill>\n<name>\nvibe-template-ops\n</name>\n<description>\n跨地域/跨租户复制 template 及本地开发工作区同步。调用 dev_info/copy/workspace/sync 三个平台接口，从租户名称解析 org_id、按地区选 domain，先 dry_run 再经用户确认后执行。当用户要求复制模板、跨租户/跨地域迁移 template、同步本地开发工作区时触发。\n</description>\n</skill>\n<skill>\n<name>\nbatch-data-synthesis-pipeline\n</name>\n<description>\nUse this skill when designing, implementing, operating, or migrating large-scale data synthesis pipelines. It covers chunked generation, deterministic seeds, local resource caching, parquet compaction, bounded uploads, resume markers, manifests, monitoring, quality sampling, and multi-worker scaling.\n</description>\n</skill>\n<skill>\n<name>\npaper-figure\n</name>\n<description>\nGenerate publication-quality figures and tables from experiment results. Use when user says \"画图\", \"作图\", \"generate figures\", \"paper figures\", or needs plots for a paper.\n</description>\n</skill>\n<skill>\n<name>\nmath-reasoning\n</name>\n<description>\nFormal mathematical reasoning for research papers — derive equations, write proofs, formalize problem settings, select statistical tests, and generate LaTeX math notation. Use when the user needs mathematical derivations, theorem proofs, notation tables, or statistical analysis formalization.\n</description>\n</skill>\n<skill>\n<name>\nreview-paper-light\n</name>\n<description>\nRun a fast 2-agent pre-submission check for an economics paper — focuses on contribution, identification, and causal overclaiming. Completes in ~1 minute.\n</description>\n</skill>\n<skill>\n<name>\npaper-launch\n</name>\n<description>\n论文写作、改稿、压缩、实验组织的全流程准则。把论文当学术发布会而不是项目总结或自我审查报告 —— 围绕真正成立的优势组织全部材料。当在写/改论文正文、摘要、引言、结论,或决定哪些实验进正文时,先读这个。\n</description>\n</skill>\n<skill>\n<name>\ndeslop\n</name>\n<description>\nRemove AI writing patterns from prose. Use this skill when writing, drafting, editing, reviewing, or revising any text to eliminate predictable AI tells, slop, and formulaic patterns. Trigger this skill whenever the user asks to \"deslop\", \"de-AI\", \"make it sound human,\" \"remove AI patterns,\" \"remove AI tropes,\" \"clean up AI writing,\" fix \"slop,\" \"deslop\" text, or review prose for authenticity. Also use when the user asks you to write or draft anything and wants it to sound natural rather than AI-generated. Common use cases include scientific writing (manuscripts, abstracts, cover letters, grant narratives, discussion sections, peer review responses), blog posts, newsletters, memos, reports, and any other substantial prose.\n</description>\n</skill>\n<skill>\n<name>\nlark-shared\n</name>\n<description>\nUse for lark-cli setup/auth tasks: auth login/status/logout, user vs bot identity, business-domain permissions (--domain, including all/docs/drive), missing scopes, revoking authorization, or handling _notice JSON.\n</description>\n</skill>\n<skill>\n<name>\nkill-argument\n</name>\n<description>\nTwo-thread adversarial review: a fresh reviewer constructs the strongest 200-word rejection memo, then a second fresh reviewer defends the paper point-by-point and surfaces still-unresolved critical issues. Use when user says \"kill argument\", \"adversarial review\", \"hostile review\", \"rebuttal preparation\", \"reviewer-2 simulation\", or before submitting a theory paper that has already passed standard review rounds.\n</description>\n</skill>\n<skill>\n<name>\npaper-revision\n</name>\n<description>\nRevise papers based on reviewer feedback. Map reviewer concerns to specific sections, apply targeted edits, run additional experiments if needed, and verify improvements. Use after receiving peer review with revision requests.\n</description>\n</skill>\n<skill>\n<name>\nclaims-drafting\n</name>\n<description>\nDraft patent claims for an invention. Use when user says \"撰写权利要求\", \"draft claims\", \"写权利要求书\", \"claim drafting\", or wants to create patent claims. The core skill of the patent pipeline.\n</description>\n</skill>\n<skill>\n<name>\nliterature-search\n</name>\n<description>\nSearch academic literature using Semantic Scholar, arXiv, and OpenAlex APIs. Returns structured JSONL with title, authors, year, venue, abstract, citations, and BibTeX. Use when the user needs to find papers, check related work, or build a bibliography.\n</description>\n</skill>\n<skill>\n<name>\nlark-base\n</name>\n<description>\n飞书多维表格（Base）操作：建表、字段、记录、视图、统计、公式/lookup、表单、仪表盘、workflow、角色权限；遇到 Base/多维表格/bitable 或 /base/ 链接时使用。文件导入转 lark-drive，认证/授权转 lark-shared。\n</description>\n</skill>\n<skill>\n<name>\nmerlin-exp-ops\n</name>\n<description>\n在 ByteDance Merlin / MLX GPU worker 上跑长程实验时的避坑手册。当任务涉及 mlx worker(抢卡/launch/login/list/quota)、在 merlin 开发机或 worker 上投递与守护实验、往 worker 铺数据或模型缓存、判断远端实验死活或某张卡有没有真在干活、pod 连不上外网/要配代理、HF 模型下载慢、SSH 到 merlin 执行脚本、或多 worker 并行编排时,**先读这个再动手**。收录的每一条都是实际栽过的坑,不是通用建议。\n</description>\n</skill>\n<skill>\n<name>\nreviewer-defense\n</name>\n<description>\nUse when the user wants to anticipate reviewer questions, select the strongest ablations to present, prepare rebuttals, or identify paper weaknesses before submission. Triggers on phrases like \"reviewer questions\", \"anticipate reviewers\", \"rebuttal\", \"paper weaknesses\", \"defend the paper\", or \"strengthen the paper\".\n</description>\n</skill>\n<skill>\n<name>\nlark-slides\n</name>\n<description>\n飞书幻灯片：创建和编辑幻灯片。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。当用户给出 doubao.com 的 /slides/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：云文档内容编辑（走 lark-doc）、云文档里的独立画板对象（走 lark-whiteboard，注意 slide 内嵌的流程图/架构图仍属本 skill）、上传或下载普通文件（走 lark-drive）。\n</description>\n</skill>\n<skill>\n<name>\nlark-im\n</name>\n<description>\n飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件（支持大文件分片下载）、管理表情回复、发送应用内/短信/电话加急、发送和处理交互卡片（Interactive Card）、监听卡片按钮回调（card.action.trigger）。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据、管理 Feed 置顶（添加/移除/查询置顶会话）、管理标签数据、处理卡片回调时使用。\n</description>\n</skill>\n<skill>\n<name>\npaper-polishing\n</name>\n<description>\nComprehensive academic paper draft feedback in ICML meta-review style. Analyzes correctness (equations, proofs, notation), motivation, methodology gaps, presentation quality, visualization improvements, and missing citations. Outputs structured feedback with overall assessment, strengths, critical/major issues, section-by-section comments, and a prioritized revision checklist. Use when the user wants \"feedback on my paper\", \"polish my draft\", \"review my manuscript\", \"what should I improve\", or \"help me revise\".\n\n</description>\n</skill>\n<skill>\n<name>\nto-cdn\n</name>\n<description>\n把内网资源链接（object-store.redacted.internal / object-store.redacted.internal 等 *redacted.internal、*redacted.internal）批量转成公网可访问的签名 CDN 链接。当需要把内网图片、视频、素材发给外部人员（外包专家、供应商、合作方），或要把 JSON/HTML 里的内网链接整批替换成外网链接时使用。\n</description>\n</skill>\n<skill>\n<name>\nopenaireview\n</name>\n<description>\nDeep multi-agent section-level paper review (based on OpenAIReview, Chicago Human-AI Institute). Runs parallel sub-agents over each section and returns tiered findings (major/moderate/minor). Use for a thorough pre-submission scrutiny pass on a PDF or arXiv paper.\n</description>\n</skill>\n<skill>\n<name>\nrebuttal-writing\n</name>\n<description>\nWrite point-by-point rebuttals to reviewer comments. Extract concerns from reviews, generate evidence-based responses, and format as a structured rebuttal document. Use after receiving peer review feedback.\n</description>\n</skill>\n<skill>\n<name>\nmatplotlib\n</name>\n<description>\nGenerate publication-quality matplotlib/seaborn charts and diagrams. Produces colorblind-accessible, despined, annotation-rich figures using Tim's personal aesthetic (whitegrid, DejaVu Sans, cubehelix/ColorBrewer palettes). Use when creating any data visualization, chart, plot, or diagram.\n</description>\n</skill>\n                <skill>\n                <name>\n                academic-humanizer\n                </name>\n                <description>\n                Improve the clarity and voice of AI-assisted academic writing (papers, theses, rebuttals) and\nfunding proposals (NSF Project Summary/Description, NIH Specific Aims): preserve scholarly\nconventions, match claims to evidence (and, for proposals, claims to feasibility), and match the\nauthor's own voice. It never changes a number, result, or citation, and it is not for evading\nAI-use disclosure. Use when editing AI-assisted academic prose or grant proposals.\n\n                </description>\n                </skill>\n<skill>\n<name>\nnovelty-check\n</name>\n<description>\nVerify research idea novelty against recent literature. Use when user says \"查新\", \"novelty check\", \"有没有人做过\", \"check novelty\", or wants to verify a research idea is novel before implementing.\n</description>\n</skill>\n<skill>\n<name>\naaai27-hard-gate\n</name>\n<description>\nRun a fail-closed AAAI-27 submission-format gate against LaTeX source, the compiled review PDF, and the reproducibility checklist. Use when asked to validate, preflight, lint, audit, or hard-check an AAAI 2027 paper for page limits, anonymous submission mode, official style integrity, forbidden LaTeX, US-Letter geometry, embedded fonts, Type 3 fonts, PDF metadata, links, bookmarks, encryption, and required manual visual checks.\n</description>\n</skill>\n<skill>\n<name>\nlark-sheets\n</name>\n<description>\n飞书电子表格：创建和操作电子表格。支持创建表格、管理工作表与行列结构（增删/合并/调整尺寸/隐藏/冻结）、读写单元格（值/公式/样式/批注/单元格图片）、查找替换、多操作原子批量更新，以及图表、透视表、条件格式、筛选器、迷你图、浮动图片等对象的创建与维护。当用户需要创建电子表格、管理工作表、批量读写或编辑数据、统计汇总与可视化、表格美化、公式计算（含 Excel 公式迁移）、金融/财务建模（DCF、三张表、预算、Sensitivity 等）等任务时使用。若用户是想按名称或关键词搜索云空间（云盘/云存储）里的表格文件，请改用 lark-drive 的 drive +search 先定位资源。当用户给出 doubao.com 的 /sheets/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。\n</description>\n</skill>\n<skill>\n<name>\nlark-task\n</name>\n<description>\n飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。\n</description>\n</skill>\n<skill>\n<name>\nacademic-paper-reviewer\n</name>\n<description>\nMulti-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy, 審查論文, 論文審查, 模擬審查, 同儕審查, 幫我審這篇, 以審查人角度評估, 審查者校準, 논문 심사, 동료 심사, 모의 심사, 심사자 관점에서 평가, 심사자 보정.\n</description>\n</skill>\n<skill>\n<name>\nlark-whiteboard\n</name>\n<description>\n飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用多种格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板时使用此 skill。不负责：飞书云文档内容编辑（lark-doc）、文档内嵌电子表格/Base（lark-sheets / lark-base）。\n\n</description>\n</skill>\n<skill>\n<name>\nlark-approval\n</name>\n<description>\n飞书审批：查询和处理审批待办/已办/实例，搜索可发起审批定义、查看定义详情并发起原生审批实例。当用户要处理审批任务、查看审批实例、搜索或发起审批时使用。审批待办不是飞书任务；非审批类待办走 lark-task。不负责创建审批定义；三方审批定义不走原生提单。\n</description>\n</skill>\n<skill>\n<name>\nlatex-paper-en\n</name>\n<description>\nEnglish LaTeX assistant for existing .tex journal or conference papers. Use for compile repair, venue formatting, bibliography/citation checks, section writing, logic, related work, tables, pseudocode, de-AI polish, translation, adaptation, and submission readiness; use latex-thesis-zh for Chinese theses and paper-audit for critique.\n</description>\n</skill>\n</available_skills>",
+            "parameters": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "skill": {
+                  "type": "string",
+                  "description": "The skill name. E.g., \"pdf\" or \"xlsx\""
+                }
+              },
+              "required": [
+                "skill"
+              ]
+            }
+          },
+          {
+            "name": "Task",
+            "description": "Launch specialized sub-agents for complex work that benefits from parallelism, specialization, isolation, or background execution.\n\nFor single-sub-agent plans, use this tool only when delegation adds context-specific value (coordination capacity, specialization, isolation, or long-running execution); otherwise handle simple, bounded work directly.\n\nAvailable sub-agent types:\n- Planner: Strategic planning specialist for complex tasks. **Prefer this when planning is needed**. Gathers necessary context through file exploration and web research, then designs structured plans. Supports both implementation and research planning. Strictly read-only — does not write/edit files. (Tools: Bash, Glob, Grep, Read, WebSearch, WebFetch)\n- Explorer: Fast codebase exploration specialist. Use for targeted searches: finding files by patterns, searching code for keywords, or quickly understanding specific modules. **Prefer Planner for comprehensive exploration with plan design**. Read-only. (Tools: Glob, Grep, Read)\n- GeneralPurpose: General-purpose agent for researching complex questions, searching for code, and executing multi-step tasks. When you are searching for a keyword or file and are not confident that you will find the right match in the first few tries use this agent to perform the search for you. (Tools: All tools)\n- DeepResearch: Specialized agent for extensive online research and information gathering tasks. Use this agent when you need to conduct comprehensive research on topics, gather information from multiple sources, analyze trends, or answer complex questions that require browsing publicly available information. Can read local files (e.g. tool_output_guard persisted output). (Tools: WebSearch, WebFetch, Read)\n- ClaudeCodeAgent: Runs Claude Code (claude -p --output-format stream-json) as the rollout body.\n- CodexAgent: Runs Codex (codex exec --json) as the rollout body.\n\nUsage notes:\n- Sub-agents run asynchronously; this call returns immediately with their agent IDs.\n- Prefer launching multiple independent tasks in one Task call when orchestration is warranted.\n- Prompts carry specs and decisions, not implementation artifacts the sub-agent could paste into files.\n- When fork_from is set, the sub-agent already inherits that agent's conversation as background — state only the objective and what differs; do not restate inherited context.\n- Use relative paths in prompts; sub-agents resolve them against their own working directory, which may differ from yours.\n\nExample:\n{{\n  \"description\": \"Fix the bug in authentication module\",\n  \"tasks\": [\n    {{\n      \"subagent_type\": \"Planner\",\n      \"subagent_name\": \"fix_attempt_1\",\n      \"prompt\": \"Investigate and fix the authentication bug in ./src/auth/login.py\"\n    }},\n    {{\n      \"subagent_type\": \"Explorer\",\n      \"subagent_name\": \"fix_attempt_2\",\n      \"prompt\": \"Find an alternative approach to fix the authentication bug\"\n    }}\n  ]\n}}",
+            "parameters": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "Short description of the overall task (3-5 words)"
+                },
+                "tasks": {
+                  "type": "array",
+                  "description": "Array of task specifications.",
+                  "minItems": 1,
+                  "maxItems": 20,
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "subagent_type": {
+                        "type": "string",
+                        "description": "The type of sub-agent to spawn. Must be one of the available types listed in the tool description.",
+                        "enum": [
+                          "Planner",
+                          "Explorer",
+                          "GeneralPurpose",
+                          "DeepResearch",
+                          "ClaudeCodeAgent",
+                          "CodexAgent"
+                        ]
+                      },
+                      "subagent_name": {
+                        "type": "string",
+                        "description": "Role name for this task (e.g., backend_developer, test_writer)"
+                      },
+                      "task_graph_id": {
+                        "type": "string",
+                        "description": "Optional. When using TaskGraph tool, provide the corresponding task ID from TaskGraph to bind this sub-agent execution with the task"
+                      },
+                      "prompt": {
+                        "type": "string",
+                        "description": "Task objectives and context for this sub-agent, NOT implementation code. NEVER include function bodies, code blocks, or file contents."
+                      },
+                      "skills": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Optional. List of skill names that this sub-agent can use. Placeholder for future functionality."
+                      },
+                      "workspace": {
+                        "type": "string",
+                        "enum": [
+                          "default",
+                          "main",
+                          "isolate"
+                        ],
+                        "description": "Workspace mode for the sub-agent. \"default\": create sub-workspace using parent isolation strategy (default behavior, no need to specify unless explicitly required). \"main\": reuse parent workspace directly (for agents that apply final changes). \"isolate\": force isolated sub-workspace.",
+                        "default": "default"
+                      },
+                      "fork_from": {
+                        "type": "string",
+                        "description": "Optional agent ID whose current conversation history the sub-agent should inherit as background. Use your own agent_id to fork self; a live sub-agent's agent_id to fan out from its exploration (each fork gets an independent copy). Omit to start with a clean history."
+                      }
+                    },
+                    "required": [
+                      "subagent_type",
+                      "subagent_name",
+                      "prompt"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "description",
+                "tasks"
+              ]
+            }
+          },
+          {
+            "name": "QueryAgent",
+            "description": "Query sub-agent status and retrieve final results.\n\nUse QueryAgent for:\n- Waiting for a sub-agent to complete and retrieving its final result (wait=true)\n- A quick, non-blocking status check (wait=false)\n- An overview of all sub-agents (omit agent_id)\n\nUsage patterns:\n- agent_id + wait=true: block until the agent completes, return final output\n- agent_id + wait=false: quick status check\n- no agent_id: summary of all agents",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "agent_id": {
+                  "type": "string",
+                  "description": "Agent ID to query. Strongly prefer specifying this to enable incremental result retrieval."
+                },
+                "wait": {
+                  "type": "boolean",
+                  "description": "Wait for completion. Defaults to false.",
+                  "default": false
+                },
+                "timeout": {
+                  "type": "number",
+                  "description": "Timeout in seconds when wait=true."
+                }
+              },
+              "required": []
+            }
+          },
+          {
+            "name": "KillAgent",
+            "description": "Kill a sub-agent's event loop and set it to ZOMBIE status.\n\nThe agent remains in registry for querying but cannot receive new messages.\nUse QueryAgent to inspect the killed agent's final output.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "agent_id": {
+                  "type": "string",
+                  "description": "The ID of the agent to kill."
+                }
+              },
+              "required": [
+                "agent_id"
+              ]
+            }
+          },
+          {
+            "name": "TaskGraphCreate",
+            "description": "Create or extend a task graph for coordinating complex tasks with dependency tracking and parallel execution.\n\n## Behavior\n- **Create** (no existing graph): Build a complete task graph after planning — define all known tasks and their dependencies upfront\n- **Extend** (graph already exists): Append new tasks discovered during execution — e.g., follow-up work, missed scope, or tasks spawned by sub-agent results (task IDs must not conflict with existing ones)\n\n## ⚠️ Task Design (IMPORTANT)\n- Right-size: standalone deliverable per task; merge if tightly coupled, split if downstream only needs partial output\n- Verifiable: include acceptance criteria in task description\n- Dependencies — Keep: concrete data flow or shared state; Remove: assumed ordering or thematic relatedness; false dependencies needlessly serialize execution\n\n## When to Use This Tool\n\nUse this tool proactively in these scenarios:\n- Complex multi-step tasks requiring 3+ distinct operations or careful planning\n- After analyzing and planning implementation steps, to structure the work\n- User explicitly requests task list or provides multiple tasks (numbered or comma-separated)\n- When tasks have dependencies and need coordinated execution\n- When identifying additional work during execution that needs to be tracked\n\n## When NOT to Use This Tool\n\nSkip using this tool when:\n- There is only a single straightforward task\n- The task is trivial (<3 simple steps) with no organizational benefit\n- The task is purely conversational or informational\n- Modifying existing tasks - use TaskGraphUpdate to update status/content/dependency of existing task IDs\n\nNOTE: If there is only one trivial task, just execute it directly instead of creating a task graph.\n\n## Dependency Rules\n- Dependencies reference other task IDs in the graph\n- No circular dependencies allowed (must form a DAG - Directed Acyclic Graph)\n- A task cannot depend on itself\n\n## Tips\n\n- Create tasks with clear, specific content that describes the outcome\n- All tasks start with status \"pending\" - use TaskGraphUpdate to change status when starting work\n- Use TaskGraphList to see overall status and TaskGraphGet for task details\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "tasks": {
+                  "type": "array",
+                  "description": "List of tasks with optional dependencies",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "Unique task ID (e.g., task-1, task-2)"
+                      },
+                      "content": {
+                        "type": "string",
+                        "description": "Task title in imperative form (e.g., \"Implement user authentication\")"
+                      },
+                      "activeForm": {
+                        "type": "string",
+                        "description": "Task title in present continuous form (e.g., \"Implementing user authentication\")"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Detailed context, acceptance criteria, and verification method"
+                      },
+                      "dependencies": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Task IDs that must complete before this task (optional, defaults to [])",
+                        "default": []
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "content",
+                      "activeForm",
+                      "description"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "tasks"
+              ]
+            }
+          },
+          {
+            "name": "TaskGraphUpdate",
+            "description": "Update task status or content in the task graph.\n\n## Status Updates\n\n- Mark `in_progress` when starting work\n- Mark `completed` only when fully done (tests pass, no errors)\n\n## Updatable Fields\n\n- **status**: pending/in_progress/completed\n- **content**: Task title (imperative form)\n- **activeForm**: Task title (present continuous form)\n- **description**: Detailed requirements\n- **dependencies**: List of prerequisite task IDs\n\n## Dependency Rules\n\n- Dependencies must reference existing task IDs\n- No circular dependencies allowed\n- Empty array `[]` clears all dependencies\n\n## Notes\n\n- `id` is required, plus at least one field to update\n- Use minimal updates to save tokens\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "tasks": {
+                  "type": "array",
+                  "description": "List of task updates. Each requires id plus at least one field.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "Task ID to update"
+                      },
+                      "content": {
+                        "type": "string",
+                        "description": "Updated task description (imperative form)"
+                      },
+                      "activeForm": {
+                        "type": "string",
+                        "description": "Updated task description (present continuous form)"
+                      },
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "pending",
+                          "in_progress",
+                          "completed"
+                        ],
+                        "description": "Updated task status"
+                      },
+                      "dependencies": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Task IDs that must complete before this task. Replaces existing dependencies."
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Updated detailed description"
+                      }
+                    },
+                    "required": [
+                      "id"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "tasks"
+              ]
+            }
+          },
+          {
+            "name": "TaskGraphList",
+            "description": "List all tasks in the task graph with status and progress information.\n\n## When to Use This Tool\n\n- To see what tasks are ready to execute (all dependencies met)\n- To check overall progress on the task graph\n- To identify tasks that are blocked by dependencies\n- After completing a task, to check for newly executable tasks\n- To understand task execution order and parallel execution opportunities\n- **All executable tasks are ready to proceed** — start them all when you can work concurrently; when executing one at a time, prefer the lowest task ID first\n\nUse TaskGraphGet with a specific task ID to view full details including description and acceptance criteria before starting work.\n\n",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "TaskGraphGet",
+            "description": "Retrieve detailed information for one or more tasks by their IDs.\n\n## When to Use This Tool\n\n- When you need the full description and acceptance criteria before starting work on a task\n- To understand task dependencies (what tasks must complete first)\n- After TaskGraphList shows tasks as executable, to get complete requirements for multiple tasks at once\n- To verify task status and content details\n- To compare multiple tasks side-by-side\n\n## Input\n\n- **task_ids**: List of task IDs to retrieve (e.g., [\"task-1\"] for single task, or [\"task-1\", \"task-2\", \"task-3\"] for multiple)\n\n## Tips\n\n- Check dependencies list to verify all prerequisite tasks are completed\n- Use list input to review multiple executable tasks at once before starting or dispatching them\n- Use TaskGraphList to see all tasks in summary form, then TaskGraphGet for details on specific tasks\n",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "task_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "List of task IDs to retrieve. Use [\"task-1\"] for single task."
+                }
+              },
+              "required": [
+                "task_ids"
+              ]
+            }
+          },
+          {
+            "name": "SendMessage",
+            "description": "Send a message to another agent for inter-agent communication.\n\nModes:\n- notify: fire-and-forget, when you do not need a response\n- request: wait for the recipient's response, when you need confirmation or an answer\n\nUse SendMessage to:\n- Ask another agent for clarification, context, or a decision (mode=request)\n- Provide guidance or relay information to another agent (mode=notify)\n- Respond to an incoming message (mode=notify; set reply_to to the request_id)\n- Report progress or final results to another agent (mode=notify)",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "agent_id": {
+                  "type": "string",
+                  "description": "Target agent ID to send the message to."
+                },
+                "message": {
+                  "type": "string",
+                  "description": "Message content. The recipient ONLY sees this field, so include necessary details when reporting results."
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "notify",
+                    "request"
+                  ],
+                  "description": "notify: fire-and-forget, request: wait for response.",
+                  "default": "notify"
+                },
+                "reply_to": {
+                  "type": "string",
+                  "description": "The request_id from incoming message when responding (uses notify mode)."
+                },
+                "timeout": {
+                  "type": "number",
+                  "description": "Timeout in seconds (only applies when mode=\"request\").",
+                  "default": 60
+                }
+              },
+              "required": [
+                "agent_id",
+                "message"
+              ]
+            }
+          },
+          {
+            "name": "CreateCronJob",
+            "description": "Create a new scheduled cron job. The job will run on the specified schedule and send the prompt to an existing agent session (the creator session by default, or the target_agent_id if specified).",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the cron job."
+                },
+                "schedule_type": {
+                  "type": "string",
+                  "enum": [
+                    "cron",
+                    "interval",
+                    "once"
+                  ],
+                  "description": "Schedule type: \"cron\" for cron expressions, \"interval\" for fixed recurring intervals, \"once\" for a one-shot timer that fires exactly once."
+                },
+                "cron_expression": {
+                  "type": "string",
+                  "description": "Cron expression (5 fields: minute hour day month weekday). Required if schedule_type is \"cron\"."
+                },
+                "interval_seconds": {
+                  "type": "integer",
+                  "description": "Interval in seconds between runs. Required if schedule_type is \"interval\"."
+                },
+                "run_at": {
+                  "type": "number",
+                  "description": "Absolute Unix timestamp (seconds since epoch) for a one-shot job. Used with schedule_type=\"once\". Takes precedence over delay_seconds if both are set."
+                },
+                "delay_seconds": {
+                  "type": "number",
+                  "description": "Relative delay in seconds from job creation for a one-shot job. Used with schedule_type=\"once\". Must be positive. Ignored if run_at is also provided."
+                },
+                "prompt": {
+                  "type": "string",
+                  "description": "The message to send to the agent when the job fires."
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of what this job does."
+                },
+                "enabled": {
+                  "type": "boolean",
+                  "description": "Whether the job is enabled (default: true).",
+                  "default": true
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Tags for categorising the job."
+                },
+                "max_concurrent": {
+                  "type": "integer",
+                  "description": "Maximum concurrent executions (default: 1).",
+                  "default": 1
+                },
+                "target_agent_id": {
+                  "type": "string",
+                  "description": "Optional. Target agent ID to send the cron message to directly. If empty, sends to the creator agent."
+                }
+              },
+              "required": [
+                "name",
+                "prompt"
+              ]
+            }
+          },
+          {
+            "name": "UpdateCronJob",
+            "description": "Update an existing cron job's fields: name, description, schedule, prompt, routing, tags, or max_concurrent. When switching to schedule_type=\"once\", provide run_at or delay_seconds.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "job_id": {
+                  "type": "string",
+                  "description": "The ID of the cron job to update."
+                },
+                "name": {
+                  "type": "string",
+                  "description": "New name for the job."
+                },
+                "description": {
+                  "type": "string",
+                  "description": "New description for the job."
+                },
+                "schedule_type": {
+                  "type": "string",
+                  "enum": [
+                    "cron",
+                    "interval",
+                    "once"
+                  ],
+                  "description": "New schedule type."
+                },
+                "cron_expression": {
+                  "type": "string",
+                  "description": "New cron expression."
+                },
+                "interval_seconds": {
+                  "type": "integer",
+                  "description": "New interval in seconds."
+                },
+                "run_at": {
+                  "type": "number",
+                  "description": "Absolute Unix timestamp (seconds) for one-shot jobs. Takes precedence over delay_seconds."
+                },
+                "delay_seconds": {
+                  "type": "number",
+                  "description": "Relative delay (seconds) for one-shot jobs. Ignored if run_at is also set."
+                },
+                "prompt": {
+                  "type": "string",
+                  "description": "New prompt message."
+                },
+                "enabled": {
+                  "type": "boolean",
+                  "description": "Enable or disable the job."
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "New set of tags (replaces existing tags)."
+                },
+                "max_concurrent": {
+                  "type": "integer",
+                  "description": "New max concurrent executions."
+                },
+                "target_agent_id": {
+                  "type": "string",
+                  "description": "Optional. Target agent ID to send the cron message to directly. If empty, sends to the creator agent."
+                }
+              },
+              "required": [
+                "job_id"
+              ]
+            }
+          },
+          {
+            "name": "ListCronJobs",
+            "description": "List all cron jobs with optional filter by enabled status.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "enabled": {
+                  "type": "boolean",
+                  "description": "Filter by enabled status. Omit to show all."
+                }
+              },
+              "required": []
+            }
+          },
+          {
+            "name": "DeleteCronJob",
+            "description": "Delete a cron job permanently.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "job_id": {
+                  "type": "string",
+                  "description": "The ID of the cron job to delete."
+                }
+              },
+              "required": [
+                "job_id"
+              ]
+            }
+          },
+          {
+            "name": "ToggleCronJob",
+            "description": "Toggle a cron job between enabled and disabled states. Also reschedules the job accordingly.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "job_id": {
+                  "type": "string",
+                  "description": "The ID of the cron job to toggle."
+                }
+              },
+              "required": [
+                "job_id"
+              ]
+            }
+          },
+          {
+            "name": "TriggerCronJob",
+            "description": "Manually trigger a cron job immediately, bypassing its normal schedule. Delivers the prompt to the routed target agent.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "job_id": {
+                  "type": "string",
+                  "description": "The ID of the cron job to trigger."
+                }
+              },
+              "required": [
+                "job_id"
+              ]
+            }
+          },
+          {
+            "name": "QueryBackgroundTool",
+            "description": "Query the status of background tool executions.\n\nIf tool_call_id is provided, returns status of that specific tool.\nIf omitted, returns status of all background tools.\nUse wait_timeout to block until the tool finishes (avoids repeated polling). Set 30-120 for long-running tools.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "tool_call_id": {
+                  "type": "string",
+                  "description": "Optional. The tool_call_id to query. If omitted, returns all background tools."
+                },
+                "wait_timeout": {
+                  "type": "integer",
+                  "description": "Max seconds to wait for the tool to finish before returning. 0 = return immediately (default). Use 30-120 for long-running tools to avoid repeated polling.",
+                  "default": 0
+                }
+              },
+              "required": []
+            }
+          },
+          {
+            "name": "CancelBackgroundTool",
+            "description": "Cancel a running background tool execution by its tool_call_id.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "tool_call_id": {
+                  "type": "string",
+                  "description": "The tool_call_id of the background tool to cancel."
+                }
+              },
+              "required": [
+                "tool_call_id"
+              ]
+            }
+          },
+          {
+            "name": "DeployFile",
+            "description": "Upload a local file to TOS (object storage) and return a publicly accessible CDN URL. Use this to deploy build artifacts, HTML pages, or any file that needs to be shared via a link.",
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "file_path": {
+                  "type": "string",
+                  "description": "Absolute path to the local file to upload."
+                },
+                "remote_key": {
+                  "type": "string",
+                  "description": "Optional remote object key (path within the TOS bucket). If omitted, a key is auto-generated from the file name and a timestamp."
+                }
+              },
+              "required": [
+                "file_path"
+              ]
+            }
+          }
+        ],
+        "created_at": 1788937962.9369102
+      }
+    ],
+    "name": "dossiers, Generation 1, agents 001-018",
+    "name_source": "auto"
+  },
+  "notify_master": false,
+  "inject_memory": false
+}

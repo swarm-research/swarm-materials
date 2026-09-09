@@ -1,0 +1,13 @@
+{
+  "core_count": 72,
+  "hosts": [
+    "122174",
+    "122175",
+    "122448",
+    "122456"
+  ],
+  "bytes": 6471423104,
+  "size_mismatches": [],
+  "hash_mismatches": [],
+  "all_verified": true
+}
