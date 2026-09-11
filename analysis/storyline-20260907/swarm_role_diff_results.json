@@ -23,7 +23,7 @@
  "gen1": {
   "coverage": {
    "name": "gen1",
-   "root": "/Users/bytedance/Downloads/swarm",
+   "root": "swarm",
    "commons_files_total": 2172,
    "commons_files_unattributed": 41,
    "attribution_modes": {
@@ -2968,9 +2968,9 @@
     },
     "model": "seed-stable-reasoning-high",
     "example_paths": [
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-026_swarm_security_audit_20260801_161200.md",
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-026_trust_but_verify_security_map_20260801_162000.md",
-     "/Users/bytedance/Downloads/swarm/commons/builds/agent-026_swarm_security_audit_report_20260801_175500.html"
+     "swarm/commons/findings/agent-026_swarm_security_audit_20260801_161200.md",
+     "swarm/commons/findings/agent-026_trust_but_verify_security_map_20260801_162000.md",
+     "swarm/commons/builds/agent-026_swarm_security_audit_report_20260801_175500.html"
     ]
    },
    {
@@ -2992,9 +2992,9 @@
     },
     "model": "seed-stable-reasoning",
     "example_paths": [
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-031_swarm-observatory-001_20260801T162436Z.json",
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-031_conformance-test-round1_20260801T163117Z.json",
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-031_swarm-ecosystem-analysis_20260801T202200Z.json"
+     "swarm/commons/findings/agent-031_swarm-observatory-001_20260801T162436Z.json",
+     "swarm/commons/findings/agent-031_conformance-test-round1_20260801T163117Z.json",
+     "swarm/commons/findings/agent-031_swarm-ecosystem-analysis_20260801T202200Z.json"
     ]
    },
    {
@@ -3016,9 +3016,9 @@
     },
     "model": "gpt56_sol_reasoning_high",
     "example_paths": [
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-007_sortnet_independent_verification_20260801T214249Z.json",
-     "/Users/bytedance/Downloads/swarm/commons/tools/agent-007_generalized_sortlow_check_20260801T232228Z.py",
-     "/Users/bytedance/Downloads/swarm/commons/findings/agent-007_sorting_lower_bound_audit_20260801T234630Z.json"
+     "swarm/commons/findings/agent-007_sortnet_independent_verification_20260801T214249Z.json",
+     "swarm/commons/tools/agent-007_generalized_sortlow_check_20260801T232228Z.py",
+     "swarm/commons/findings/agent-007_sorting_lower_bound_audit_20260801T234630Z.json"
     ]
    },
    {
@@ -3040,9 +3040,9 @@
     },
     "model": "seed-stable",
     "example_paths": [
-     "/Users/bytedance/Downloads/swarm/commons/builds/agent-036_echo_dashboard_20260801T163044Z/index.html",
-     "/Users/bytedance/Downloads/swarm/commons/builds/agent-036_agent_profiles_20260801T163738Z/index.html",
-     "/Users/bytedance/Downloads/swarm/commons/builds/agent-036_agent_profiles_20260801T163738Z/profile_agent-000.html"
+     "swarm/commons/builds/agent-036_echo_dashboard_20260801T163044Z/index.html",
+     "swarm/commons/builds/agent-036_agent_profiles_20260801T163738Z/index.html",
+     "swarm/commons/builds/agent-036_agent_profiles_20260801T163738Z/profile_agent-000.html"
     ]
    },
    {
@@ -3064,9 +3064,9 @@
     },
     "model": "seed-stable-reasoning-high",
     "example_paths": [
-     "/Users/bytedance/Downloads/swarm/commons/data/agent-025_swarm_insight_20260801T163054Z.json",
-     "/Users/bytedance/Downloads/swarm/commons/data/agent-025_swarm_insight_20260801T163054Z.html",
-     "/Users/bytedance/Downloads/swarm/commons/data/agent-025_swarm_insight_20260801T163451Z.json"
+     "swarm/commons/data/agent-025_swarm_insight_20260801T163054Z.json",
+     "swarm/commons/data/agent-025_swarm_insight_20260801T163054Z.html",
+     "swarm/commons/data/agent-025_swarm_insight_20260801T163451Z.json"
     ]
    }
   ],
@@ -3102,7 +3102,7 @@
   "122174": {
    "coverage": {
     "name": "122174",
-    "root": "/Users/bytedance/Downloads/swarm-gen2/122174/swarm",
+    "root": "swarm-gen2/122174/swarm",
     "commons_files_total": 2819,
     "commons_files_unattributed": 39,
     "attribution_modes": {
@@ -6763,8 +6763,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-082_replication_current_network_corpus_audit_20260807.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-082_agent0196_manifest_complete_hash_replication_20260807.md"
+      "swarm-gen2/122174/swarm/commons/findings/agent-082_replication_current_network_corpus_audit_20260807.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-082_agent0196_manifest_complete_hash_replication_20260807.md"
      ]
     },
     {
@@ -6786,9 +6786,9 @@
      },
      "model": "ep-20260702161005-jcdtr",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T120500Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T122000Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_sortnet-sa-search-tool_20260802T131000Z.md"
+      "swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T120500Z.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T122000Z.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-0136_sortnet-sa-search-tool_20260802T131000Z.md"
      ]
     },
     {
@@ -6810,8 +6810,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0166_agent072_genetic_repair_depth_contract_audit_20260803T023500Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0166_agent0181_population_sa_cold_depth_and_selection_audit_20260803T024500Z.md"
+      "swarm-gen2/122174/swarm/commons/findings/agent-0166_agent072_genetic_repair_depth_contract_audit_20260803T023500Z.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-0166_agent0181_population_sa_cold_depth_and_selection_audit_20260803T024500Z.md"
      ]
     },
     {
@@ -6853,9 +6853,9 @@
      },
      "model": "ep-20260702161005-jcdtr",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-072_genetic_repair_sortnet_20260803T0215Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-072_genetic_repair_multi_start_20260803T0230Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-072_ga_ils_n10_d7_s30_negative_20260803T123000Z.md"
+      "swarm-gen2/122174/swarm/commons/findings/agent-072_genetic_repair_sortnet_20260803T0215Z.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-072_genetic_repair_multi_start_20260803T0230Z.md",
+      "swarm-gen2/122174/swarm/commons/findings/agent-072_ga_ils_n10_d7_s30_negative_20260803T123000Z.md"
      ]
     }
    ]
@@ -6863,7 +6863,7 @@
   "122175": {
    "coverage": {
     "name": "122175",
-    "root": "/Users/bytedance/Downloads/swarm-gen2/122175/swarm",
+    "root": "swarm-gen2/122175/swarm",
     "commons_files_total": 2676,
     "commons_files_unattributed": 14,
     "attribution_modes": {
@@ -10460,9 +10460,9 @@
      },
      "model": "ep-20260702161005-jcdtr",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_independent_sat_depth_verifier_20260804.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_20260804.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_v2_20260804.py"
+      "swarm-gen2/122175/swarm/commons/tools/agent-0172_independent_sat_depth_verifier_20260804.py",
+      "swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_20260804.py",
+      "swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_v2_20260804.py"
      ]
     },
     {
@@ -10484,9 +10484,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_duplicate_audit_denominator_20260802.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_reference_audit_truncated_templates_20260802.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_growth_replication_reference_extractor_20260802.md"
+      "swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_duplicate_audit_denominator_20260802.md",
+      "swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_reference_audit_truncated_templates_20260802.md",
+      "swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_growth_replication_reference_extractor_20260802.md"
      ]
     },
     {
@@ -10508,9 +10508,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_20260807.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_v1_1_20260807.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_generic_erdos_witness_bundle_audit_20260807.py"
+      "swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_20260807.py",
+      "swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_v1_1_20260807.py",
+      "swarm-gen2/122175/swarm/commons/tools/agent-073_generic_erdos_witness_bundle_audit_20260807.py"
      ]
     },
     {
@@ -10532,8 +10532,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-0182_three_corrections_to_erdos_structural_analysis_20260806.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-0182_status_correction_1680_claim_already_withdrawn_20260806.md"
+      "swarm-gen2/122175/swarm/commons/findings/agent-0182_three_corrections_to_erdos_structural_analysis_20260806.md",
+      "swarm-gen2/122175/swarm/commons/findings/agent-0182_status_correction_1680_claim_already_withdrawn_20260806.md"
      ]
     },
     {
@@ -10555,9 +10555,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0102_artifact_reference_audit_20260802T202500Z.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/data/agent-0102_artifact_reference_audit_summary_20260802T202500Z.json",
-      "/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0102_artifact_reference_audit_v2_20260802T204500Z.py"
+      "swarm-gen2/122175/swarm/commons/tools/agent-0102_artifact_reference_audit_20260802T202500Z.py",
+      "swarm-gen2/122175/swarm/commons/data/agent-0102_artifact_reference_audit_summary_20260802T202500Z.json",
+      "swarm-gen2/122175/swarm/commons/tools/agent-0102_artifact_reference_audit_v2_20260802T204500Z.py"
      ]
     }
    ]
@@ -10569,7 +10569,7 @@
   "122448": {
    "coverage": {
     "name": "122448",
-    "root": "/Users/bytedance/Downloads/swarm-gen2/122448/swarm",
+    "root": "swarm-gen2/122448/swarm",
     "commons_files_total": 1432,
     "commons_files_unattributed": 4,
     "attribution_modes": {
@@ -14127,9 +14127,9 @@
      },
      "model": "ep-20260702161005-jcdtr",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_toolkit_reconstructed_20260802T2105Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_navel_gazing_revisited_20260802T2125Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_monoculture_convergence_20260802T2230Z.md"
+      "swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_toolkit_reconstructed_20260802T2105Z.md",
+      "swarm-gen2/122448/swarm/commons/findings/agent-109_navel_gazing_revisited_20260802T2125Z.md",
+      "swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_monoculture_convergence_20260802T2230Z.md"
      ]
     },
     {
@@ -14151,9 +14151,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/tools/agent-055_audit_width_bounded_constructive_20260803T1930Z.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/tools/agent-055_verify_layer_budget_submission_20260803T2005Z.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-055_independent_verification_n14_k6_and_exactness_scope_20260803T2005Z.md"
+      "swarm-gen2/122448/swarm/commons/tools/agent-055_audit_width_bounded_constructive_20260803T1930Z.py",
+      "swarm-gen2/122448/swarm/commons/tools/agent-055_verify_layer_budget_submission_20260803T2005Z.py",
+      "swarm-gen2/122448/swarm/commons/findings/agent-055_independent_verification_n14_k6_and_exactness_scope_20260803T2005Z.md"
      ]
     },
     {
@@ -14175,9 +14175,9 @@
      },
      "model": "ep-20260702161005-jcdtr",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_constructive_width_bounded_bounds_20260803T1600Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_n7_all_optimal_width3_20260803T1630Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_merging_depth_conjecture_20260803T1500Z.md"
+      "swarm-gen2/122448/swarm/commons/findings/agent-0154_constructive_width_bounded_bounds_20260803T1600Z.md",
+      "swarm-gen2/122448/swarm/commons/findings/agent-0154_n7_all_optimal_width3_20260803T1630Z.md",
+      "swarm-gen2/122448/swarm/commons/findings/agent-0154_merging_depth_conjecture_20260803T1500Z.md"
      ]
     },
     {
@@ -14199,8 +14199,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/tools/agent-0119_salvage_collision_audit_20260802T2105Z.py",
-      "/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0119_independent_verification_wave_transition_and_adversarial_roles_20260803T0900Z.md"
+      "swarm-gen2/122448/swarm/commons/tools/agent-0119_salvage_collision_audit_20260802T2105Z.py",
+      "swarm-gen2/122448/swarm/commons/findings/agent-0119_independent_verification_wave_transition_and_adversarial_roles_20260803T0900Z.md"
      ]
     },
     {
@@ -14228,7 +14228,7 @@
   "122456": {
    "coverage": {
     "name": "122456",
-    "root": "/Users/bytedance/Downloads/swarm-gen2/122456/swarm",
+    "root": "swarm-gen2/122456/swarm",
     "commons_files_total": 3021,
     "commons_files_unattributed": 38,
     "attribution_modes": {
@@ -17686,8 +17686,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/data/agent-0175_CORRECTION-canonical-ledger-exists-at-root-navigator-misses-593-rows_20260804T0010Z.json",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0175_CORRECTION-the-ledger-was-not-empty-i-followed-the-broken-path_20260804T0010Z.md"
+      "swarm-gen2/122456/swarm/commons/data/agent-0175_CORRECTION-canonical-ledger-exists-at-root-navigator-misses-593-rows_20260804T0010Z.json",
+      "swarm-gen2/122456/swarm/commons/findings/agent-0175_CORRECTION-the-ledger-was-not-empty-i-followed-the-broken-path_20260804T0010Z.md"
      ]
     },
     {
@@ -17709,9 +17709,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION-machine-authored-is-not-reasonless-only-this-emitter-is_20260802T2016Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION23-still-promotes-a-broader-regex-to-ground-truth_20260802T2030Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION29-enumerable-neighborhood-not-set-vs-content-is-the-boundary_20260802T2058Z.md"
+      "swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION-machine-authored-is-not-reasonless-only-this-emitter-is_20260802T2016Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION23-still-promotes-a-broader-regex-to-ground-truth_20260802T2030Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION29-enumerable-neighborhood-not-set-vs-content-is-the-boundary_20260802T2058Z.md"
      ]
     },
     {
@@ -17733,8 +17733,8 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-056_navigator-v2-ground-truth-audit_20260802T150058Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-056_ADDENDUM-navigator-audit-current-generation-scope_20260802T1503Z.md"
+      "swarm-gen2/122456/swarm/commons/findings/agent-056_navigator-v2-ground-truth-audit_20260802T150058Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-056_ADDENDUM-navigator-audit-current-generation-scope_20260802T1503Z.md"
      ]
     },
     {
@@ -17756,9 +17756,9 @@
      },
      "model": "gpt-5.6-sol",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-066_CORRECTION-agent0160-sidecar-refutes-zero-and-reachability-premium-is-1.37x_pid29895_20260802T1755Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-066_CORRECTION-content-census-catches-3-of-our-files-but-1.8x-is-association-not-gain_pid30033_20260802T1725Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-066_RETRACTION-I-accepted-both-kit-items-but-one-predated-snapshot_pid29895_20260802T1810Z.md"
+      "swarm-gen2/122456/swarm/commons/findings/agent-066_CORRECTION-agent0160-sidecar-refutes-zero-and-reachability-premium-is-1.37x_pid29895_20260802T1755Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-066_CORRECTION-content-census-catches-3-of-our-files-but-1.8x-is-association-not-gain_pid30033_20260802T1725Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-066_RETRACTION-I-accepted-both-kit-items-but-one-predated-snapshot_pid29895_20260802T1810Z.md"
      ]
     },
     {
@@ -17780,9 +17780,9 @@
      },
      "model": "ep-20260802152152-sklbd",
      "example_paths": [
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_sampled_census_c3_20260807T0300Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_density_structure_c2_20260807T0400Z.md",
-      "/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_tail_structure_20260807T0800Z.md"
+      "swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_sampled_census_c3_20260807T0300Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_density_structure_c2_20260807T0400Z.md",
+      "swarm-gen2/122456/swarm/commons/findings/agent-081_erdos_tail_structure_20260807T0800Z.md"
      ]
     }
    ]

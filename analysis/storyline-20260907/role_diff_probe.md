@@ -217,73 +217,73 @@ Reading: the recurring structure is real and not machine-specific — every mach
 **gen1**
 
 - `agent-026` (seed-stable-reasoning-high, 172 acts, H=0.6024): cite 59%, verify 13%, board 13%, finding 6%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-026_swarm_security_audit_20260801_161200.md`
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-026_trust_but_verify_security_map_20260801_162000.md`
-  - `/Users/bytedance/Downloads/swarm/commons/builds/agent-026_swarm_security_audit_report_20260801_175500.html`
+  - `swarm/commons/findings/agent-026_swarm_security_audit_20260801_161200.md`
+  - `swarm/commons/findings/agent-026_trust_but_verify_security_map_20260801_162000.md`
+  - `swarm/commons/builds/agent-026_swarm_security_audit_report_20260801_175500.html`
 - `agent-031` (seed-stable-reasoning, 57 acts, H=0.6252): cite 56%, finding 14%, board 14%, tool 5%, data 5%. Own dominant artifact type: finding.
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-031_swarm-observatory-001_20260801T162436Z.json`
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-031_conformance-test-round1_20260801T163117Z.json`
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-031_swarm-ecosystem-analysis_20260801T202200Z.json`
+  - `swarm/commons/findings/agent-031_swarm-observatory-001_20260801T162436Z.json`
+  - `swarm/commons/findings/agent-031_conformance-test-round1_20260801T163117Z.json`
+  - `swarm/commons/findings/agent-031_swarm-ecosystem-analysis_20260801T202200Z.json`
 - `agent-007` (gpt56_sol_reasoning_high, 128 acts, H=0.6937): board 41%, cite 23%, verify 22%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-007_sortnet_independent_verification_20260801T214249Z.json`
-  - `/Users/bytedance/Downloads/swarm/commons/tools/agent-007_generalized_sortlow_check_20260801T232228Z.py`
-  - `/Users/bytedance/Downloads/swarm/commons/findings/agent-007_sorting_lower_bound_audit_20260801T234630Z.json`
+  - `swarm/commons/findings/agent-007_sortnet_independent_verification_20260801T214249Z.json`
+  - `swarm/commons/tools/agent-007_generalized_sortlow_check_20260801T232228Z.py`
+  - `swarm/commons/findings/agent-007_sorting_lower_bound_audit_20260801T234630Z.json`
 
 **122174**
 
 - `agent-082` (gpt-5.6-sol, 18 acts, H=0.5808): cite 39%, verify 33%, board 17%, correct 11%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-082_replication_current_network_corpus_audit_20260807.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-082_agent0196_manifest_complete_hash_replication_20260807.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-082_replication_current_network_corpus_audit_20260807.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-082_agent0196_manifest_complete_hash_replication_20260807.md`
 - `agent-0136` (ep-20260702161005-jcdtr, 13 acts, H=0.5944): finding 38%, cite 31%, tool 15%, board 15%. Own dominant artifact type: finding.
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T120500Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T122000Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0136_sortnet-sa-search-tool_20260802T131000Z.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T120500Z.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-0136_mandelbrot-exact-crack_20260802T122000Z.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-0136_sortnet-sa-search-tool_20260802T131000Z.md`
 - `agent-0166` (gpt-5.6-sol, 43 acts, H=0.623): cite 44%, verify 26%, correct 16%, board 9%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0166_agent072_genetic_repair_depth_contract_audit_20260803T023500Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122174/swarm/commons/findings/agent-0166_agent0181_population_sa_cold_depth_and_selection_audit_20260803T024500Z.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-0166_agent072_genetic_repair_depth_contract_audit_20260803T023500Z.md`
+  - `swarm-gen2/122174/swarm/commons/findings/agent-0166_agent0181_population_sa_cold_depth_and_selection_audit_20260803T024500Z.md`
 
 **122175**
 
 - `agent-0172` (ep-20260702161005-jcdtr, 17 acts, H=0.4423): verify 47%, cite 41%, finding 12%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_independent_sat_depth_verifier_20260804.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_20260804.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_v2_20260804.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-0172_independent_sat_depth_verifier_20260804.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_20260804.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-0172_dpll_sat_verifier_v2_20260804.py`
 - `agent-048` (gpt-5.6-sol, 260 acts, H=0.6531): cite 40%, correct 27%, verify 15%, board 13%. Own dominant artifact type: correct.
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_duplicate_audit_denominator_20260802.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_reference_audit_truncated_templates_20260802.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_growth_replication_reference_extractor_20260802.md`
+  - `swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_duplicate_audit_denominator_20260802.md`
+  - `swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_reference_audit_truncated_templates_20260802.md`
+  - `swarm-gen2/122175/swarm/commons/findings/agent-048_CORRECTION_growth_replication_reference_extractor_20260802.md`
 - `agent-073` (gpt-5.6-sol, 93 acts, H=0.6922): cite 35%, verify 25%, board 20%, correct 11%, finding 8%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_20260807.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_v1_1_20260807.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122175/swarm/commons/tools/agent-073_generic_erdos_witness_bundle_audit_20260807.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_20260807.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-073_erdos_witness_bundle_verifier_v1_1_20260807.py`
+  - `swarm-gen2/122175/swarm/commons/tools/agent-073_generic_erdos_witness_bundle_audit_20260807.py`
 
 **122448**
 
 - `agent-0109` (ep-20260702161005-jcdtr, 24 acts, H=0.5248): cite 62%, finding 12%, tool 12%, verify 8%. Own dominant artifact type: finding.
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_toolkit_reconstructed_20260802T2105Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_navel_gazing_revisited_20260802T2125Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_monoculture_convergence_20260802T2230Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_toolkit_reconstructed_20260802T2105Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-109_navel_gazing_revisited_20260802T2125Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-109_sortnet_monoculture_convergence_20260802T2230Z.md`
 - `agent-055` (gpt-5.6-sol, 43 acts, H=0.5276): cite 51%, verify 33%, correct 9%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/tools/agent-055_audit_width_bounded_constructive_20260803T1930Z.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/tools/agent-055_verify_layer_budget_submission_20260803T2005Z.py`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-055_independent_verification_n14_k6_and_exactness_scope_20260803T2005Z.md`
+  - `swarm-gen2/122448/swarm/commons/tools/agent-055_audit_width_bounded_constructive_20260803T1930Z.py`
+  - `swarm-gen2/122448/swarm/commons/tools/agent-055_verify_layer_budget_submission_20260803T2005Z.py`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-055_independent_verification_n14_k6_and_exactness_scope_20260803T2005Z.md`
 - `agent-0154` (ep-20260702161005-jcdtr, 17 acts, H=0.5908): cite 41%, finding 24%, tool 24%, board 12%. Own dominant artifact type: finding.
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_constructive_width_bounded_bounds_20260803T1600Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_n7_all_optimal_width3_20260803T1630Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122448/swarm/commons/findings/agent-0154_merging_depth_conjecture_20260803T1500Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-0154_constructive_width_bounded_bounds_20260803T1600Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-0154_n7_all_optimal_width3_20260803T1630Z.md`
+  - `swarm-gen2/122448/swarm/commons/findings/agent-0154_merging_depth_conjecture_20260803T1500Z.md`
 
 **122456**
 
 - `agent-0175` (gpt-5.6-sol, 13 acts, H=0.5761): cite 38%, correct 31%, verify 23%, finding 8%. Own dominant artifact type: correct.
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/data/agent-0175_CORRECTION-canonical-ledger-exists-at-root-navigator-misses-593-rows_20260804T0010Z.json`
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0175_CORRECTION-the-ledger-was-not-empty-i-followed-the-broken-path_20260804T0010Z.md`
+  - `swarm-gen2/122456/swarm/commons/data/agent-0175_CORRECTION-canonical-ledger-exists-at-root-navigator-misses-593-rows_20260804T0010Z.json`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-0175_CORRECTION-the-ledger-was-not-empty-i-followed-the-broken-path_20260804T0010Z.md`
 - `agent-0165` (gpt-5.6-sol, 55 acts, H=0.6517): cite 38%, correct 31%, finding 11%, board 11%, verify 9%. Own dominant artifact type: correct.
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION-machine-authored-is-not-reasonless-only-this-emitter-is_20260802T2016Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION23-still-promotes-a-broader-regex-to-ground-truth_20260802T2030Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION29-enumerable-neighborhood-not-set-vs-content-is-the-boundary_20260802T2058Z.md`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION-machine-authored-is-not-reasonless-only-this-emitter-is_20260802T2016Z.md`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION23-still-promotes-a-broader-regex-to-ground-truth_20260802T2030Z.md`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-0165_CORRECTION29-enumerable-neighborhood-not-set-vs-content-is-the-boundary_20260802T2058Z.md`
 - `agent-056` (gpt-5.6-sol, 66 acts, H=0.7103): cite 36%, verify 27%, board 15%, correct 12%, finding 6%. Own dominant artifact type: verify.
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-056_navigator-v2-ground-truth-audit_20260802T150058Z.md`
-  - `/Users/bytedance/Downloads/swarm-gen2/122456/swarm/commons/findings/agent-056_ADDENDUM-navigator-audit-current-generation-scope_20260802T1503Z.md`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-056_navigator-v2-ground-truth-audit_20260802T150058Z.md`
+  - `swarm-gen2/122456/swarm/commons/findings/agent-056_ADDENDUM-navigator-audit-current-generation-scope_20260802T1503Z.md`
 
 Self-declared roles in gen1 registry status lines (the only agents that wrote a `role` field): agent-014: "independent verification, red-teaming, data integrity" (×5); agent-014: "independent verification, red-teaming, data integrity, statistical hygiene" (×1); agent-014: "independent verification, red-teaming, instrumentation, data integrity" (×1); agent-016: "infrastructure + swarm-observability research" (×1); agent-029: "catalyst_explorer" (×1). agent-014's self-description ("independent verification, red-teaming, data integrity") matches its measured profile (verify is its largest commons type), but only 3 of 33 agents ever declared a role.
 
