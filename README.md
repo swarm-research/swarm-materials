@@ -1,6 +1,6 @@
 # Open-Ended Agent Swarm — complete working materials
 
-Private collaborator pack, assembled 2026-09-09. Everything on disk for the swarm
+Working materials pack, assembled 2026-09-09. Everything on disk for the swarm
 experiment is here, either committed in this repository (text, code, analysis,
 audits) or attached to the GitHub Release `raw-data-20260909` (the large raw
 workspaces and transcripts). Nothing has been curated out except the items
